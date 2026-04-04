@@ -1,0 +1,34 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "eu.ansvar/norwegian-financial-regulation-mcp",
+  "description": "Query Finanstilsynet forskrifter (regulations), rundskriv (circulars), veiledninger (guidance), and enforcement actions",
+  "repository": {
+    "url": "https://github.com/Ansvar-Systems/norwegian-financial-regulation-mcp",
+    "source": "github"
+  },
+  "homepage": "https://ansvar.eu",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "keywords": [
+    "finanstilsynet",
+    "norwegian-financial-regulation",
+    "norway",
+    "compliance",
+    "financial-services",
+    "banking",
+    "insurance",
+    "securities",
+    "mcp",
+    "ansvar"
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@ansvar/norwegian-financial-regulation-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
