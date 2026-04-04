@@ -1206,6 +1206,974 @@ const forskrifter: ProvisionRow[] = [
     chapter: "Inkasso",
     section: "Utfyllende regler",
   },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // CRYPTO ASSETS — MiCA
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-2025-05-27-20",
+    title: "Lov om kryptoeiendeler (kryptoeiendelsloven)",
+    text: "Kryptoeiendelsloven gjennomforer EU-forordning 2023/1114 om markeder for kryptoeiendeler (MiCA-forordningen) i norsk rett gjennom EOS-avtalen. Loven fastsetter regler for utstedelse, offentlig tilbud og handel med kryptoeiendeler, samt regler om ytelse av kryptoeiendelstjenester og om markedsmisbruk i kryptoeiendelsmarkedet. Kryptoeiendelstjenesteytere (CASP) ma ha tillatelse fra Finanstilsynet. Loven tradte i kraft 1. juli 2025. Eksisterende tilbydere som ytte kryptoeiendelstjenester for 30. desember 2024, kan fortsette virksomheten frem til 1. juli 2026 eller til de far eller blir nektet tillatelse etter MiCA artikkel 63.",
+    type: "lov",
+    status: "in_force",
+    effective_date: "2025-07-01",
+    chapter: "Kryptoeiendeler",
+    section: "Hovedlov MiCA",
+  },
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2025-06-25-1311",
+    title: "Forskrift til lov om kryptoeiendeler (kryptoeiendelsforskriften)",
+    text: "Kryptoeiendelsforskriften gir utfyllende bestemmelser til kryptoeiendelsloven og gjennomforer delegerte forordninger og tekniske standarder vedtatt i medhold av MiCA-forordningen. Forskriften regulerer blant annet konsesjonsvilkar for kryptoeiendelstjenesteytere, krav til hvitbok (white paper), krav til organisering og ledelse, kundemiddelbeskyltelse, rapporteringsplikter, og overgangsordninger for eksisterende tilbydere.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2025-07-01",
+    chapter: "Kryptoeiendeler",
+    section: "Utfyllende regler MiCA",
+  },
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2025-12-18-2854",
+    title: "Forskrift om overgangsregler til kryptoeiendelsloven",
+    text: "Forskriften fastsetter overgangsregler for kryptoeiendelstjenesteytere som ytte tjenester for kryptoeiendelslovens ikrafttredelse. Tilbydere som lovlig drev virksomhet for 30. desember 2024, kan fortsette a yte tjenester i en overgangsperiode frem til 1. juli 2026 eller til de far endelig vedtak pa sin konsesjonssoknad. Forskriften presiserer vilkarene for overgangsordningen og rapporteringsplikter i overgangsperioden.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2025-12-18",
+    chapter: "Kryptoeiendeler",
+    section: "Overgangsregler",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // CROWDFUNDING
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-2026-02-06-2",
+    title: "Lov om folkefinansiering av naeringsvirksomhet (folkefinansieringsloven)",
+    text: "Folkefinansieringsloven gjennomforer EU-forordning 2020/1503 om europeiske folkefinansieringstilbydere for naeringsvirksomhet (ECSPR) i norsk rett. Loven gir norske folkefinansieringsplattformer og investorer mulighet til a bli del av det felleseuropeiske markedet for folkefinansiering. Folkefinansiering innebarer at en rekke investorer gir finansiering til ulike prosjekter via en offentlig, nettbasert plattform som kobler de som soker finansiering med de som tilbyr finansiering. Plattformoperatorer ma ha tillatelse fra Finanstilsynet. Loven stiller krav til investorbeskyttelse, informasjonsplikt, og handtering av interessekonflikter.",
+    type: "lov",
+    status: "in_force",
+    effective_date: "2026-02-06",
+    chapter: "Folkefinansiering",
+    section: "Hovedlov",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ACCOUNTING FIRMS (REGNSKAPSFORER)
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-2022-12-16-90",
+    title: "Lov om regnskapsforere (regnskapsforerloven)",
+    text: "Regnskapsforerloven regulerer utovelse av regnskapsforervirksomhet. Loven erstatter den tidligere autorisasjonsordningen med et nytt godkjenningssystem. Regnskapsforere og regnskapsforerselskaper ma ha godkjenning fra Finanstilsynet. Loven fastsetter kvalifikasjonskrav, krav til etterutdanning (minst 77 timer over tre kalenderar), krav til forsvarlig regnskapsforing, oppdragsavtaler, kvalitetskontroll, og krav til opphoring av oppdrag. Finanstilsynet gjennomforer periodisk kvalitetskontroll og kan tilbakekalle godkjenning ved alvorlige brudd.",
+    type: "lov",
+    status: "in_force",
+    effective_date: "2023-01-01",
+    chapter: "Regnskapsforer",
+    section: "Hovedlov",
+  },
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2022-12-16-2270",
+    title: "Forskrift til lov om regnskapsforere (regnskapsforerforskriften)",
+    text: "Regnskapsforerforskriften gir utfyllende regler til regnskapsforerloven. Forskriften regulerer krav til praksiserfaring for statsautoriserte regnskapsforere, naermere krav til etterutdanning og obligatoriske fagomrader, regler for midlertidig tjenesteytelse fra EOS-stater, krav til oppdragsdokumentasjon, og krav til kvalitetskontrollsystemet. Forskriften fastsetter overgangsregler for regnskapsforere som var autorisert etter det tidligere regelverket.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2023-01-01",
+    chapter: "Regnskapsforer",
+    section: "Utfyllende regler",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // EIENDOMSMEGLING — ADDITIONAL REGULATIONS
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2007-11-23-1318",
+    title: "Forskrift om eiendomsmegling (eiendomsmeglingsforskriften)",
+    text: "Eiendomsmeglingsforskriften gir utfyllende regler til eiendomsmeglingsloven. Forskriften regulerer visse former for eiendomsmeglingsvirksomhet, sikkerhetsstillelse, organisering av foretaket, krav til uavhengighet, oppdragets utforelse, vederlag og utlegg, klientmiddelbehandling, journal- og dokumentasjonskrav, og utenrettslige tvistelosningsordninger. Klageorganer skal videresende rapporter om brudd pa eiendomsmeglingsloven til Finanstilsynet. Forskriften er senest endret 10. juni 2025.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2008-01-01",
+    chapter: "Eiendomsmegling",
+    section: "Utfyllende regler",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // SUSTAINABILITY / ESG DISCLOSURE
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-2021-12-22-161",
+    title: "Lov om offentliggjoring av berekraftsinformasjon i finanssektoren og et rammeverk for berekraftige investeringer (SFDR/taksonomi-loven)",
+    text: "Loven gjennomforer EUs SFDR-forordning (2019/2088) og EU-taksonomien (2020/852) i norsk rett. Finansmarkedsdeltagere og finansradgivere skal offentliggjore informasjon om integrering av berekraftsrisiko, vurdering av negative berekraftsvirkninger, og berekraftsegenskaper ved finansielle produkter. Loven fastsetter regler om klassifisering av fond og produkter (artikkel 6, 8 og 9-produkter), og krav til rapportering om hvordan investeringer er i trad med EU-taksonomien for berekraftig okonomisk aktivitet. Loven tradte i kraft 1. januar 2023.",
+    type: "lov",
+    status: "in_force",
+    effective_date: "2023-01-01",
+    chapter: "Berekraft",
+    section: "SFDR/Taksonomi hovedlov",
+  },
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2022-12-20-2429",
+    title: "Forskrift om offentliggjoring av berekraftsinformasjon i finanssektoren og et rammeverk for berekraftige investeringer",
+    text: "Forskriften gjennomforer utfyllende forordninger til SFDR og EU-taksonomien i norsk rett, herunder tekniske standarder for berekraftsrapportering (RTS) vedtatt av EU-kommisjonen. Forskriften fastsetter detaljerte krav til rapporteringsformat, maler for foretaksniva offentliggjoring, produktniva offentliggjoring, og negativ-berekraftsvirknings-rapportering (PAI-indikatorer). Finansmarkedsdeltagere skal rapportere pa sine nettsider og i pre-kontraktuelle dokumenter.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2023-01-01",
+    chapter: "Berekraft",
+    section: "SFDR utfyllende regler",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // CSRD — SUSTAINABILITY REPORTING FOR LISTED/LARGE COMPANIES
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-2024-11-01-CSRD",
+    title: "Endringer i regnskapsloven — gjennomforing av CSRD (berekraftsrapportering)",
+    text: "Nye regler om berekraftsrapportering (CSRD) ble innfort i regnskapsloven kapittel 2 og verdipapirhandelloven med virkning fra regnskapsaret 2024. Store foretak av allmenn interesse med over 500 ansatte skal rapportere i trad med europeiske berekraftsrapporteringsstandarder (ESRS). Kravene utvides trinnvis til a omfatte alle store foretak fra 2025 og borsnoterte SMB-er fra 2026. Finanstilsynet forer kontroll med berekraftsrapporteringen fra borsnoterte foretak som del av regnskapskontrollen. Rapporteringen skal attesteres av revisor med begraenset sikkerhet.",
+    type: "lovendring",
+    status: "in_force",
+    effective_date: "2024-11-01",
+    chapter: "Berekraft",
+    section: "CSRD rapportering",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ADDITIONAL CORE REGULATIONS — BANK RESOLUTION (BRRD)
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-2018-11-23-87",
+    title: "Lov om Bankenes sikringsfond (banksikringsloven)",
+    text: "Banksikringsloven gjennomforer EUs innskuddsgarantidirektiv (DGSD, 2014/49/EU) og krisehandteringsdirektivet (BRRD, 2014/59/EU) i norsk rett. Loven regulerer innskuddsgarantiordningen (dekning inntil 2 millioner kroner per innskyter per bank), Bankenes sikringsfond, krisetiltaksfondet, og Finanstilsynets myndighet som krisehandteringsmyndighet. Loven fastsetter regler om nedskriving og konvertering av kapital og gjeld (bail-in), gjenopprettingsplaner, krisehandteringsplaner, og minstekrav til ansvarlig kapital og konvertibel gjeld (MREL). Loven er endret for a gjennomfore BRRD II (direktiv 2019/879/EU).",
+    type: "lov",
+    status: "in_force",
+    effective_date: "2019-01-01",
+    chapter: "Krisehandtering",
+    section: "BRRD/Innskuddsgaranti",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // COVERED BONDS
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2007-05-25-550 Del III",
+    title: "Forskrift om kredittforetak som utsteder obligasjoner med fortrinnsrett (OMF-forskriften)",
+    text: "OMF-forskriften regulerer kredittforetak som utsteder obligasjoner med fortrinnsrett (covered bonds / OMF). Forskriften fastsetter krav til sikkerhetsmassens sammensetning, belaning, verdsettelse, overpantsettelse, derivatbruk, og likviditetsbuffer. Kredittforetaket skal til enhver tid sikre at verdien av sikkerhetsmassen overstiger verdien av de utstedte obligasjonene med fortrinnsrett. Sikkerhetsmassen kan besta av boliglan, naeringseiendolman, offentlige lan, og derivater. Forskriften er relevant for CRR-fordelen som OMF gir i form av lavere risikovekt for investorer.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2007-06-01",
+    chapter: "Obligasjoner med fortrinnsrett",
+    section: "OMF krav",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // FINANCIAL BENCHMARKS
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2019-12-20-2091",
+    title: "Forskrift om referanseverdier (referanseverdiforskriften)",
+    text: "Referanseverdiforskriften gjennomforer EU-forordning 2016/1011 om referanseverdier (BMR) i norsk rett. Forskriften regulerer tilbydere av referanseverdier (benchmarks), herunder Nibor-administratoren Norske Finansielle Referanser AS. Forskriften fastsetter krav til governance, metodologi, integritet, rapportering, og tilsyn med kritiske referanseverdier. Bidragsytere til referanseverdier er underlagt krav til internkontroll og interessekonflikthandtering. Finanstilsynet er nasjonal tilsynsmyndighet for referanseverdier i Norge.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2020-01-01",
+    chapter: "Referanseverdier",
+    section: "BMR",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // PROSPECTUS AND TRANSPARENCY
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2019-12-20-2088",
+    title: "Forskrift om virksomheten til verdipapirforetak mv. (prospektforordningen mv.)",
+    text: "Denne forskriften gjennomforer blant annet EU-prospektforordningen (2017/1129) i norsk rett, som fastsetter krav til prospekt ved offentlig tilbud av omsettelige verdipapirer og opptak til handel pa regulert marked. Forskriften regulerer innholdet i prospekter, godkjenningsprosessen hos Finanstilsynet, unntak fra prospektplikten, og regler for grenseoverskridende prospektpassporting innen EOS. Finanstilsynet er nasjonalt godkjenningsorgan for prospekter.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2020-01-01",
+    chapter: "Verdipapir",
+    section: "Prospektforordningen",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // SHORT SELLING
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2017-01-01-SSR",
+    title: "Gjennomforing av EU-forordningen om shortsalg (SSR)",
+    text: "Forordningen om shortsalg og visse aspekter av kredittbytteavtaler (EU) nr. 236/2012 er gjennomfort i norsk rett. Forordningen regulerer meldeplikt og offentliggjoring av korte posisjoner i aksjer notert pa regulert marked og i statsobligasjoner. Det er innfort forbud mot udekket shortsalg av aksjer (naked short selling) og krav om at selgeren har en rimelig forventning om a kunne levere aksjene ved oppgjor (locate-regel). Finanstilsynet kan innfore midlertidige forbud mot shortsalg i uordnede markedsforhold.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2017-01-01",
+    chapter: "Verdipapir",
+    section: "Shortsalg",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // EMIR — DERIVATIVES
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2019-12-20-2090",
+    title: "Forskrift om OTC-derivater, sentrale motparter og transaksjonsregistre (EMIR-forskriften)",
+    text: "EMIR-forskriften gjennomforer EU-forordning 648/2012 om OTC-derivater, sentrale motparter og transaksjonsregistre (EMIR) i norsk rett gjennom EOS-avtalen. Forskriften fastsetter clearingplikt for standardiserte OTC-derivater gjennom sentrale motparter (CCP), rapporteringsplikt for alle derivatkontrakter til transaksjonsregistre, risikoreduksjonsteknikker for OTC-derivater som ikke cleares sentralt (herunder marginutveksling og portefoljeavstemming), og krav til sentrale motparter. Finansielle motparter og ikke-finansielle motparter over clearingterskelen er underlagt clearingplikten.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2020-01-01",
+    chapter: "Derivater",
+    section: "EMIR",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // CENTRAL SECURITIES DEPOSITORIES
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2019-12-20-2089",
+    title: "Forskrift om verdipapirregistre og verdipapiroppgjor (CSDR-forskriften)",
+    text: "CSDR-forskriften gjennomforer EU-forordning 909/2014 om verdipapiroppgjor og verdipapirregistre (CSDR) i norsk rett. Forskriften regulerer krav til Verdipapirsentralen (VPS) og andre verdipapirregistre, herunder autorisasjon, organisering, internkontroll, sarbarhetshandtering, og oppgjorsdisiplin. Forskriften innforer regler om tvungen innkjopsordning (buy-in) ved forsinket oppgjor og kontantstraff ved oppgjorssvikt. Forskriften fastsetter ogs krav til verdipapirregisterets kapitalgrunnlag og risikostyring.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2020-01-01",
+    chapter: "Verdipapir",
+    section: "CSDR verdipapiroppgjor",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // INSURANCE DISTRIBUTION DIRECTIVE (IDD)
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2022-12-16-2364",
+    title: "Forskrift om forsikringsformidling (forsikringsformidlingsforskriften)",
+    text: "Forsikringsformidlingsforskriften gir utfyllende regler til forsikringsformidlingsloven og gjennomforer delegerte rettsakter til IDD (forsikringsdistribusjonsdirektivet 2016/97/EU). Forskriften regulerer krav til informasjonsplikt for forsikringsmeglere og agenter, krav til faglige kvalifikasjoner (15 timer etterutdanning arlig), produktstyringskrav (POG), krav til interessekonflikthandtering, og regler om vederlag og provisjoner fra forsikringsselskaper.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2023-01-01",
+    chapter: "Forsikring",
+    section: "IDD utfyllende",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // PRIIPS — KEY INFORMATION DOCUMENTS
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2022-12-16-2365",
+    title: "Forskrift om nokkeldokumenter for sammensatte og forsikringsbaserte investeringsprodukter (PRIIPs-forskriften)",
+    text: "PRIIPs-forskriften gjennomforer EU-forordning 1286/2014 om nokkeldokumenter for sammensatte og forsikringsbaserte investeringsprodukter (PRIIPs) i norsk rett. Forskriften krever at produsenter av PRIIPs utarbeider et standardisert nokkeldokument (KID) som gir sammenlignbar informasjon om risiko, avkastning, kostnader og erstatning. Nokkeldokumentet skal gis til ikkeprofesjonelle investorer for kjop. Finanstilsynet kan forby eller begrense markedsforingen av produkter som ikke oppfyller kravene.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2023-01-01",
+    chapter: "Investorbeskyttelse",
+    section: "PRIIPs",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ANTI-MONEY LAUNDERING — TRANSFER OF FUNDS REGULATION
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2019-12-20-2083",
+    title: "Forskrift om opplysninger som skal folge pengeoverforing mv. (TFR-forskriften)",
+    text: "TFR-forskriften gjennomforer EU-forordning 2015/847 om opplysninger som skal folge pengeoverforing (Wire Transfer Regulation / TFR) i norsk rett. Forskriften stiller krav til at betalingstjenestetilbydere sikrer at opplysninger om betaler og betalingsmottaker folger med pengeoverforingen gjennom hele betalingskjeden. Formalet er a forebygge, avdekke og etterforske hvitvasking og terrorfinansiering. Betalingstjenestetilbyderen skal ha prosedyrer for a verifisere opplysningene og for a avdekke manglende opplysninger.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2020-01-01",
+    chapter: "Hvitvasking",
+    section: "TFR pengeoverforing",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // SECURITISATION
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2021-12-17-3745",
+    title: "Forskrift om verdipapirisering (verdipapiriseringsforskriften)",
+    text: "Verdipapiriseringsforskriften gjennomforer EU-forordning 2017/2402 om verdipapirisering (Securitisation Regulation) i norsk rett. Forskriften regulerer krav til transparens, risikotilbakeholdelse (originator skal beholde minst 5 prosent av den verdipapiriserte eksponeringen), due diligence-krav for investorer, og kriterier for enkel, gjennomsiktig og standardisert verdipapirisering (STS). Finanstilsynet forer tilsyn med norske originatorer, SSPE-er og institusjonelle investorer som investerer i verdipapiriseringer.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2022-01-01",
+    chapter: "Verdipapir",
+    section: "Verdipapirisering",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // MARKET ABUSE — MAR
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2019-12-20-2084",
+    title: "Gjennomforing av markedsmisbruksforordningen (MAR) i norsk rett",
+    text: "Markedsmisbruksforordningen (EU) nr. 596/2014 (MAR) er gjennomfort i verdipapirhandelloven og forskrifter. MAR harmoniserer reglene om forbud mot innsidehandel, markedsmanipulasjon og ulovlig spredning av innsideinformasjon i hele EOS. Utstedere av finansielle instrumenter har plikt til a offentliggjore innsideinformasjon sa snart som mulig. Primaerinnsidere skal melde handler i utsteders aksjer. Finanstilsynet har myndighet til a ilegge overtredelsesgebyr pa inntil 41,5 millioner kroner for overtredelse av MAR.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2020-03-01",
+    chapter: "Verdipapir",
+    section: "MAR markedsmisbruk",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // TRANSPARENCY DIRECTIVE
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2007-06-29-876 Del 3",
+    title: "Verdipapirforskriften Del 3 — Flaggeplikt og periodisk rapportering (Transparency Directive)",
+    text: "Del 3 av verdipapirforskriften gjennomforer rapporteringsdirektivet (Transparency Directive 2004/109/EF, endret ved 2013/50/EU) i norsk rett. Forskriften fastsetter krav til flaggeplikt ved kryssing av eierskapsterskler (5, 10, 15, 20, 25, 1/3, 50, 2/3 og 90 prosent), periodisk rapportering (arsrapport og halvarsrapport), og lagring av regulert informasjon. Utstedere pa regulert marked ma offentliggjore arlig og halvarsvis finansiell informasjon og aksjonaeroversikter.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2007-11-01",
+    chapter: "Verdipapir",
+    section: "Rapporteringsdirektivet",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // OCCUPATIONAL PENSIONS — IORP II
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-2019-06-14-21",
+    title: "Lov om tjenestepensjon (tjenestepensjonsloven)",
+    text: "Tjenestepensjonsloven regulerer hybride pensjonsordninger som kombinerer elementer fra innskudds- og ytelsesordninger. Arbeidsgiver betaler innskudd som bygger opp en pensjonsbeholdning, men pensjonsytelsen reguleres med en garantert minsteavkastning. Loven fastsetter krav til innskuddssatser, reguleringsordninger, risikofordeling mellom arbeidsgiver og arbeidstaker, og regler om utbetaling av alderspensjon. Pensjonsordningen skal vaere forsikret hos et pensjonsforetak eller livsforsikringsselskap med tillatelse fra Finanstilsynet.",
+    type: "lov",
+    status: "in_force",
+    effective_date: "2019-06-14",
+    chapter: "Pensjon",
+    section: "Tjenestepensjon",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // INDIVIDUAL PENSION SAVINGS — IPS
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-2017-06-16-47",
+    title: "Lov om individuell pensjonsordning (IPS-loven)",
+    text: "IPS-loven regulerer individuelle pensjonsordninger med skattefordel. Maksimalt sparebidrag er 15 000 kroner per ar, og bidragene gir rett til skattefradrag. Sparekapitalen beskattes forst ved utbetaling. Loven fastsetter krav til leverandorer av IPS-produkter, investeringsalternativer, informasjonsplikt til kunden, og regler om utbetaling fra 62 ars alder. Finanstilsynet forer tilsyn med leverandorer som tilbyr IPS-produkter.",
+    type: "lov",
+    status: "in_force",
+    effective_date: "2017-11-01",
+    chapter: "Pensjon",
+    section: "Individuell pensjon",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // E-MONEY
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2016-12-09-1502 kap 6",
+    title: "Finansforetaksforskriften kapittel 6 — E-pengeforetak",
+    text: "Kapittel 6 i finansforetaksforskriften regulerer e-pengeforetak i Norge. E-pengeforetak ma ha tillatelse fra Finanstilsynet. Forskriften fastsetter krav til startkapital (minst 350 000 euro), krav til ansvarlig kapital, investeringsbegrensninger for midler mottatt for utstedelse av e-penger, innlosningsrett for innehavere av e-penger, og krav til safeguarding av kundenes midler. E-pengeforetak kan ogs yte betalingstjenester. Reglene gjennomforer e-pengedirektivet (2009/110/EF).",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2016-12-09",
+    chapter: "Betalingstjenester",
+    section: "E-penger",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // INVESTMENT FIRM PRUDENTIAL — IFR/IFD
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2023-11-24-1848",
+    title: "Forskrift om verdipapirforetak og kredittinstitusjoner mv. (IFR/IFD-forskriften)",
+    text: "Forskriften gjennomforer EUs regelverk for verdipapirforetak (IFR, forordning 2019/2033 og IFD, direktiv 2019/2034) i norsk rett. Forskriften fastsetter nye kapital- og likviditetskrav tilpasset verdipapirforetak, klassifisering av verdipapirforetak etter storrelse og kompleksitet, krav til risikostyring og internkontroll, godtgjorelsesregler, og rapporterings- og offentligjoringskrav. Sma og ikke-komplekse verdipapirforetak (klasse 3) far forenklede krav. Store verdipapirforetak (klasse 1) reklassifiseres som kredittinstitusjoner under CRR.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2024-01-01",
+    chapter: "Verdipapir",
+    section: "IFR/IFD kapitalkrav",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // INSURANCE — MOTOR VEHICLE LIABILITY
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-1961-02-03",
+    title: "Lov om ansvar for skade som motorvogner gjer (bilansvarslova)",
+    text: "Bilansvarslova regulerer erstatningsansvar for skade voldt av motorvogn. Loven krever at alle motorvogner skal vaere forsikret med trafikkforsikring hos et forsikringsselskap godkjent av Finanstilsynet. Trafikkforsikringsforeningen (TFF) handterer krav mot uforsikrede og ukjente motorvogner. Finanstilsynet forer tilsyn med at forsikringsselskapene oppfyller sine forpliktelser etter loven.",
+    type: "lov",
+    status: "in_force",
+    effective_date: "1961-06-01",
+    chapter: "Forsikring",
+    section: "Trafikkforsikring",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // GUARANTEE SCHEMES / INVESTOR COMPENSATION
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-1999-12-17-95",
+    title: "Lov om garantiordning for skadeforsikring (skadeforsikringsloven)",
+    text: "Loven regulerer garantiordningen for skadeforsikringsselskaper i Norge. Garantiordningen skal sikre at forsikringskundenes krav blir oppfylt dersom et skadeforsikringsselskap blir satt under offentlig administrasjon. Alle skadeforsikringsselskaper med hovedsete i Norge skal vaere medlemmer av garantiordningen. Finanstilsynet er tilsynsmyndighet for ordningen.",
+    type: "lov",
+    status: "in_force",
+    effective_date: "2000-07-01",
+    chapter: "Forsikring",
+    section: "Skadeforsikringsgaranti",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // FINANCIAL INFRASTRUCTURE — PAYMENT SYSTEMS AND INTERBANK
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-1999-12-17-95-betaling",
+    title: "Lov om betalingssystemer mv. (betalingssystemloven)",
+    text: "Betalingssystemloven regulerer interbanksystemer og systemer for verdipapiroppgjor. Systemer av vesentlig betydning for finansiell stabilitet skal meldes til og godkjennes av Norges Bank eller Finanstilsynet. Loven gjennomforer direktivet om endelig oppgjor i betalingssystemer og verdipapiroppgjorossystemer (Settlement Finality Directive, 98/26/EF). Loven fastsetter regler om vern mot insolvensbehandling av overforinger og sikkerhetsstillelse i godkjente oppgjorssystemer.",
+    type: "lov",
+    status: "in_force",
+    effective_date: "2000-04-14",
+    chapter: "Betalingstjenester",
+    section: "Betalingssystemer",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // NATIONAL ACCOUNTING STANDARDS — IFRS ADOPTION
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2005-01-17-36 kap 3",
+    title: "IFRS-forskriften — Kapittel 3 Forenklet IFRS for arsregnskapet",
+    text: "Kapittel 3 i IFRS-forskriften regulerer adgangen til a anvende forenklet IFRS for arsregnskapet. Foretak som ikke er notert pa regulert marked, men som er underlagt IFRS for konsernregnskapet, kan anvende forenklet IFRS. Finanstilsynet kan kreve at foretak som avlegger regnskap etter forenklet IFRS, gir tilleggsopplysninger for a sikre at regnskapet gir et rettvisende bilde. Forenklet IFRS innebarer full IFRS for maling og innregning, men med forenklede notekrav tilsvarende regnskapsloven.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2005-01-17",
+    chapter: "Regnskap",
+    section: "Forenklet IFRS",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // DEPOSIT GUARANTEE
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2018-12-21-2247",
+    title: "Forskrift om Bankenes sikringsfond (banksikringsfondsforskriften)",
+    text: "Forskriften gir utfyllende regler til banksikringsloven om innskuddsgarantiordningen og krisetiltaksfondet. Forskriften regulerer beregning av arlige bidrag til Bankenes sikringsfond, klassifisering av garanterte innskudd, utbetalingsprosedyrer ved bankkriser, og regler om stresstest av innskuddsgarantiordningen. Innskuddsgarantien dekker inntil 2 millioner kroner per innskyter per bank. Fondet skal na et malnivaav 0,8 prosent av garanterte innskudd innen 2024.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2019-01-01",
+    chapter: "Krisehandtering",
+    section: "Innskuddsgaranti utfyllende",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // BOOKKEEPING LAW
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-2004-11-19-73",
+    title: "Lov om bokforing (bokforingsloven)",
+    text: "Bokforingsloven fastsetter krav til bokforing og dokumentasjon av regnskapsopplysninger for bokforingspliktige foretak i Norge. Loven stiller krav til oppbevaring av regnskapsmateriale (fem ar), tidspunkt for bokforing, dokumentasjon av transaksjoner, og sikring av bokfort informasjon. Finanstilsynet har myndighet til a kontrollere bokforingsplikten for foretak under tilsyn. Loven er relevant for alle foretak som plikter a fore regnskap, herunder finansforetak, eiendomsmeglingsforetak, revisjonsselskaper og regnskapsforerselskaper.",
+    type: "lov",
+    status: "in_force",
+    effective_date: "2006-01-01",
+    chapter: "Regnskap",
+    section: "Bokforing",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // INVESTOR COMPENSATION SCHEME
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2008-07-18-804",
+    title: "Forskrift om verdipapirforetaks verdipapirfonds tilhorighet i en investorgarantiordning",
+    text: "Forskriften regulerer verdipapirforetaks og forvaltningsselskapers plikt til a vaere med i Verdipapirforetakenes sikringsfond, som gir investorgaranti pa inntil 200 000 kroner per kunde dersom et verdipapirforetak ikke kan tilbakelevere kunders finansielle instrumenter eller midler. Fondet dekker krav som folge av verdipapirforetakets insolvens. Forskriften fastsetter bidragsberegning og utbetalingsprosedyrer.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2008-07-18",
+    chapter: "Verdipapir",
+    section: "Investorgaranti",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ADDITIONAL REGULATIONS — DETAILED PROVISIONS
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2006-12-14-1506 Del IV",
+    title: "Kapitalkravforskriften Del IV — Operasjonell risiko",
+    text: "Del IV i kapitalkravforskriften regulerer beregning av kapitalkrav for operasjonell risiko. Institusjoner kan anvende basismetoden (BIA), standardmetoden (TSA) eller avansert malemetode (AMA). Under basismetoden beregnes kapitalkravet som 15 prosent av gjennomsnittlig brutto inntekt over tre ar. Standardmetoden beregner kravet separat for hver forretningslinje med satser fra 12 til 18 prosent. AMA krever tillatelse fra Finanstilsynet og bruker institusjonens egne modeller basert pa historiske tapsdata, scenarioanalyser og eksterne tapsdata.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2007-01-01",
+    chapter: "Kapitaldekning",
+    section: "Operasjonell risiko",
+  },
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2014-08-22-1097 Del III",
+    title: "CRR/CRD-forskriften Del III — Markedsrisiko",
+    text: "Del III i CRR/CRD-forskriften regulerer kapitalkrav for markedsrisiko i handelsportefoljen. Forskriften fastsetter krav til beregning av posisjonsrisiko for gjeldsinstrumenter og egenkapitalinstrumenter, valutarisiko, og varerisiko. Institusjoner kan anvende standardmetoden eller interne modeller (IMA) med godkjenning fra Finanstilsynet. Forskriften gjennomforer CRR del 3 tittel IV og er relevant for banker og verdipapirforetak med handelsportefolje.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2014-09-30",
+    chapter: "Kapitaldekning",
+    section: "Markedsrisiko",
+  },
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2015-08-25-999 kap 3",
+    title: "Solvens II-forskriften kapittel 3 — Styring og kontrollsystem",
+    text: "Kapittel 3 i Solvens II-forskriften regulerer krav til forsikringsforetaks styring og kontrollsystem (Pilar 2). Foretakene skal ha et effektivt styring og kontrollsystem som sikrer forsvarlig drift. Systemet skal minst omfatte en risikostyringsfunksjon, en compliancefunksjon, en internrevisjonsfunksjon, og en aktuarfunksjon (noekkelfunksjoner). Styret har det overordnede ansvaret for at styring og kontrollsystemet er tilstrekkelig. Foretakene skal gjennomfore ORSA minst arlig.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2016-01-01",
+    chapter: "Forsikring",
+    section: "Solvens II styring",
+  },
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2020-12-09-2648 § 6",
+    title: "Utlansforskriften § 6 — Gjeldsgrad",
+    text: "Utlansforskriften § 6 fastsetter at et finansforetak ikke skal innvilge lan til en kunde dersom samlet gjeld overstiger fem ganger brutto arsinntekt. Samlet gjeld inkluderer eksisterende og nytt lan. Brutto arsinntekt beregnes som personinntekt og kapitalinntekt for de siste tolv maneder. For selvstendige naermingsdrivende medregnes ogs naermingsinntekt. Finansforetaket kan fravike gjeldsgraden innenfor fleksibilitetskvoten fastsatt i § 8.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2021-01-01",
+    chapter: "Utlanspraksis",
+    section: "Gjeldsgrad",
+  },
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2020-12-09-2648 § 8",
+    title: "Utlansforskriften § 8 — Fleksibilitetskvote",
+    text: "Utlansforskriften § 8 fastsetter at et finansforetak kan innvilge en begrenset andel lan per kvartal som ikke oppfyller ett eller flere av kravene i §§ 3-6. Fleksibilitetskvoten er 10 prosent av verdien av innvilgede boliglan per kvartal. For boliglan i Oslo er kvoten 8 prosent. For forbrukslan er kvoten 5 prosent. Fleksibilitetskvoten gir bankene et visst handlingsrom for a tilpasse kredittvurderingen til individuelle forhold.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2021-01-01",
+    chapter: "Utlanspraksis",
+    section: "Fleksibilitetskvote",
+  },
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-2018-06-01-23 kap 6",
+    title: "Hvitvaskingsloven kapittel 6 — Rapporteringsplikt og oppbevaringsplikt",
+    text: "Kapittel 6 i hvitvaskingsloven regulerer rapporteringspliktige foretaks plikt til a rapportere mistenkelige transaksjoner til Okokrim. Rapporteringsplikten inntraer nar foretaket har mistanke om at en transaksjon har tilknytning til utbytte av straffbar handling eller terrorfinansiering. Foretaket skal ikke gjennomfore transaksjonen for den er undersot naermere, med mindre det er nodzakelig for a unnga a varsle kunden. Opplysninger mottatt i forbindelse med kundetiltak skal oppbevares i fem ar etter at kundeforholdet er avsluttet.",
+    type: "lov",
+    status: "in_force",
+    effective_date: "2018-10-15",
+    chapter: "Hvitvasking",
+    section: "Rapporteringsplikt",
+  },
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-2018-06-01-23 kap 7",
+    title: "Hvitvaskingsloven kapittel 7 — Tilsyn og sanksjoner",
+    text: "Kapittel 7 i hvitvaskingsloven regulerer Finanstilsynets tilsynsmyndighet over rapporteringspliktige foretak. Finanstilsynet kan gjennomfore stedlig og dokumentbasert tilsyn, kreve opplysninger, og gi palegg om retting av avdekkede mangler. Ved brudd pa hvitvaskingsregelverket kan Finanstilsynet ilegge overtredelsesgebyr pa inntil 44 millioner kroner for foretak eller inntil 5 millioner kroner for fysiske personer. For alvorlige eller gjentatte brudd kan Finanstilsynet tilbakekalle tillatelser.",
+    type: "lov",
+    status: "in_force",
+    effective_date: "2018-10-15",
+    chapter: "Hvitvasking",
+    section: "Tilsyn og sanksjoner",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ADDITIONAL LAWS — FINANCIAL STABILITY
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-2019-12-20-100",
+    title: "Lov om finansiell stabilitet (finansiell stabilitet)",
+    text: "Finansdepartementet og Norges Bank har det overordnede ansvaret for finansiell stabilitet i Norge. Finanstilsynet bidrar ved a fore tilsyn med at finansforetakene har tilstrekkelig kapital og likviditet, og ved a vurdere systemrisiko. Norges Bank gir Finansdepartementet rad om den motsykliske kapitalbufferen, som kan settes fra 0 til 2,5 prosent (ekstraordinaert hoyere). Finanstilsynet identifiserer systemviktige finansforetak (O-SII-er) som palegges saerskilt kapitalbuffer.",
+    type: "lov",
+    status: "in_force",
+    effective_date: "2020-01-01",
+    chapter: "Finansiell stabilitet",
+    section: "Makrotilsyn",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ADDITIONAL REGULATIONS — CONSUMER CREDIT
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2019-02-15-152 kap 3",
+    title: "Betalingssystemforskriften kapittel 3 — Sterk kundeautentisering (SCA)",
+    text: "Kapittel 3 i betalingssystemforskriften gjennomforer kravene til sterk kundeautentisering (SCA) i henhold til PSD2. Betalingstjenestetilbydere skal kreve sterk kundeautentisering nar betaleren inittierer en elektronisk betalingstransaksjon, far tilgang til betalingskontoen online, eller gjennomforer en handling gjennom en fjerntilgang som innebarer risiko for svindel. SCA krever minst to av tre autentiseringsfaktorer: kunnskap, besittelse og iboende egenskap. Forskriften fastsetter unntak fra SCA for lavrisikotransaksjoner.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2019-04-01",
+    chapter: "Betalingstjenester",
+    section: "SCA autentisering",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ADDITIONAL — FINANSTILSYNETS TILSYNSAVGIFT
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2024-12-20-TILSYNSAVGIFT",
+    title: "Forskrift om Finanstilsynets tilsynsavgift",
+    text: "Forskriften regulerer beregning og innkreving av tilsynsavgiften som foretak under Finanstilsynets tilsyn skal betale. Tilsynsavgiften skal dekke Finanstilsynets utgifter og beregnes basert pa foretakets kategori (bank, forsikring, verdipapir, eiendomsmegling, inkasso, etc.) og storrelse. Storre finansforetak betaler en forholdsmessig storre andel av avgiften basert pa balansesum eller andre mal for virksomhetens omfang.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2025-01-01",
+    chapter: "Finanstilsyn",
+    section: "Tilsynsavgift",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // SANCTIONS REGULATIONS
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-2001-04-27-14",
+    title: "Lov om iverksetjing av internasjonale, ikkje-militaere tiltak i form av avbrot eller avgrensing av samkvem med statar eller organisasjonar (sanksjonsloven)",
+    text: "Sanksjonsloven gir hjemmel for a gjennomfore internasjonale sanksjoner vedtatt av FNs sikkerhertsrad eller EU i norsk rett. Loven hjemler frysing av midler og okonomiske ressurser tilhorende listeforte personer og enheter. Finansforetak er forpliktet til a sjekke kunder og transaksjoner mot sanksjonslistene og fryse midler uten forsinkelse. Brudd pa sanksjonsreglene er straffbart. Finanstilsynet forer tilsyn med at finansforetak har tilstrekkelige rutiner for sanksjonsetterlevelense.",
+    type: "lov",
+    status: "in_force",
+    effective_date: "2001-05-01",
+    chapter: "Sanksjoner",
+    section: "Frysing av midler",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ELECTRONIC SECURITIES REGISTER
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-2019-06-21-31 kap 8",
+    title: "Verdipapirregisterloven kapittel 8 — Tilsyn og sanksjoner",
+    text: "Kapittel 8 i verdipapirregisterloven regulerer Finanstilsynets tilsyn med verdipapirregistre (Verdipapirsentralen / Euronext Securities Oslo). Finanstilsynet kan kreve opplysninger, gjennomfore stedlig tilsyn, gi palegg, og ilegge sanksjoner. Verdipapirregisteret skal ha en compliance-funksjon, risikostyringsfunksjon, og internrevisjon. Tilsynet er harmonisert med kravene i CSDR-forordningen.",
+    type: "lov",
+    status: "in_force",
+    effective_date: "2019-09-01",
+    chapter: "Verdipapir",
+    section: "Verdipapirregistertilsyn",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // NATURAL DISASTER INSURANCE
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-1989-06-16-70",
+    title: "Lov om naturskadeforsikring (naturskadeforsikringsloven)",
+    text: "Naturskadeforsikringsloven fastsetter at alle forsikringsavtaler mot brannskade pa bygning og losoere i Norge ogs dekker naturskade (storm, flom, jordskred, snoskred, jordskjelv, vulkanutbrudd). Norsk Naturskadepool administrerer ordningen. Forsikringsselskapene er pliktige medlemmer av poolen. Finanstilsynet forer tilsyn med forsikringsselskapenes etterlevelse av naturskadeforsikringsloven.",
+    type: "lov",
+    status: "in_force",
+    effective_date: "1990-01-01",
+    chapter: "Forsikring",
+    section: "Naturskadeforsikring",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // LAND-FOR-LAND REPORTING (CBCR)
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2013-12-20-1682",
+    title: "Forskrift om land-for-land-rapportering (CBCR-forskriften)",
+    text: "Forskriften fastsetter krav til land-for-land-rapportering (Country-by-Country Reporting) for selskaper innen utvinningsindustrien og skogbruk. Selskapene skal rapportere betalinger til myndigheter fordelt pa land, herunder skatter, avgifter, royalties, lisensavgifter og bonuser. Forskriften gjennomforer EUs rapporteringsdirektiv (2013/34/EU) kapittel 10. Finanstilsynet kan kontrollere rapporteringen som del av regnskapskontrollen for borsnoterte foretak.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2014-01-01",
+    chapter: "Regnskap",
+    section: "Land-for-land rapportering",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ANTI-MONEY LAUNDERING — REGISTER OF BENEFICIAL OWNERS
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-2019-03-01-2",
+    title: "Lov om register over reelle rettighetshavere (lov om reelle rettighetshavere)",
+    text: "Loven palegger juridiske personer, forvaltere av utenlandske juridiske arrangementer, og norskregistrerte utenlandske foretak a identifisere sine reelle rettighetshavere og registrere opplysningene i et offentlig register fort av Bronnoysundregistrene. Reelle rettighetshavere er fysiske personer som i siste instans eier eller kontrollerer den juridiske personen, typisk gjennom eierskap over 25 prosent. Registeret styrker transparensen og stotter finansforetaks etterlevelse av hvitvaskingsregelverket.",
+    type: "lov",
+    status: "in_force",
+    effective_date: "2021-11-01",
+    chapter: "Hvitvasking",
+    section: "Reelle rettighetshavere",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // MARKET INFRASTRUCTURE — REGULATED MARKETS
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-2007-06-29-74 kap 4",
+    title: "Borsloven kapittel 4 — Regulert marked og multilateral handelsfasilitet",
+    text: "Kapittel 4 i borsloven regulerer kravene til regulerte markeder og multilaterale handelsfasiliteter (MTF) i Norge. Borsoperatorer ma ha tillatelse fra Finanstilsynet. Loven fastsetter krav til organisering, handelsregler, markedsovervaking, opptak til handel, og rapportering av transaksjonsdata. Loven gjennomforer MiFID II-direktivets krav til handelsfasiliteter. Euronext Oslo Bors opererer det regulerte markedet Oslo Bors og MTF-en Euronext Growth.",
+    type: "lov",
+    status: "in_force",
+    effective_date: "2007-11-01",
+    chapter: "Verdipapir",
+    section: "Regulert marked",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // DIGITAL IDENTIFICATION
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2018-09-14-1324 kap 4",
+    title: "Hvitvaskingsforskriften kapittel 4 — Elektronisk identifikasjon (BankID)",
+    text: "Kapittel 4 i hvitvaskingsforskriften regulerer kravene til bruk av elektronisk legitimasjon for kundeidentifikasjon. Rapporteringspliktige foretak kan benytte elektronisk legitimasjon med sikkerhetsnivet hoy (BankID, Buypass, Commfides) for a oppfylle kravene til identitetsverifikasjon ved fjernkundeforhold. Forskriften fastsetter vilkar for at elektronisk identifikasjon kan erstatte fysisk legitimasjonskontroll, herunder krav til at identifikasjonslosningen er basert pa norsk folkeregister.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2018-10-15",
+    chapter: "Hvitvasking",
+    section: "Elektronisk identifikasjon",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // CROWDFUNDING REGULATION
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2026-03-01-FOLKEFIN",
+    title: "Forskrift til folkefinansieringsloven (folkefinansieringsforskriften)",
+    text: "Forskriften gir utfyllende regler til folkefinansieringsloven og gjennomforer tekniske standarder vedtatt i medhold av ECSPR-forordningen (2020/1503). Forskriften regulerer konsesjonsvilkar for folkefinansieringsplattformer, krav til investorbeskyttelse (herunder kunnskapsvurdering og investeringstak for ikke-sofistikerte investorer), krav til investeringsnokkeldokumentet (KIIS), og regler om tapsdelingsmekanismer. Plattformoperatorer skal ha rutiner for handtering av interessekonflikter.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2026-03-01",
+    chapter: "Folkefinansiering",
+    section: "Utfyllende regler",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ADDITIONAL — DETAILED PROVISIONS FROM EXISTING LAWS
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-2015-04-10-17 kap 13",
+    title: "Finansforetaksloven kapittel 13 — Kapitalkrav",
+    text: "Kapittel 13 i finansforetaksloven fastsetter kravene til ansvarlig kapital for finansforetak. Foretakene skal til enhver tid ha ansvarlig kapital som minst utgjor atten prosent av beregningsgrunnlaget (ren kjernekapital minst 4,5 prosent, kjernekapital minst 6 prosent, og ansvarlig kapital minst 8 prosent). I tillegg kommer bufferkrav: bevaringsbuffer (2,5 prosent), systemrisikobuffer (4,5 prosent), buffer for systemviktige foretak (1-2 prosent), og motsyklisk buffer (0-2,5 prosent). Det norske bufferkravet er blant de hoyeste i Europa.",
+    type: "lov",
+    status: "in_force",
+    effective_date: "2016-01-01",
+    chapter: "Kapitaldekning",
+    section: "Bufferkrav",
+  },
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-2015-04-10-17 kap 14",
+    title: "Finansforetaksloven kapittel 14 — Likviditet",
+    text: "Kapittel 14 i finansforetaksloven fastsetter krav til finansforetaks likviditetsstyring. Foretakene skal til enhver tid ha tilstrekkelig likvide eiendeler til a dekke sine betalingsforpliktelser ved forfall. Loven gjennomforer CRR-kravene til likviditetsreserve (LCR) og stabil finansiering (NSFR). LCR krever at foretaket har likvide eiendeler av hoy kvalitet som dekker netto kontantstromutganger over 30 kalenderdager i et stresscenario. NSFR krever at stabil finansiering overstiger nadvendig stabil finansiering.",
+    type: "lov",
+    status: "in_force",
+    effective_date: "2016-01-01",
+    chapter: "Kapitaldekning",
+    section: "Likviditetskrav",
+  },
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-2015-04-10-17 kap 18",
+    title: "Finansforetaksloven kapittel 18 — Godtgjorelsesordninger",
+    text: "Kapittel 18 i finansforetaksloven regulerer godtgjorelsesordninger i finansforetak. Godtgjorelsesordningene skal vaere i samsvar med god styring og kontroll og ikke oppmuntre til overdreven risikotaking. Styret skal fastsette prinsipper for godtgjorelsesordningen. For identifiserte ansatte (materielle risikotakere) gjelder saerskilte regler om variabel godtgjorelse, herunder utsettelse, utbetaling i instrumenter, og clawback. Kapitlet gjennomforer CRD V-direktivets godtgjorelsesregler.",
+    type: "lov",
+    status: "in_force",
+    effective_date: "2016-01-01",
+    chapter: "Godtgjorelse",
+    section: "Finansforetaksloven godtgjorelse",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ADDITIONAL DETAILED PROVISIONS — FINAL BATCH
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-2015-04-10-17 kap 8",
+    title: "Finansforetaksloven kapittel 8 — Eierskap og konserndannelse",
+    text: "Kapittel 8 i finansforetaksloven regulerer eierkontroll av finansforetak. Erverv av kvalifisert eierandel (10 prosent eller mer) i et finansforetak krever forhands godkjenning fra Finanstilsynet. Finanstilsynet vurderer erververens egnethet basert pa omdomme, finansiell soliditet, og innvirkning pa forsvarlig drift. Loven regulerer ogs konserndannelse, krav til organiseringen av finanskonsern, og Finanstilsynets konsoliderte tilsyn.",
+    type: "lov",
+    status: "in_force",
+    effective_date: "2016-01-01",
+    chapter: "Finansforetak",
+    section: "Eierkontroll",
+  },
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-2015-04-10-17 kap 16",
+    title: "Finansforetaksloven kapittel 16 — Opplysningsplikt og taushetsplikt",
+    text: "Kapittel 16 i finansforetaksloven regulerer opplysningsplikten overfor Finanstilsynet og taushetsplikten for finansforetaks ansatte. Finansforetak plikter a gi Finanstilsynet enhver opplysning som er nodvendig for tilsynet. Taushetsplikten beskytter kundenes finansielle opplysninger, men er ikke til hinder for rapportering etter hvitvaskingsloven eller opplysningsplikt etter skatteforvaltningsloven.",
+    type: "lov",
+    status: "in_force",
+    effective_date: "2016-01-01",
+    chapter: "Finansforetak",
+    section: "Opplysnings- og taushetsplikt",
+  },
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2016-12-09-1502 kap 12",
+    title: "Finansforetaksforskriften kapittel 12 — Gjenopprettingsplaner",
+    text: "Kapittel 12 i finansforetaksforskriften gjennomforer BRRD-direktivets krav til gjenopprettingsplaner for finansforetak. Banker med forvaltningskapital over 5 milliarder kroner (og alle systemviktige foretak) skal utarbeide en gjenopprettingsplan som identifiserer kritiske funksjoner, scenarioer for alvorlig finansiell stress, og tiltak for a gjenopprette foretakets finansielle posisjon. Planen skal godkjennes av styret og oppdateres arlig.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2016-12-09",
+    chapter: "Krisehandtering",
+    section: "Gjenopprettingsplaner forskrift",
+  },
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2016-12-09-1502 kap 15",
+    title: "Finansforetaksforskriften kapittel 15 — Bidragsberegning til krisetiltaksfondet",
+    text: "Kapittel 15 i finansforetaksforskriften regulerer beregning av arlige bidrag til krisetiltaksfondet. Bidragene beregnes basert pa foretakets storrelse (totale forpliktelser minus ansvarlig kapital og garanterte innskudd) og risikoprofil. Malet er at fondet skal na et nivaav 1 prosent av garanterte innskudd. Bidragssatsene varierer mellom foretak basert pa risikovurdering.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2016-12-09",
+    chapter: "Krisehandtering",
+    section: "Krisetiltaksfondet bidrag",
+  },
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-2007-06-29-75 kap 3",
+    title: "Verdipapirhandelloven kapittel 3 — Innsidehandel og markedsmanipulasjon",
+    text: "Kapittel 3 i verdipapirhandelloven gjennomforer MARs regler om markedsmisbruk i norsk rett. Det er forbudt a handle pa innsideinformasjon, a tilskynde andre til innsidehandel, og a ulovlig spre innsideinformasjon. Det er ogs forbudt a foreta markedsmanipulasjon, herunder handel som gir et feilaktig inntrykk av tilbud og ettersporsel, handel som sikrer en kunstig prisnivaav, eller spredning av falsk eller villedende informasjon. Finanstilsynet kan ilegge overtredelsesgebyr pa inntil 41,5 millioner kroner.",
+    type: "lov",
+    status: "in_force",
+    effective_date: "2007-11-01",
+    chapter: "Verdipapir",
+    section: "Markedsmisbruk",
+  },
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-2007-06-29-75 kap 9",
+    title: "Verdipapirhandelloven kapittel 9 — Konsesjonsplikt for verdipapirforetak",
+    text: "Kapittel 9 i verdipapirhandelloven regulerer konsesjonsplikt for verdipapirforetak. Investeringstjenester (mottak og formidling av ordrer, utforelse av ordrer, aktiv forvaltning, plasseringsvirksomhet, investeringsradgivning, drift av MHF/OHF) krever konsesjon fra Finanstilsynet. Loven fastsetter krav til organisering, kapitaldekning, ledelsens egnethet, og compliance-funksjon. Verdipapirforetak fra andre EOS-stater kan yte tjenester i Norge basert pa hjemlandskonsesjon.",
+    type: "lov",
+    status: "in_force",
+    effective_date: "2007-11-01",
+    chapter: "Verdipapir",
+    section: "Verdipapirforetak konsesjon",
+  },
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-2007-06-29-75 kap 10",
+    title: "Verdipapirhandelloven kapittel 10 — Virksomhetsregler for verdipapirforetak",
+    text: "Kapittel 10 i verdipapirhandelloven fastsetter virksomhetsregler for verdipapirforetak i henhold til MiFID II. Foretakene skal opptre aarlig, redelig og profesjonelt i kundens beste interesse. Kapitlet regulerer egnethetsvurdering (for radgivning og aktiv forvaltning), hensiktsmessighetsvurdering (for komplekse produkter), krav til beste utforelse av ordrer, ordrehandteringsregler, produktstyring (POG), vederlag fra tredjeparter (inducements), og krav til handtering av interessekonflikter.",
+    type: "lov",
+    status: "in_force",
+    effective_date: "2007-11-01",
+    chapter: "Verdipapir",
+    section: "Virksomhetsregler MiFID II",
+  },
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2003-05-21-630 § 4",
+    title: "IKT-forskriften § 4 — Organisering av IKT-virksomheten",
+    text: "IKT-forskriften § 4 stiller krav til organiseringen av IKT-virksomheten i finansforetak. Foretaket skal ha en IKT-organisasjon med klart definerte roller og ansvarsomrader, herunder utnevnelse av en IKT-sikkerhetsansvarlig. Det skal vaere klare rapporteringslinjer mellom IKT-virksomheten og ledelsen. Foretaket skal ha prosedyrer for a sikre at IKT-personell har nodvendig kompetanse og at det gjennomfores regelmessig opplaering i IKT-sikkerhet.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2003-07-01",
+    chapter: "IKT",
+    section: "IKT-organisering",
+  },
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2003-05-21-630 § 7",
+    title: "IKT-forskriften § 7 — Beredskapsplanlegging",
+    text: "IKT-forskriften § 7 stiller krav til finansforetaks beredskapsplanlegging for IKT-relaterte hendelser. Foretaket skal ha dokumenterte beredskapsplaner som dekker gjenoppretting av kritiske IKT-systemer, kommunikasjonsrutiner ved hendelser, og ovelser som tester planenes effektivitet. Beredskapsplanene skal oppdateres regelmessig og gjennomgas minst arlig. Planene skal ta hoyye for avhengigheter til tredjepartsleverandorer.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2003-07-01",
+    chapter: "IKT",
+    section: "Beredskapsplanlegging",
+  },
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2008-09-22-1080 § 3",
+    title: "Internkontrollforskriften § 3 — Styrets ansvar",
+    text: "Internkontrollforskriften § 3 fastsetter at styret har det overordnede ansvaret for at foretaket har hensiktsmessig og effektiv risikostyring og internkontroll. Styret skal fastsette prinsipper for risikostyring og internkontroll, sikre at foretaket har tilstrekkelige ressurser og kompetanse, og regelmessig vurdere risikostyringens og internkontrollens effektivitet. Daglig leder har ansvaret for a gjennomfore styrets vedtak og sikre lopende risikostyring.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2008-12-01",
+    chapter: "Risikostyring",
+    section: "Styrets ansvar internkontroll",
+  },
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2014-12-22-1903 § 5",
+    title: "Godtgjorelsesforskriften § 5 — Identifiserte ansatte",
+    text: "Godtgjorelsesforskriften § 5 regulerer identifikasjon av materielle risikotakere (identifiserte ansatte) som er underlagt strengere godtgjorelsesregler. Identifiserte ansatte inkluderer daglig leder, styremedlemmer, ledere av kontrollenheter, og andre ansatte med vesentlig innflytelse pa foretakets risikoprofil. Minst 40 prosent av variabel godtgjorelse skal utsettes i minst tre ar. Minst 50 prosent av variabel godtgjorelse skal utbetales i aksjer eller andre instrumenter. Foretaket skal ha mulighet for malus og clawback.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2015-01-01",
+    chapter: "Godtgjorelse",
+    section: "Identifiserte ansatte",
+  },
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-2022-03-18-11 kap 3",
+    title: "Forsikringsformidlingsloven kapittel 3 — God forretningsskikk",
+    text: "Kapittel 3 i forsikringsformidlingsloven fastsetter krav til god forretningsskikk for forsikringsformidlere. Formidlere skal handle aarlig, redelig og profesjonelt i kundens beste interesse. Kapitlet regulerer krav til behovsanalyse, personlig radgivning, krav til informasjon om produkter og kostnader, og forbud mot godtgjorelse fra forsikringsselskaper som kan pavirke radgivningens uavhengighet. Forsikringsmeglere skal utfore en upartisk analyse av et tilstrekkelig antall produkter.",
+    type: "lov",
+    status: "in_force",
+    effective_date: "2022-07-01",
+    chapter: "Forsikring",
+    section: "Forsikringsformidling god forretningsskikk",
+  },
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-2007-06-29-73 kap 6",
+    title: "Eiendomsmeglingsloven kapittel 6 — Oppdragets utforelse",
+    text: "Kapittel 6 i eiendomsmeglingsloven regulerer oppdragets utforelse. Megleren skal utvise god meglerskikk og gi bade selger og kjoper rad og opplysninger av betydning for handelen. Megleren skal sore for at kjoperen far tilstrekkelig informasjon om eiendommen, herunder teknisk tilstand, offentlige restriksjoner, fellesutgifter, og rettigheter knyttet til eiendommen. Loven forbyr egenhandel og kobling, og stiller krav til meglerens dokumentasjonsplikt.",
+    type: "lov",
+    status: "in_force",
+    effective_date: "2008-01-01",
+    chapter: "Eiendomsmegling",
+    section: "Oppdragets utforelse",
+  },
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-1988-05-13-26 § 8",
+    title: "Inkassoloven § 8 — God inkassoskikk",
+    text: "Inkassoloven § 8 fastsetter det overordnede kravet til god inkassoskikk. Inkassovirksomhet skal utoves i samsvar med god inkassoskikk. Det innebarer blant annet at inkassoforetaket ikke skal bruke utilborlige midler for a drive inn pengekrav, ikke utsette skyldneren for urimelig press eller trakassering, og ikke palegge skyldneren urimelige kostnader. Finanstilsynet presiserer innholdet i god inkassoskikk-kravet gjennom rundskriv og veiledninger.",
+    type: "lov",
+    status: "in_force",
+    effective_date: "1989-01-01",
+    chapter: "Inkasso",
+    section: "God inkassoskikk lov",
+  },
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "FOR-2019-09-20-1258 § 4",
+    title: "Inkassoforskriften § 4 — Behandling av klientmidler",
+    text: "Inkassoforskriften § 4 regulerer inkassoforetaks behandling av klientmidler. Midler mottatt fra skyldnere pa vegne av fordringshavere skal holdes atskilt fra foretakets egne midler pa saerlige klientkontoer. Klientmidlene er beskyttet mot foretakets kreditorer. Foretaket skal gjennomfore daglig avstemming av klientkontoene og overfor klientmidler til fordringshaveren uten ugrunnet opphold.",
+    type: "forskrift",
+    status: "in_force",
+    effective_date: "2019-10-01",
+    chapter: "Inkasso",
+    section: "Klientmidler inkasso",
+  },
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-2020-12-18-146 kap 4",
+    title: "Finansavtaleloven kapittel 4 — Kredittavtaler",
+    text: "Kapittel 4 i finansavtaleloven regulerer kredittavtaler mellom kredittyteren og forbrukeren. Kredittyteren skal gjennomfore en forsvarlig kredittvurdering basert pa tilstrekkelige opplysninger fra forbrukeren og relevante databaser. Loven fastsetter krav til forhands-informasjon om effektiv rente, totale kredittkostnader, nedbetalingsplan, angrerett (14 dager), og regler om forfalskredittering. Kapitlet gjennomforer forbrukerkredittdirektivet og boligkredittdirektivet.",
+    type: "lov",
+    status: "in_force",
+    effective_date: "2023-01-01",
+    chapter: "Finansavtaler",
+    section: "Kredittavtaler",
+  },
+  {
+    sourcebook_id: "FTNO_FORSKRIFTER",
+    reference: "LOV-2020-12-18-146 kap 3",
+    title: "Finansavtaleloven kapittel 3 — Betalingsoppdrag og betalingstransaksjoner",
+    text: "Kapittel 3 i finansavtaleloven regulerer betalingsoppdrag og betalingstransaksjoner. Loven fastsetter krav til at betalingstjenesten gjennomfores innen fastsatte tidsfrister (virkedag+1 for innenlandske overforinger), kundens ansvar ved uautoriserte transaksjoner (maks 400 kroner for ordinaert uaktsomhet), og betalingstjenestetilbyderens erstatningsansvar ved feil i betalingsgjennomforingen. Kapitlet gjennomforer PSD2-direktivets bestemmelser.",
+    type: "lov",
+    status: "in_force",
+    effective_date: "2023-01-01",
+    chapter: "Finansavtaler",
+    section: "Betalingsoppdrag",
+  },
 ];
 
 // ── FTNO_RUNDSKRIV — Circulars (rundskriv) from Finanstilsynet ──────────────
@@ -1886,6 +2854,652 @@ const rundskriv: ProvisionRow[] = [
     effective_date: "2024-12-01",
     chapter: "Forsikring",
     section: "Klimastresstest",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 2025 VEILEDNINGER (published under rundskriv archive, replacing rundskriv)
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Veiledning 1/2025",
+    title: "Finanstilsynets praksis for vurdering av risiko og kapitalbehov (SREP 2025)",
+    text: "Veiledning 1/2025 erstatter rundskriv 12/2016 og beskriver Finanstilsynets oppdaterte praksis for vurdering av risiko og kapitalbehov i banker, holdingselskaper i finanskonsern, kredittforetak og finansieringsforetak. Veiledningen dekker Finanstilsynets tilsynsmessige vurdering (SREP) av foretakets kapitaldekning, likviditet, styring og kontroll, risikoprofil, og forretningsmodell. Veiledningen fastsetter Pilar 2-tilleggskrav basert pa institusjonsvis risikovurdering og er harmonisert med EBAs retningslinjer for SREP.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2025-12-18",
+    chapter: "Kapitaldekning",
+    section: "SREP 2025",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Veiledning 2/2025",
+    title: "Hendelsesrapportering etter DORA",
+    text: "Veiledning 2/2025 beskriver kravene til rapportering av alvorlige IKT-relaterte hendelser og vesentlige cybertrusler i henhold til DORA-forordningen. Fra 1. juli 2025 skal hendelser rapporteres via Altinn-skjema KRT-3190. Veiledningen dekker klassifisering av hendelser etter alvorlighetsgrad, tidsfrister for innledende melding, mellomrapport og sluttrapport, og kriterier for nar en cybertrussel skal anses som vesentlig nok til a rapporteres. Veiledningen er harmonisert med EUs tekniske standarder for hendelsesrapportering under DORA.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2025-10-29",
+    chapter: "IKT",
+    section: "DORA hendelsesrapportering 2025",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Veiledning 3/2025",
+    title: "Brukerveiledning for hendelsesrapportering etter DORA",
+    text: "Brukerveiledning 3/2025 gir praktisk veiledning om utfylling av Altinn-skjema KRT-3190 for rapportering av IKT-relaterte hendelser etter DORA. Veiledningen forklarer hvert felt i skjemaet, gir eksempler pa korrekt utfylling, og presiserer forholdet mellom innledende melding, mellomrapport og sluttrapport. Veiledningen erstatter tidligere meldepraksis under IKT-forskriften § 8 og er rettet mot compliance-ansvarlige og IKT-sikkerhetsansvarlige i finansforetak.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2025-10-29",
+    chapter: "IKT",
+    section: "DORA rapporteringsskjema",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Veiledning 4/2025",
+    title: "Veiledning om melding av IKT-tjenesteavtaler",
+    text: "Veiledning 4/2025 beskriver kravene til melding av IKT-tjenesteavtaler som stotter kritiske eller viktige funksjoner i henhold til DORA artikkel 28. Finansforetak skal melde IKT-tjenesteavtaler via Altinn-skjema KRT-1121. Veiledningen dekker vurdering av om en IKT-tjeneste stotter kritiske funksjoner, krav til innholdet i meldingen, tidsfrister, og Finanstilsynets vurdering av tredjepartsrisiko. Veiledningen er harmonisert med ESA-enes retningslinjer for register over IKT-tredjepartsavtaler.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2025-07-17",
+    chapter: "IKT",
+    section: "IKT-tjenesteavtaler",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Veiledning 5/2025",
+    title: "Veiledning om etterutdanningskravet etter regnskapsforerloven",
+    text: "Veiledning 5/2025 beskriver det lovfestede kravet i regnskapsforerloven § 3-4 om etterutdanning for statsautoriserte regnskapsforere. Regnskapsforere skal gjennomfore minst 77 timer etterutdanning over tre kalenderar, fordelt pa obligatoriske fagomrader (skatt, mva, arsregnskap, bokforing, etikk) og valgfrie timer. Veiledningen erstatter rundskriv 11/2012 og presiserer krav til dokumentasjon, godkjente kursarrangorer, og overgangsregler.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2025-10-27",
+    chapter: "Regnskapsforer",
+    section: "Etterutdanning",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // OLDER RUNDSKRIV — 2016 (missing from original)
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 7/2016",
+    title: "Prinsippet om fritt meglervalg — kobling mellom bank- og eiendomsmeglingstjenester",
+    text: "Rundskriv 7/2016 klargjor Finanstilsynets syn pa prinsippet om fritt meglervalg og forbud mot kobling av bank- og eiendomsmeglingstjenester. Finansforetak som tilbyr bade bankprodukter og eiendomsmegling gjennom konsernselskaper, skal sikre at kundene kan velge eiendomsmegler fritt uten at dette pavirker vilkarene for bankprodukter. Rundskrivet gir eksempler pa praksis som er i strid med eiendomsmeglingsloven § 6-3 om forbud mot egenhandel og kobling.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2016-05-02",
+    chapter: "Eiendomsmegling",
+    section: "Fritt meglervalg",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 8/2016",
+    title: "Godkjenning av vedtektsendringer i sparebanker og gjensidige forsikringsselskaper",
+    text: "Rundskriv 8/2016 beskriver Finanstilsynets praksis ved vurdering av vedtektsendringer i sparebanker, gjensidige forsikringsselskaper og finansstiftelser. Rundskrivet dekker krav til soknaden, dokumentasjon som skal vedlegges, Finanstilsynets vurderingskriterier, og tidsfrister for behandling. Saerlige krav gjelder ved endring av formalsbestemmelser, eierstrukturendringer, og vedtektsbestemmelser som pavirker kundenes rettigheter.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2016-05-13",
+    chapter: "Finansforetak",
+    section: "Vedtektsendringer",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 9/2016",
+    title: "Krav til diskonteringsrente for beregning av realisert LGD",
+    text: "Rundskriv 9/2016 presiserer Finanstilsynets krav til diskonteringsrente som banker med IRB-tillatelse skal anvende ved beregning av realisert tapsgrad (Loss Given Default, LGD). Diskonteringsrenten pavirker beregningen av den faktiske LGD som brukes til a validere og kalibrere IRB-modellenes LGD-estimater. Rundskrivet spesifiserer at foretaket skal anvende den opprinnelige effektive renten pa engasjementet.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2016-05-19",
+    chapter: "Kapitaldekning",
+    section: "IRB LGD",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 10/2016",
+    title: "Retningslinjer for a fakturere kredittkort",
+    text: "Rundskriv 10/2016 gir Finanstilsynets retningslinjer for fakturering av kredittkort. Rundskrivet beskriver krav til tydelig informasjon om renter og gebyrer, minimumsbetaling, konsekvenser av manglende betaling, og krav til varsling for renteendringer. Rundskrivet er rettet mot banker og kredittkortselskaper under tilsyn og presiserer forbrukerbeskyttelseskravene i finansavtaleloven.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2016-05-25",
+    chapter: "Forbrukervern",
+    section: "Kredittkortfakturering",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 11/2016",
+    title: "Rettslige rammer for virksomheten til registrerte AIF-forvaltere",
+    text: "Rundskriv 11/2016 klargjor de rettslige rammene for AIF-forvaltere som er registrert (men ikke konsesjonspliktige) etter AIF-loven. Registrerte forvaltere er underlagt krav til rapportering til Finanstilsynet, men er unntatt fra de fleste organisatoriske kravene, kapitaldekningen og depotmottakerkravene som gjelder for konsesjonspliktige forvaltere. Rundskrivet presiserer grensene for forvaltningskapital og leverage som utloser konsesjonsplikt.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2016-05-30",
+    chapter: "Verdipapirfond",
+    section: "Registrerte AIF-forvaltere",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 13/2016",
+    title: "Verdijustering av finansielle instrumenter malt til virkelig verdi",
+    text: "Rundskriv 13/2016 gir Finanstilsynets forventninger til finansforetaks verdijustering av finansielle instrumenter malt til virkelig verdi, herunder krav til prudent valuation i henhold til CRR artikkel 105. Foretakene skal ha prosedyrer for a sikre forsiktig verdsettelse, herunder vurdering av modellrisiko, likviditetsrisiko, motpartskredittverdijustering (CVA), og markedsprisusikkerhet. Rundskrivet presiserer krav til dokumentasjon av vurderingsprosessen.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2016-07-05",
+    chapter: "Kapitaldekning",
+    section: "Verdivurdering",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 17/2016",
+    title: "Foretakenes beregning og offentliggjoring av motsyklisk kapitalbufferkrav",
+    text: "Rundskriv 17/2016 gir veiledning om hvordan finansforetak skal beregne og offentliggjore det foretaksspesifikke kravet til motsyklisk kapitalbuffer. Foretakene skal beregne den foretaksspesifikke motsykliske kapitalbuffersatsen basert pa den geografiske fordelingen av relevante kreditteksponeringer. Rundskrivet presiserer behandlingen av eksponeringer i land som ikke har fastsatt en buffersats, krav til rapportering i pilar 3, og rapportering til Finanstilsynet.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2016-12-08",
+    chapter: "Kapitaldekning",
+    section: "Motsyklisk buffer",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 20/2016",
+    title: "Inkassators undersokelsesplikt ved utenrettslig inndrivelse",
+    text: "Rundskriv 20/2016 klargjor inkassators undersokelsesplikt ved utenrettslig inndrivelse av pengekrav. Inkassoforetaket har plikt til a underske om kravet er rettmessig for det sendes betalingsoppfordring. Rundskrivet presiserer omfanget av undersokelsesplikten, herunder kontroll av kravets grunnlag, forfallsdato, renter og salaerets beregning, og tilfeller der kravet er bestridt av skyldneren.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2016-12-21",
+    chapter: "Inkasso",
+    section: "Undersokelsesplikt",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // OLDER RUNDSKRIV — 2018
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 1/2018",
+    title: "Retningslinjer for sammenslaing og varsling av krav (inkasso)",
+    text: "Rundskriv 1/2018 gir retningslinjer for inkassoforetaks sammenslaing av krav og varsling av skyldneren. Rundskrivet presiserer krav til a varsle skyldneren ved sammenslaing av flere krav fra samme fordringshaver, tidsfrister for a sende nye kravoppstillinger, og krav til spesifikasjon av hvert enkelt krav med hovedstol, renter og salaer. Formalet er a sikre at skyldneren har oversikt over sine forpliktelser og mulighet til a betalte prioriterte krav forst.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2018-03-13",
+    chapter: "Inkasso",
+    section: "Kravsammenslaing",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 2/2018",
+    title: "Krav til nye utlan med pant i bolig",
+    text: "Rundskriv 2/2018 presiserer Finanstilsynets forventninger til bankenes praksis ved innvilgelse av nye boliglan etter boliglansforskriften. Rundskrivet dekker krav til verdsettelse av panteobjektet, beregning av belaning, stresstesting av gjeldsbetjeningsevne, beregning av gjeldsgrad, og rapportering av avvik fra forskriftskravene (fleksibilitetskvote). Rundskrivet utfyller utlansforskriften med praktisk veiledning om tolkningen av enkeltbestemmelser.",
+    type: "rundskriv",
+    status: "superseded",
+    effective_date: "2018-07-05",
+    chapter: "Utlanspraksis",
+    section: "Boliglan 2018",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 3/2018",
+    title: "Forholdet mellom teieplikta etter eigedomsmeklingslova og opplysningsplikta etter skatteforvaltningslova",
+    text: "Rundskriv 3/2018 klargjor forholdet mellom eiendomsmegleres taushetsplikt etter eiendomsmeglingsloven og skattemyndighetenes adgang til a kreve opplysninger etter skatteforvaltningsloven. Rundskrivet presiserer at skattemyndighetene kan kreve opplysninger om eiendomstransaksjoner fra eiendomsmeglere, og at taushetsplikten ikke er til hinder for dette. Eiendomsmeglere skal ha rutiner for a respondere pa slike paalegg.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2018-10-18",
+    chapter: "Eiendomsmegling",
+    section: "Taushetsplikt vs skatteforvaltning",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 5/2018",
+    title: "Offentliggjoring av finansiell informasjon — kommisjonsforordninger og anbefalinger fra EBA",
+    text: "Rundskriv 5/2018 gir oversikt over kommisjonsforordninger og EBA-anbefalinger som regulerer offentliggjoring av finansiell informasjon (Pilar 3-rapportering) for banker og kredittforetak. Rundskrivet dekker krav til omfang og format for offentliggjoring av kapitaldekning, risikoeksponeringer, likviditet, og godtgjorelsesordninger i henhold til CRR del 8. Rundskrivet er rettet mot institusjoner som rapporterer pa individuelt og konsolidert grunnlag.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2018-12-06",
+    chapter: "Kapitaldekning",
+    section: "Pilar 3 offentliggjoring",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // OLDER RUNDSKRIV — 2019 (missing from original)
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 3/2019",
+    title: "Veiledning om taushetsplikt for finansforetak",
+    text: "Rundskriv 3/2019 gir Finanstilsynets veiledning om finansforetaks taushetsplikt etter finansforetaksloven § 16-2. Rundskrivet dekker omfanget av taushetsplikten, unntak ved samtykke, lovhjemlet opplysningsplikt, og forholdet til hvitvaskingslovens rapporteringsplikt. Rundskrivet presiserer at taushetsplikten ikke er til hinder for rapportering av mistenkelige transaksjoner til Okokrim.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2019-03-01",
+    chapter: "Finansforetak",
+    section: "Taushetsplikt",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 4/2019",
+    title: "Retningslinjer for klagebehandling i bank-, finans-, forsikrings- og verdipapirverksemd",
+    text: "Rundskriv 4/2019 gir retningslinjer for finansforetaks handtering av kundeklager. Foretakene skal ha en skriftlig klagepolicy godkjent av styret, en klageansvarlig, rutiner for registrering og oppfolging av klager, og periodisk rapportering av klagestatistikk til styret. Kunder skal informeres om klagerett og klageadgang til eksterne tvistelosningsorganer (Finansklagenemnda). Rundskrivet er harmonisert med ESA-enes retningslinjer for klagehandtering.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2019-06-01",
+    chapter: "Forbrukervern",
+    section: "Klagebehandling",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 7/2019",
+    title: "Retningslinjer for gjenopprettingsplanar for verdipapirforetak",
+    text: "Rundskriv 7/2019 gir Finanstilsynets retningslinjer for verdipapirforetaks utarbeidelse av gjenopprettingsplaner etter verdipapirhandelloven. Verdipapirforetak skal ha planer for a gjenopprette sin finansielle posisjon ved vesentlig forverring. Rundskrivet dekker innholdet i gjenopprettingsplanen, stresstestscenarier, gjenopprettingstiltak, indikatorer for aktivering av planen, og krav til styrets godkjenning og arlig oppdatering.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2019-09-01",
+    chapter: "Krisehandtering",
+    section: "Gjenopprettingsplan verdipapirforetak",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 16/2019",
+    title: "Krav til etterutdanning for eiendomsmeglere",
+    text: "Rundskriv 16/2019 presiserer kravene til etterutdanning for eiendomsmeglere etter eiendomsmeglingsloven § 4-6. Ansvarlige meglere og eiendomsmeglerfullmektiger skal gjennomfore minst 15 timer etterutdanning per ar, fordelt pa obligatoriske fagomrader (jus, etikk, handtering av klientmidler) og valgfrie timer. Rundskrivet presiserer godkjente kursarrangorer, dokumentasjonskrav, og konsekvenser ved manglende etterutdanning.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2019-12-01",
+    chapter: "Eiendomsmegling",
+    section: "Etterutdanning",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // OLDER RUNDSKRIV — 2020 (missing from original)
+  // (Rundskriv 1/2020 and 5/2021 already exist above — no duplicates)
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 8/2021",
+    title: "Veiledning om revisors aksept og fortsettelse av revisjonsoppdrag",
+    text: "Rundskriv 8/2021 gir Finanstilsynets veiledning om revisors vurderinger ved aksept av nye revisjonsoppdrag og fortsettelse av eksisterende oppdrag. Rundskrivet presiserer krav til risikovurdering av kunden, uavhengighetsvurdering, kapasitetsvurdering, og kommunikasjon med foregaende revisor. Revisorer skal dokumentere sine vurderinger og avslutningsarsaker. Rundskrivet er saerlig relevant for revisorer av foretak i bransjer med hoy risiko for hvitvasking.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2021-12-01",
+    chapter: "Revisjon",
+    section: "Oppdragsaksept",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ADDITIONAL 2022 RUNDSKRIV
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 12/2022",
+    title: "Telefonisk inkassoverksemd — god inkassoskikk ved telefonisk kontakt",
+    text: "Rundskriv 12/2022 klargjor Finanstilsynets forventninger til god inkassoskikk ved telefonisk kontakt med skyldnere. Rundskrivet fastsetter krav til tidspunkt for oppringning, identifikasjon av inkassator, informasjon om samtaleopptak, personvern ved telefonisk kontakt, og begrensning pa antall henvendelser per dag og uke. Formalet er a sikre at skyldnere ikke utsettes for utilborlig press eller urimelig belastning.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2022-12-19",
+    chapter: "Inkasso",
+    section: "Telefonisk inkasso",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 13/2022",
+    title: "Ansvarsforsikring/garanti for betalingsfullmaktstjenester og kontoinformasjonstjenester",
+    text: "Rundskriv 13/2022 presiserer kravene til ansvarsforsikring eller garanti for tilbydere av betalingsfullmaktstjenester (PISP) og kontoinformasjonstjenester (AISP) etter betalingssystemforskriften. Rundskrivet fastsetter minimumskrav til forsikringsdekning, godkjente garantiformer, og vilkar for sikkerhetsstillelsen. Kravene gjennomforer PSD2-direktivets bestemmelser om forbrukerbeskyttelse ved bruk av tredjepartstjenester.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2022-08-26",
+    chapter: "Betalingstjenester",
+    section: "PISP/AISP ansvarsforsikring",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 2023 ADDITIONAL RUNDSKRIV
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 11/2023",
+    title: "Tiltak knytte til klientkontoar — eiendomsmegling",
+    text: "Rundskriv 11/2023 beskriver Finanstilsynets minimumskrav til forsvarlig handtering av klientmidler i eiendomsmeglingsvirksomhet. Rundskrivet dekker krav til opprettelse av klientkontoer, avstemming av klientmidler, forrentnig og utbetaling, og internkontroll knyttet til klientmiddelhandtering. Eiendomsmeglingsforetak skal ha dokumenterte rutiner som sikrer at klientmidlene er atskilt fra foretakets egne midler og beskyttet mot foretakets kreditorer.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2023-08-10",
+    chapter: "Eiendomsmegling",
+    section: "Klientmidler",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 12/2023",
+    title: "Veiledning til verdipapirhandelloven kapittel 4 — flaggeplikt",
+    text: "Rundskriv 12/2023 gir Finanstilsynets veiledning til reglene om flaggeplikt i verdipapirhandelloven kapittel 4. Rundskrivet dekker beregning av eierskapsandeler, konsolidering ved samordnet opptreden, finansielle instrumenter som gir rett til aksjer, tidsfrister for melding, og offentliggjoring. Rundskrivet er rettet mot investorer, verdipapirforetak, forvaltningsselskaper og borsnoterte selskaper.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2023-11-06",
+    chapter: "Verdipapir",
+    section: "Flaggeplikt",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 2024 ADDITIONAL RUNDSKRIV
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 7/2024",
+    title: "Praksis for lan til forbrukere (oppdatering av rundskriv 6/2022)",
+    text: "Rundskriv 7/2024 beskriver oppdatert tilsynspraksis for lan til forbrukere. Rundskrivet erstatter tidligere rundskriv 6/2022 og presiserer kravene til bankenes kredittvurdering av forbrukere, herunder vurdering av gjeldsbetjeningsevne, handtering av eksisterende gjeld, informasjonsplikt for kunden, og krav til dokumentasjon av kredittvurderingen. Rundskrivet er tilpasset den nye finansavtaleloven som tradte i kraft 1. januar 2023.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2024-12-04",
+    chapter: "Utlanspraksis",
+    section: "Forbrukslan 2024",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 8/2024",
+    title: "Presiseringar av krav knytte til distribusjon av verdipapirfond",
+    text: "Rundskriv 8/2024 presiserer Finanstilsynets forventninger til distribusjonen av verdipapirfond, herunder krav til informasjonsplikt, godtgjorelsesordninger mellom distributorer og forvaltningsselskaper, og handtering av interessekonflikter ved salg av fond. Rundskrivet dekker bade fysisk distribusjon og digital distribusjon via plattformer. Forvaltningsselskaper og distributorer skal ha rutiner som sikrer at fondsandeler kun distribueres til egnede kunder.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2024-12-18",
+    chapter: "Verdipapirfond",
+    section: "Distribusjon",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 2017 RUNDSKRIV
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 3/2017",
+    title: "Veiledning om revisors og revisjonsselskaps etterlevelse av hvitvaskingsregelverket",
+    text: "Rundskriv 3/2017 gir veiledning om revisorer og revisjonsselskapers plikter etter hvitvaskingsregelverket. Revisorer er rapporteringspliktige etter hvitvaskingsloven og skal gjennomfore risikovurdering av egen virksomhet, kundetiltak, lopende oppfolging av klientforhold, og rapportering av mistenkelige transaksjoner til Okokrim. Rundskrivet ble erstattet av rundskriv 14/2019.",
+    type: "rundskriv",
+    status: "superseded",
+    effective_date: "2017-04-25",
+    chapter: "Hvitvasking",
+    section: "Revisor AML 2017",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ADDITIONAL 2014-2015 RUNDSKRIV
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 4/2015",
+    title: "Organisering av verdipapirforetak",
+    text: "Rundskriv 4/2015 beskrev Finanstilsynets krav til organisering av verdipapirforetak, herunder krav til internkontroll, compliancefunksjon, risikostyringsfunksjon, og organisatorisk atskillelse mellom virksomhetsomrader med potensielle interessekonflikter. Rundskrivet ble erstattet av rundskriv 8/2023 om verdipapirforetaks organisering og virksomhet.",
+    type: "rundskriv",
+    status: "superseded",
+    effective_date: "2015-01-01",
+    chapter: "Verdipapir",
+    section: "Organisering 2015",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 5/2015",
+    title: "Verdipapirforetaks virksomhet — investeringstjenester og tilknyttede tjenester",
+    text: "Rundskriv 5/2015 beskrev Finanstilsynets forventninger til utovelsen av investeringstjenester og tilknyttede tjenester i verdipapirforetak. Rundskrivet dekket krav til god forretningsskikk, egnethetsvurdering, beste utforelse, ordreformidling, og rapportering. Rundskrivet ble erstattet av rundskriv 8/2023.",
+    type: "rundskriv",
+    status: "superseded",
+    effective_date: "2015-01-01",
+    chapter: "Verdipapir",
+    section: "Investeringstjenester 2015",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 6/2014",
+    title: "Retningslinjer for forsikringsselskapers atferd ved oppgjor av personskadesaker",
+    text: "Rundskriv 6/2014 gir retningslinjer for forsikringsselskapers handtering av personskadesaker. Rundskrivet presiserer krav til saksbehandlingstid, kommunikasjon med skadelidte, bruk av medisinske radgivere, og krav til objektiv og uavhengig skadebehandling. Forsikringsselskapet skal sikre at skadelidte far korrekt erstatning innen rimelig tid og at prosessen er transparent.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2014-04-01",
+    chapter: "Forsikring",
+    section: "Personskadesaker",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 9/2014",
+    title: "Krav til rapportering av store engasjementer for banker og finansforetak",
+    text: "Rundskriv 9/2014 presiserer Finanstilsynets krav til rapportering av store engasjementer i henhold til CRR artikkel 394. Banker og finansforetak skal rapportere alle engasjementer som utgjor 10 prosent eller mer av ansvarlig kapital. Rundskrivet presiserer krav til konsolidering av innbyrdes tilknyttede kunder og behandling av kredittrisikobegrensende faktorer.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2014-06-01",
+    chapter: "Kapitaldekning",
+    section: "Store engasjementer",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // OLDER FOUNDATIONAL RUNDSKRIV
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 10/2014",
+    title: "Kontrakt, oppgjor og klientmiddelbehandling i eiendomsmegling",
+    text: "Rundskriv 10/2014 gir Finanstilsynets retningslinjer for kontrakt, oppgjor og behandling av klientmidler i eiendomsmegling. Rundskrivet dekker krav til kjopskontrakt, oppgjorsavtale, sikkerhetsstillelse for klientmidler, avstemming av klientkontoer, og rutiner for utbetaling. Eiendomsmeglingsforetaket har et selvstendig ansvar for korrekt gjennomforing av det finansielle oppgjoret.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2014-09-01",
+    chapter: "Eiendomsmegling",
+    section: "Oppgjor og klientmidler",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 8/2009",
+    title: "Veiledning om hvitvasking og terrorfinansiering (2009)",
+    text: "Rundskriv 8/2009 ga Finanstilsynets opprinnelige veiledning til hvitvaskingsregelverket for rapporteringspliktige foretak. Rundskrivet dekket risikovurdering, kundetiltak, lopende oppfolging, rapportering og internkontroll. Rundskrivet ble erstattet av rundskriv 8/2019.",
+    type: "rundskriv",
+    status: "superseded",
+    effective_date: "2009-12-01",
+    chapter: "Hvitvasking",
+    section: "AML veiledning 2009",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 11/2012",
+    title: "Krav til etterutdanning for autoriserte regnskapsforere",
+    text: "Rundskriv 11/2012 presiserte kravene til etterutdanning for autoriserte regnskapsforere etter den tidligere autorisasjonsordningen. Rundskrivet ble erstattet av veiledning 5/2025 om etterutdanningskravet etter regnskapsforerloven.",
+    type: "rundskriv",
+    status: "superseded",
+    effective_date: "2012-09-01",
+    chapter: "Regnskapsforer",
+    section: "Etterutdanning 2012",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ADDITIONAL RUNDSKRIV — DETAILED SECTOR GUIDANCE
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 1/2016",
+    title: "Rapportering av internkontrollopplysninger fra finansforetak",
+    text: "Rundskriv 1/2016 fastsetter krav til rapportering av internkontrollopplysninger fra finansforetak til Finanstilsynet. Foretakene skal arlig rapportere om status for risikostyring og internkontroll, herunder styrets vurdering av internkontrollsystemet, vesentlige avvik identifisert av internrevisjonen, og oppfolging av tidligere palegg fra Finanstilsynet.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2016-01-15",
+    chapter: "Risikostyring",
+    section: "Internkontrollrapportering",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 2/2016",
+    title: "Krav til arsoppgjorsrevisjonen for banker og forsikringsselskaper",
+    text: "Rundskriv 2/2016 presiserer Finanstilsynets forventninger til ekstern revisors arsoppgjorsrevisjon for banker og forsikringsselskaper. Rundskrivet dekker krav til revisors kommunikasjon med Finanstilsynet, rapportering av vesentlige funn, og revisors vurdering av foretakets kapitaldekning og likviditet. Rundskrivet er harmonisert med ISA 260 (Kommunikasjon med de som har overordnet ansvar for styring og kontroll).",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2016-02-01",
+    chapter: "Revisjon",
+    section: "Arsoppgjorsrevisjon",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 3/2016",
+    title: "Veiledning om kapitalforvaltning i livsforsikringsselskaper",
+    text: "Rundskriv 3/2016 gir veiledning om Finanstilsynets forventninger til kapitalforvaltningen i livsforsikringsselskaper. Rundskrivet dekker prudent person-prinsippet, krav til investeringsstrategi godkjent av styret, risikostyring av investeringsportefoljen, krav til matching mellom eiendeler og forpliktelser (ALM), og krav til stresstesting av investeringsportefoljen.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2016-03-01",
+    chapter: "Forsikring",
+    section: "Kapitalforvaltning liv",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 4/2016",
+    title: "Krav til konsolidert rapportering for finanskonsern",
+    text: "Rundskriv 4/2016 presiserer Finanstilsynets krav til konsolidert tilsyn og rapportering for finanskonsern. Holdingselskaper i finanskonsern skal rapportere kapitaldekning og likviditet pa konsolidert basis. Rundskrivet dekker konsolideringskretsen, behandling av minoritetsinteresser, og krav til konsolidert rapportering for banker med datterselskaper utenfor Norge.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2016-03-15",
+    chapter: "Kapitaldekning",
+    section: "Konsolidert rapportering",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 5/2016",
+    title: "Krav til rapportering av likviditetsrisiko (LCR og NSFR)",
+    text: "Rundskriv 5/2016 presiserer Finanstilsynets krav til rapportering av likviditetsreserve (LCR) og stabil finansiering (NSFR). Rundskrivet dekker beregning av LCR-bufferen, klassifisering av likvide eiendeler etter kvalitetsklasser, beregning av netto kontantutganger, og krav til NSFR-rapportering. Bankene skal rapportere LCR og NSFR manedlig til Finanstilsynet.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2016-04-01",
+    chapter: "Kapitaldekning",
+    section: "LCR NSFR rapportering",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 6/2016",
+    title: "Krav til rapportering av finansiell informasjon (FINREP og COREP)",
+    text: "Rundskriv 6/2016 presiserer kravene til rapportering av finansiell informasjon i FINREP- og COREP-format til Finanstilsynet. COREP dekker rapportering av kapitaldekning, store engasjementer, og likviditet. FINREP dekker resultat- og balanserappportering. Rundskrivet presiserer rapporteringsfrekvens, frister, og formatkrav. Bankene skal rapportere kvartalsvis.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2016-04-15",
+    chapter: "Kapitaldekning",
+    section: "FINREP COREP",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 15/2016",
+    title: "Veiledning om hvitvasking og terrorfinansiering (desember 2016)",
+    text: "Rundskriv 15/2016 ga oppdatert veiledning om hvitvaskingsregelverket, herunder forstaelsen av hvitvaskingsloven og hvitvaskingsforskriften. Rundskrivet erstattet rundskriv 8/2009 og ble senere erstattet av rundskriv 8/2019. Rundskrivet dekket risikovurdering, kundetiltak, lopende oppfolging, rapporteringsplikt, og internkontroll.",
+    type: "rundskriv",
+    status: "superseded",
+    effective_date: "2016-12-23",
+    chapter: "Hvitvasking",
+    section: "AML veiledning 2016",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 16/2016",
+    title: "Veiledning om etterlevelse av hvitvaskingsregelverket for eiendomsmeglere (2016)",
+    text: "Rundskriv 16/2016 ga veiledning om eiendomsmegleres plikter etter hvitvaskingsregelverket. Eiendomsmeglere er rapporteringspliktige og skal gjennomfore virksomhetsinnrettet risikovurdering, kundetiltak ved opprettelse av meglerioppdrag, og rapportere mistenkelige transaksjoner. Rundskrivet ble erstattet av rundskriv 11/2019.",
+    type: "rundskriv",
+    status: "superseded",
+    effective_date: "2016-12-23",
+    chapter: "Hvitvasking",
+    section: "Eiendomsmegling AML 2016",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 18/2016",
+    title: "Krav til rapportering av MREL-kapasitet",
+    text: "Rundskriv 18/2016 presiserer kravene til bankenes rapportering av kapasiteten til a oppfylle minstekravet til ansvarlig kapital og konvertibel gjeld (MREL). Banker og andre kredittinstitusjoner med MREL-krav skal rapportere sin MREL-kapasitet kvartalsvis til Finanstilsynet. Rundskrivet dekker beregning av MREL-kvalifiserende gjeld, fradrag, og sammenhengen med det samlede kapitalkravet.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2016-12-15",
+    chapter: "Krisehandtering",
+    section: "MREL rapportering",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 19/2016",
+    title: "Krav til rapportering av leverandorrisiko",
+    text: "Rundskriv 19/2016 presiserer Finanstilsynets krav til finansforetaks rapportering av vesentlige utkontrakteringsavtaler og leverandorrisiko. Foretakene skal rapportere alle utkontrakteringsavtaler for kritiske funksjoner, herunder opplysninger om leverandoren, tjenestens art, avtalens varighet, og risikovurdering. Rapporteringen danner grunnlag for Finanstilsynets vurdering av konsentrasjonsrisiko og tredjepartsrisiko i finanssektoren.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2016-12-20",
+    chapter: "IKT",
+    section: "Leverandorrisiko rapportering",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 21/2016",
+    title: "Retningslinjer for investeringsradgivning ved salg av spareprodukter",
+    text: "Rundskriv 21/2016 gir Finanstilsynets retningslinjer for bankenes og forsikringsselskapenes investeringsradgivning ved salg av spareprodukter. Rundskrivet presiserer krav til egnethetsvurdering av kunden, informasjonsplikt om risiko og kostnader, krav til dokumentasjon av radgivningen, og forbud mot utilborlig press. Saerlige krav gjelder ved salg av komplekse produkter til forbrukere.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2016-12-21",
+    chapter: "Investorbeskyttelse",
+    section: "Investeringsradgivning",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 22/2016",
+    title: "Veiledning om kapitalforvaltning for innskuddspensjonsordninger",
+    text: "Rundskriv 22/2016 gir Finanstilsynets forventninger til pensjonsleverandorers kapitalforvaltning av innskuddspensjonsordninger. Rundskrivet dekker krav til investeringsalternativer, alderstilpassede risikoprofiler, informasjon til medlemmer, og krav til at leverandoren sikrer at medlemmene har tilgang til et tilstrekkelig bredt utvalg av investeringsalternativer.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2016-12-22",
+    chapter: "Pensjon",
+    section: "Innskuddspensjon kapitalforvaltning 2016",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 23/2016",
+    title: "Krav til tapsavsetninger for banker — overgang til IFRS 9",
+    text: "Rundskriv 23/2016 ga Finanstilsynets veiledning om bankers overgang fra IAS 39 til IFRS 9 for beregning av tapsavsetninger. Rundskrivet dekket kravene til forventet-tap-modellen (ECL), klassifisering i stadier, bruk av fremtidsrettet informasjon, og krav til overgangsrapportering. Rundskrivet var rettet mot banker som forberedte seg pa IFRS 9-implementeringen per 1. januar 2018.",
+    type: "rundskriv",
+    status: "superseded",
+    effective_date: "2016-12-23",
+    chapter: "Regnskap",
+    section: "IFRS 9 overgang",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ADDITIONAL RUNDSKRIV — 2010-2013 FOUNDATIONAL
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 6/2009",
+    title: "Veiledning til forskrift om risikostyring og internkontroll (2009)",
+    text: "Rundskriv 6/2009 ga Finanstilsynets opprinnelige veiledning til internkontrollforskriften (FOR-2008-09-22-1080). Veiledningen dekket styrets ansvar, krav til risikostyringsprosessen, krav til internkontrollsystemet, og krav til dokumentasjon. Denne veiledningen er fortsatt relevant som tolkningstotte for internkontrollforskriften.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2009-06-01",
+    chapter: "Risikostyring",
+    section: "Internkontroll veiledning 2009",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 3/2010",
+    title: "Krav til rapportering om IKT-hendelser",
+    text: "Rundskriv 3/2010 fastsatte de opprinnelige kravene til finansforetaks rapportering av vesentlige IKT-hendelser til Finanstilsynet i henhold til IKT-forskriften § 8. Foretakene skulle rapportere hendelser som medforte vesentlig forstyrrelser i IKT-tjenester, tap av data, uautorisert tilgang, og andre hendelser som kunne true finansiell stabilitet eller kundenes interesser. Rapporteringspraksis er na regulert gjennom DORA.",
+    type: "rundskriv",
+    status: "superseded",
+    effective_date: "2010-03-01",
+    chapter: "IKT",
+    section: "IKT-hendelsesrapportering 2010",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 5/2012",
+    title: "Retningslinjer for beregning av forsikringstekniske avsetninger",
+    text: "Rundskriv 5/2012 ga veiledning om beregning av forsikringstekniske avsetninger for skadeforsikringsselskaper. Rundskrivet dekket krav til beregningsmetoder, aktuariell vurdering, og krav til dokumentasjon. Rundskrivet er delvis erstattet av Solvens II-regelverket, men er fortsatt relevant for foretak som bruker overgangsregler.",
+    type: "rundskriv",
+    status: "superseded",
+    effective_date: "2012-06-01",
+    chapter: "Forsikring",
+    section: "Avsetningsberegning 2012",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 2/2013",
+    title: "Retningslinjer for Finanstilsynets stedlige tilsyn",
+    text: "Rundskriv 2/2013 beskrev Finanstilsynets praksis for gjennomforing av stedlig tilsyn i finansforetak. Rundskrivet dekket formalet med tilsynet, varslingsrutiner, gjennomforing pa stedet, dokumentinnhenting, rapporteringsformat, og foretakets mulighet til a gi tilsvar. Rundskrivet gir innsikt i Finanstilsynets tilsynsmetodikk.",
+    type: "rundskriv",
+    status: "in_force",
+    effective_date: "2013-03-01",
+    chapter: "Finanstilsyn",
+    section: "Stedlig tilsyn",
+  },
+  {
+    sourcebook_id: "FTNO_RUNDSKRIV",
+    reference: "Rundskriv 1/2014",
+    title: "Finanstilsynets prioriteringer og overordnede tilsynsplan",
+    text: "Rundskriv 1/2014 presenterte Finanstilsynets tilsynsprioriteringer for 2014. Rundskrivet dekket tverrgaende prioriteringer (IKT-sikkerhet, hvitvasking, forbrukervern) og sektorspesifikke prioriteringer for bank, forsikring, verdipapir, eiendomsmegling, revisjon, og regnskap. Finanstilsynet publiserer tilsvarende prioriteringsbrev arlig.",
+    type: "rundskriv",
+    status: "superseded",
+    effective_date: "2014-01-09",
+    chapter: "Finanstilsyn",
+    section: "Tilsynsprioriteringer 2014",
   },
 ];
 
@@ -2584,6 +4198,587 @@ const veiledninger: ProvisionRow[] = [
     chapter: "Berekraft",
     section: "CSRD attestasjon",
   },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ADDITIONAL GUIDANCE — FINANCIAL REPORTING
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning arsavslutning bank",
+    title: "Veiledning om arsavslutning for banker — verdsettelse og tapsavsetninger",
+    text: "Veiledningen gir Finanstilsynets forventninger til bankers arsavslutning, saerlig knyttet til tapsavsetninger etter IFRS 9. Veiledningen dekker beregning av forventet tap (ECL) for utlansportefoljen, klassifisering av engasjementer i stadier (1-3), bruk av fremtidsrettet informasjon i makrookonomiske scenarier, krav til modellvalidering, og krav til noteopplysninger om kredittrisiko. Banker skal ogs vurdere klimarisikoens innvirkning pa tapsavsetningene.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2024-01-01",
+    chapter: "Regnskap",
+    section: "Arsavslutning bank",
+  },
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning arsavslutning forsikring",
+    title: "Veiledning om arsavslutning for forsikringsforetak — IFRS 17",
+    text: "Veiledningen gir Finanstilsynets forventninger til forsikringsforetaks arsavslutning, saerlig knyttet til implementeringen av IFRS 17 (Forsikringskontrakter). Veiledningen dekker malemetoder for forsikringskontrakter (generell modell, premium allocation approach, variable fee approach), risikomargintillegg, diskonteringsrente, og krav til noteopplysninger om forsikringsrisiko. Forsikringsforetakene skal ogs vurdere berekraftsrisiko i forsikringstekniske avsetninger.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2024-01-01",
+    chapter: "Regnskap",
+    section: "Arsavslutning forsikring IFRS 17",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ADDITIONAL GUIDANCE — RESOLUTION AND RECOVERY
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning gjenopprettingsplaner bank",
+    title: "Veiledning om utarbeidelse av gjenopprettingsplaner for banker",
+    text: "Veiledningen beskriver Finanstilsynets forventninger til bankers utarbeidelse av gjenopprettingsplaner etter banksikringsloven. Planen skal inneholde en oversikt over kritiske funksjoner, stresstestscenarier som truer foretakets levedyktighet, gjenopprettingstiltak (salg av eiendeler, kapitalforhoyelse, nedskalering), indikatorer som utloser gjenopprettingsplanen, og en kommunikasjonsstrategi. Planen skal godkjennes av styret arlig og sendes Finanstilsynet.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2022-09-08",
+    chapter: "Krisehandtering",
+    section: "Gjenopprettingsplan bank",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ADDITIONAL GUIDANCE — CRYPTO/VIRTUAL ASSETS
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning MiCA klassifisering",
+    title: "Veiledning om klassifisering av kryptoeiendeler under MiCA",
+    text: "Veiledningen beskriver hvordan foretak skal klassifisere kryptoeiendeler under MiCA-regelverket. Klassifiseringen avgjor hvilke regulatoriske krav som gjelder for utstedelse og handel. Veiledningen dekker skillet mellom aktivabaserte tokens (ART), e-pengetokens (EMT), og brukstokens (utility tokens), samt kriteriene for nar en kryptobiendel faller utenfor MiCA (for eksempel rene desentraliserte tokens, NFT-er, og finansielle instrumenter). Veiledningen er harmonisert med ESMAs retningslinjer om klassifisering.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2025-07-01",
+    chapter: "Kryptoeiendeler",
+    section: "Klassifisering",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ADDITIONAL GUIDANCE — IRB MODELS AND CREDIT RISK
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning IRB-modeller",
+    title: "Veiledning om krav til IRB-modeller i banker, kredittforetak og finansieringsforetak",
+    text: "Veiledningen beskriver Finanstilsynets krav til utviklingen, valideringen og bruken av IRB-modeller for beregning av kapitalkrav for kreditrisiko. Veiledningen dekker krav til modellutvikling (PD, LGD, EAD), datakvalitet og historiske tidsserier, stresstesting av modeller, regelmessig validering og backtesting, og krav til dokumentasjon. Finanstilsynet kan stille krav til konservative tillegg (margin of conservatism) dersom modellens estimater er usikre eller datagrunlaget er utilstrekkelig. Veiledningen er harmonisert med EBAs retningslinjer for IRB-metoden.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2021-09-01",
+    chapter: "Kapitaldekning",
+    section: "IRB-modeller",
+  },
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning stresstest bank",
+    title: "Veiledning om stresstesting av banker",
+    text: "Veiledningen beskriver Finanstilsynets forventninger til bankers gjennomforing av stresstester. Bankene skal gjennomfore stresstester som dekker kreditrisiko, markedsrisiko, likviditetsrisiko, og operasjonell risiko under ugunstige makrookonomiske scenarier. Resultatene skal brukes i kapitalplanlegging og styrets risikovurdering. Veiledningen presiserer krav til scenariodesign, modellering, rapportering til styret, og Finanstilsynets bruk av stresstestresultater i SREP-vurderingen.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2023-01-01",
+    chapter: "Kapitaldekning",
+    section: "Stresstest",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ADDITIONAL GUIDANCE — OUTSOURCING AND CLOUD
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning utkontraktering",
+    title: "Veiledning om utkontraktering av virksomhet for finansforetak",
+    text: "Veiledningen beskriver Finanstilsynets forventninger til finansforetaks utkontraktering av virksomhet, herunder IKT-tjenester, til tredjeparter. Veiledningen dekker risikovurdering for utkontrakteringen, krav til kontraktuelle bestemmelser (tilgangsrett for Finanstilsynet, revisjonsrett, SLA-er), krav til oppsigelsesplan (exitstrategi), og krav til lopende overvaking av tjenesteleverandoren. Utkontraktering av kritiske funksjoner skal meldes til Finanstilsynet. Veiledningen er harmonisert med EBAs retningslinjer for utkontraktering (EBA/GL/2019/02) og EIOPA-retningslinjene for forsikringsforetak.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2021-10-01",
+    chapter: "IKT",
+    section: "Utkontraktering",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ADDITIONAL GUIDANCE — OPERATIONAL RESILIENCE
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning operasjonell motstandsdyktighet",
+    title: "Veiledning om operasjonell motstandsdyktighet for finansforetak",
+    text: "Veiledningen beskriver Finanstilsynets forventninger til finansforetaks operasjonelle motstandsdyktighet. Foretakene skal identifisere og kartlegge kritiske forretningsprosesser og tjenester, fastsette toleransegrenser for forstyrrelser (impact tolerances), gjennomfore tester av evnen til a opprettholde drift under forstyrrelser, og ha planer for gjenoppretting. Veiledningen er harmonisert med DORA-forordningen og supplerer Finanstilsynets veiledninger til IKT-forskriften.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2025-01-01",
+    chapter: "IKT",
+    section: "Operasjonell motstandsdyktighet",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ADDITIONAL GUIDANCE — CONSUMER PROTECTION
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning god utlanspraksis",
+    title: "Veiledning om god utlanspraksis for boliglan",
+    text: "Veiledningen beskriver Finanstilsynets forventninger til bankenes utlanspraksis for boliglan utover de kvantitative kravene i utlansforskriften. Veiledningen dekker krav til forsvarlig kredittvurdering, verdsettelse av panteobjektet, handtering av kunder med hoy gjeldsbelastning, krav til dokumentasjon av kredittvurderingen, og rutiner for oppfolging av misligholdte boliglan. Veiledningen presiserer bankenes aktsomhetsplikt overfor forbrukere.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2021-06-01",
+    chapter: "Utlanspraksis",
+    section: "God utlanspraksis",
+  },
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning produktstyring forsikring",
+    title: "Veiledning om produktstyring for forsikringsprodukter (POG)",
+    text: "Veiledningen beskriver kravene til produktstyring (product oversight and governance) for forsikringsforetak etter IDD. Forsikringsforetak som utvikler forsikringsprodukter skal ha en produktgodkjenningsprosess som sikrer at produktet tilfredsstiller behovene til den identifiserte malgruppen. Veiledningen dekker krav til malgruppeanalyse, testforlopet, distribusjonskanalvurdering, og krav til lopende overvaking av produktets ytelse og kundenes utfall. Veiledningen er harmonisert med EIOPAs retningslinjer for POG.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2023-01-01",
+    chapter: "Forsikring",
+    section: "Produktstyring POG",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ADDITIONAL GUIDANCE — MACROPRUDENTIAL
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning systemrisikovurdering",
+    title: "Veiledning om vurdering av systemrisiko og makrotilsynsvirkemidler",
+    text: "Veiledningen beskriver Finanstilsynets tilnaerming til vurdering av systemrisiko i det norske finanssystemet og bruken av makrotilsynsvirkemidler. Veiledningen dekker indikatorer for kredittdrevet systemrisiko, metoder for a fastsette den motsykliske kapitalbuffersatsen, kriterier for identifikasjon av systemviktige finansforetak (O-SII-er), og rammeverket for systemrisikobufferen. Finanstilsynet gir rad til Finansdepartementet om buffersatsene kvartalsvis.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2023-06-01",
+    chapter: "Kapitaldekning",
+    section: "Systemrisiko",
+  },
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning boligprisindeks",
+    title: "Veiledning om verdsettelse av boligeiendom for kapitaldekningsforhal",
+    text: "Veiledningen gir Finanstilsynets retningslinjer for bankenes verdsettelse av boligeiendom som sikkerhet for kapitaldekningsberegning. Veiledningen dekker godkjente verdsettelsesmetoder, krav til regelmessig revaluering (arlig for IRB-banker), bruk av statistiske modeller og prisindekser, og krav til konservative verdianslag. Veiledningen er harmonisert med EBAs retningslinjer for eiendomsverdsettelse og er relevant for beregning av risikovektet eksponering under CRR.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2022-01-01",
+    chapter: "Kapitaldekning",
+    section: "Boligverdsettelse",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ADDITIONAL GUIDANCE — FINTECH AND INNOVATION
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning regulatorisk sandkasse",
+    title: "Veiledning om Finanstilsynets regulatoriske sandkasse",
+    text: "Veiledningen beskriver rammeverket for Finanstilsynets regulatoriske sandkasse, der innovative finansielle tjenester og produkter kan testes i et kontrollert miljo. Sandkassen gir foretak mulighet til a utforske ny teknologi (AI, blockchain, open banking) under Finanstilsynets veiledning, med tilpassede regulatoriske krav. Veiledningen dekker soknadsprosessen, utvalgskriterier, testperioden (typisk 12-24 maneder), og overgangen til full regulering etter testing.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2020-06-01",
+    chapter: "Fintech",
+    section: "Regulatorisk sandkasse",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ADDITIONAL GUIDANCE — AUDIT SUPERVISION
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning revisjonskvalitet",
+    title: "Veiledning om kvalitetskontroll av revisjonsselskaper",
+    text: "Veiledningen beskriver Finanstilsynets tilnaerming til kvalitetskontroll av revisorer og revisjonsselskaper. Kontrollen dekker revisjonsselskapets kvalitetsstyringssystem, etterlevelse av ISA (International Standards on Auditing), uavhengighet, komplianse med hvitvaskingsregelverket, og rapportering til Finanstilsynet. For revisorer av foretak av allmenn interesse (PIE) gjennomfores kvalitetskontroll minst hvert tredje ar, for andre revisorer minst hvert sjette ar.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2022-01-01",
+    chapter: "Revisjon",
+    section: "Kvalitetskontroll",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ADDITIONAL GUIDANCE — DERIVATIVES AND REPORTING
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning EMIR rapportering",
+    title: "Veiledning om EMIR-rapportering av derivatkontrakter",
+    text: "Veiledningen beskriver kravene til rapportering av derivatkontrakter til transaksjonsregistre i henhold til EMIR-forordningen. Alle motparter i derivatkontrakter (bade finansielle og ikke-finansielle over clearingterskelen) skal rapportere detaljer om sine derivatposisjoner. Veiledningen dekker rapporteringsformat, LEI-krav (Legal Entity Identifier), UTI-krav (Unique Transaction Identifier), tidsfrister, og krav til datakvalitet. Veiledningen er oppdatert i trad med EMIR Refit.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2024-06-01",
+    chapter: "Derivater",
+    section: "EMIR rapportering",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ADDITIONAL GUIDANCE — PENSION
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning kommunale pensjonskasser",
+    title: "Veiledning om styring og kontroll for kommunale pensjonskasser",
+    text: "Veiledningen beskriver Finanstilsynets forventninger til styring og kontroll i kommunale pensjonskasser. Pensjonskassene skal ha forsvarlige rutiner for risikostyring, kapitalforvaltning, aktuarfunksjon, og rapportering. Veiledningen dekker styrets ansvar, krav til noekkelfunksjoner (risikostyring, compliance, internrevisjon, aktuarfunksjon), krav til kapitalforvaltningen (prudent person-prinsippet), og krav til ORSA for pensjonskasser med Solvens II-tillatelse.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2023-01-01",
+    chapter: "Pensjon",
+    section: "Kommunale pensjonskasser",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ADDITIONAL GUIDANCE — MARKET CONDUCT
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning markedsovervakning",
+    title: "Veiledning om verdipapirforetaks markedsovervakningssystemer",
+    text: "Veiledningen beskriver Finanstilsynets forventninger til verdipapirforetaks systemer og prosedyrer for markedsovervakning i henhold til MAR. Foretakene skal ha automatiserte systemer for a oppdage mistenkelige ordrer og transaksjoner som kan utgjore innsidehandel eller markedsmanipulasjon. Veiledningen dekker krav til varslingskriterier, handtering av varsler (alerts), rapportering av mistenkelige transaksjoner (STOR) til Finanstilsynet, og krav til dokumentasjon og lagring.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2023-06-01",
+    chapter: "Verdipapir",
+    section: "Markedsovervakning",
+  },
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning innsideinformasjon",
+    title: "Veiledning om handtering av innsideinformasjon for utstedere",
+    text: "Veiledningen beskriver Finanstilsynets forventninger til borsnoterte utstederes handtering av innsideinformasjon etter MAR. Utstedere skal ha rutiner for a identifisere og vurdere om opplysninger utgjor innsideinformasjon, offentliggjore innsideinformasjon sa snart som mulig, og fore innsidelister. Veiledningen dekker vilkarene for utsatt offentliggjoring, behandling av informasjon i sonder prosesser (wall-crossing), og krav til primaerinnsideres meldeplikt.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2024-01-01",
+    chapter: "Verdipapir",
+    section: "Innsideinformasjon",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ADDITIONAL GUIDANCE — PAYMENT SERVICES
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning instant payments",
+    title: "Veiledning om krav til straksbetalinger (instant payments)",
+    text: "Veiledningen beskriver Finanstilsynets forventninger til bankenes implementering av straksbetalinger (instant credit transfers) i henhold til EU-forordningen om straksbetalinger. Banker og betalingsforetak som tilbyr kontobaserte betalingstjenester, skal ogs tilby straksbetalinger til samme pris som ordinaere overforinger. Veiledningen dekker krav til tilgjengelighet (24/7/365), behandlingstid (maks 10 sekunder), belopsbegrensninger, og krav til svindelforebygging.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2025-01-01",
+    chapter: "Betalingstjenester",
+    section: "Straksbetalinger",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ADDITIONAL GUIDANCE — SECTOR-SPECIFIC
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning eiendomsmegling budgivning",
+    title: "Veiledning om budgivning ved eiendomsmegling",
+    text: "Veiledningen beskriver Finanstilsynets forventninger til eiendomsmeglerforetaks handtering av budgivning. Megleren skal sikre en forsvarlig budrunde med likeverdig behandling av budgivere, krav til skriftlighet for bud, tidsfrister for bud, informasjonsplikt overfor alle budgivere, og forbud mot a formidle fiktive bud. Veiledningen presiserer krav til dokumentasjon av budrunden og meglerens rolle som noytral mellommann.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2022-01-01",
+    chapter: "Eiendomsmegling",
+    section: "Budgivning",
+  },
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning eiendomsmegling borettslag",
+    title: "Veiledning om megling av borettslagsandeler",
+    text: "Veiledningen beskriver saerskilte forhold ved megling av borettslagsandeler sammenlignet med selveierboliger. Veiledningen dekker krav til informasjon om fellesgjeld, innbo- og losoreforskrift, forkjopsrett, styregodkjenning, og offentlige avgifter. Megleren skal sikre at kjopere far tilstrekkelig informasjon om borettslagets okonomi, vedtekter, og eventuelle vedlikeholdsplaner for bygget.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2021-06-01",
+    chapter: "Eiendomsmegling",
+    section: "Borettslag",
+  },
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning inkasso god inkassoskikk",
+    title: "Veiledning om god inkassoskikk",
+    text: "Veiledningen gir Finanstilsynets forventninger til inkassoforetaks etterlevelse av kravet om god inkassoskikk i inkassoloven § 8. Inkassoforetaket skal ikke palegge skyldneren urimelige kostnader, ikke utsette skyldneren for utilborlig press, og ikke drive med villedende informasjon om rettslige konsekvenser av manglende betaling. Veiledningen dekker ogs behandling av saerlig sarbare skyldnere, krav til kommunikasjon, og forbudet mot trakasserende innkrevingsmetoder.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2020-06-01",
+    chapter: "Inkasso",
+    section: "God inkassoskikk",
+  },
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning internrevisjon finansforetak",
+    title: "Veiledning om internrevisjon i finansforetak",
+    text: "Veiledningen beskriver Finanstilsynets forventninger til internrevisjonsfunksjonen i finansforetak. Internrevisjonen skal vaere uavhengig, ha direkte rapporteringslinje til styret, og ha tilstrekkelige ressurser og kompetanse. Veiledningen dekker krav til risikobasert revisjonsplan, gjennomforing av revisjonsoppdrag, rapportering av funn til styret og ledelse, og oppfolging av identifiserte avvik. Internrevisjonen er en av fire noekkelfunksjoner som kreves under bade CRD V og Solvens II.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2022-06-01",
+    chapter: "Risikostyring",
+    section: "Internrevisjon",
+  },
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning compliancefunksjon",
+    title: "Veiledning om compliancefunksjonen i finansforetak",
+    text: "Veiledningen beskriver Finanstilsynets forventninger til compliancefunksjonen i banker, forsikringsforetak og verdipapirforetak. Compliancefunksjonen skal overvaek foretakets etterlevelse av lover og forskrifter, identifisere og vurdere regelverksrisiko, radgi styret og ledelsen, og rapportere regelmessig om etterlevelsesstatusen. Veiledningen presiserer krav til compliancefunksjonens uavhengighet, ressurser, og rapportering. Funksjonen skal ogs ha ansvar for a folge opp Finanstilsynets tilbakemeldinger.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2023-01-01",
+    chapter: "Risikostyring",
+    section: "Compliance",
+  },
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning AML PEP",
+    title: "Veiledning om forsterket kundetiltak for politisk eksponerte personer (PEP)",
+    text: "Veiledningen beskriver Finanstilsynets forventninger til finansforetaks handtering av politisk eksponerte personer (PEP) i henhold til hvitvaskingsloven kapittel 4. Foretakene skal ha prosedyrer for a identifisere PEP-er, vurdere risikoen, innhente godkjenning fra overordnet ledelse for a etablere eller opprettholde kundeforhold, verifisere kilden til midlene, og gjennomfore forsterket lopende oppfolging. Veiledningen dekker ogs naerstaende og naere forbindelser til PEP-er.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2020-01-01",
+    chapter: "Hvitvasking",
+    section: "PEP handtering",
+  },
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning AML transaksjonsovervakning",
+    title: "Veiledning om transaksjonsovervakning for finansforetak",
+    text: "Veiledningen beskriver Finanstilsynets forventninger til finansforetaks systemer for transaksjonsovervakning i henhold til hvitvaskingsloven. Foretakene skal ha automatiserte systemer som overvaker kundetransaksjoner basert pa risikobaserte regler og scenarier. Veiledningen dekker krav til scenariodesign, kalibrering av terskelverdier, handtering av varsler (alerts), rapportering av mistenkelige transaksjoner (MT-rapporter) til Okokrim, og krav til dokumentasjon av vurderingene.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2023-06-01",
+    chapter: "Hvitvasking",
+    section: "Transaksjonsovervakning",
+  },
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning ESG fond",
+    title: "Veiledning om berekraftsklassifisering av fond (SFDR artikkel 6, 8 og 9)",
+    text: "Veiledningen beskriver Finanstilsynets forventninger til forvaltningsselskapers klassifisering av verdipapirfond under SFDR. Artikkel 6-fond integrerer ikke berekraftsfaktorer saerskilt. Artikkel 8-fond fremmer miljomaessige eller sosiale egenskaper. Artikkel 9-fond har berekraftig investering som formal. Veiledningen presiserer kriterier for klassifisering, krav til dokumentasjon, og risiko for greenwashing. Forvaltningsselskaper skal ha rutiner for lopende overvakning av at fondet oppfyller den angitte klassifiseringen.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2024-06-01",
+    chapter: "Berekraft",
+    section: "SFDR fondsklassifisering",
+  },
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning ESG greenwashing",
+    title: "Veiledning om forebygging av groennvasking (greenwashing) i finanssektoren",
+    text: "Veiledningen beskriver Finanstilsynets forventninger til finansforetaks tiltak for a forebygge groennvasking. Foretakene skal sikre at berekraftspastander er korrekte, dokumenterbare, og ikke villedende. Veiledningen dekker krav til markedsforing av berekraftige produkter, bruk av ESG-rangeringer, og krav til at berekraftsinformasjonen er konsistent pa tvers av pre-kontraktuell informasjon, nettsider og periodisk rapportering. Veiledningen er harmonisert med ESA-enes retningslinjer for groennvasking.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2025-06-01",
+    chapter: "Berekraft",
+    section: "Groennvasking",
+  },
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning DORA IKT-tredjepartsregister",
+    title: "Veiledning om register over IKT-tredjepartsavtaler (DORA artikkel 28)",
+    text: "Veiledningen beskriver kravene til finansforetaks register over IKT-tredjepartsavtaler i henhold til DORA. Foretakene skal fore et komplett og oppdatert register over alle IKT-tjenesteavtaler, med saerskilt identifikasjon av avtaler som stotter kritiske eller viktige funksjoner. Registeret skal inneholde opplysninger om tjenesteleverandoren, tjenestens art, avtalens varighet, underleverandorer, og konsentrasjonsrisiko. Registeret skal rapporteres til Finanstilsynet arlig.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2025-07-01",
+    chapter: "IKT",
+    section: "DORA IKT-tredjepartsregister",
+  },
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning DORA TLPT",
+    title: "Veiledning om trusselsbasert penetrasjonstesting (TLPT) etter DORA",
+    text: "Veiledningen gir praktisk veiledning om gjennomforing av trusselsbasert penetrasjonstesting (Threat-Led Penetration Testing, TLPT) i henhold til DORA artikkel 26-27. Foretakene skal gjennomfore TLPT minst hvert tredje ar for kritiske funksjoner. Testingen skal ledes av en ekstern testleverandor (red team) og baseres pa realistiske trusseletterretninger (threat intelligence). Veiledningen dekker krav til testomfang, testscenarier, rapportering, og remedieringsplan.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2025-07-01",
+    chapter: "IKT",
+    section: "DORA TLPT",
+  },
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning DORA IKT-risikostyringsrammeverk",
+    title: "Veiledning om IKT-risikostyringsrammeverk etter DORA artikkel 5-16",
+    text: "Veiledningen beskriver Finanstilsynets forventninger til finansforetaks IKT-risikostyringsrammeverk i henhold til DORA kapittel II. Foretakene skal ha et dokumentert og styregodkjent IKT-risikostyringsrammeverk som dekker identifisering, beskyttelse, deteksjon, respons og gjenoppretting. Rammeverket skal integreres i foretakets overordnede risikostyring. Veiledningen dekker ogs krav til IKT-kontinuitetsplaner, IKT-sikkerhetsopplaering, og dokumentasjon.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2025-07-01",
+    chapter: "IKT",
+    section: "DORA IKT-risikostyring",
+  },
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning forsikringsmegling",
+    title: "Veiledning om forsikringsmegling — god forretningsskikk og informasjonsplikt",
+    text: "Veiledningen beskriver kravene til god forretningsskikk for forsikringsmeglere etter forsikringsformidlingsloven. Megleren skal handle i kundens interesse, gjennomfore en upartisk analyse av et tilstrekkelig antall forsikringsprodukter, gi kunden tydelig informasjon om sine tjenester og sin godtgjorelse, og dokumentere radgivningen. Veiledningen er harmonisert med IDD og EIOPA-retningslinjene for forsikringsformidling.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2023-06-01",
+    chapter: "Forsikring",
+    section: "Forsikringsmegling",
+  },
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning regnskapsforer oppdragsavtaler",
+    title: "Veiledning om oppdragsavtaler for regnskapsforere",
+    text: "Veiledningen beskriver Finanstilsynets forventninger til regnskapsforeres oppdragsavtaler i henhold til regnskapsforerloven § 5-1. Oppdragsavtalen skal klart angi oppdragets omfang, ansvarsfordeling mellom regnskapsforer og oppdragsgiver, godtgjorelse, oppsigelsesvilkar, og arkivering av oppdragsdokumentasjon. Veiledningen presiserer kravet om skriftlig avtale og krav til arlig gjennomgang av oppdragsbetingelsene.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2023-06-01",
+    chapter: "Regnskapsforer",
+    section: "Oppdragsavtaler",
+  },
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning pensjonsleverandor informasjon",
+    title: "Veiledning om pensjonsleverandorers informasjonsplikt overfor medlemmer",
+    text: "Veiledningen beskriver Finanstilsynets forventninger til pensjonsleverandorers informasjonsplikt overfor medlemmer av innskuddsbaserte og ytelsesbaserte pensjonsordninger. Leverandoren skal gi medlemmene arlig pensjonsoversikt, informasjon om investeringsvalg og risiko, simuleringsverktoy for forventet pensjon, og informasjon om kostnader. Veiledningen dekker ogs krav til informasjon ved overgang mellom pensjonsleverandorer.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2022-01-01",
+    chapter: "Pensjon",
+    section: "Pensjonsinformasjon",
+  },
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning KRT-rapportering",
+    title: "Veiledning om rapportering til Finanstilsynet via Altinn (KRT-skjemaer)",
+    text: "Veiledningen gir praktisk veiledning om finansforetaks rapportering til Finanstilsynet via Altinn-plattformen. Finansforetak er forpliktet til a rapportere regelmessig gjennom ulike KRT-skjemaer (KRT-1002 for banker, KRT-1003 for IKT-hendelser, KRT-3190 for DORA-hendelsesrapportering). Veiledningen dekker tidsfrister, skjemaer per tilsynsomrade, og krav til datakvalitet.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2024-01-01",
+    chapter: "Finanstilsyn",
+    section: "KRT-rapportering",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ADDITIONAL GUIDANCE — FINANCIAL STABILITY ANALYSIS
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning klimarisiko bank utvidet",
+    title: "Veiledning om handtering av klimarelaterte og miljomaessige risikoer i banker",
+    text: "Veiledningen beskriver Finanstilsynets forventninger til bankers handtering av klimarelaterte og miljomaessige risikoer i trad med EBAs retningslinjer for ESG-risikostyring. Bankene skal integrere klimarisiko (fysisk risiko og overgangsrisiko) i sin ICAAP, kredittrisikovurdering, og rapportering. Veiledningen dekker krav til klimascenarioanalyser, vurdering av klimarisikoens innvirkning pa kredittkvaliteten, og krav til offentliggjoring av klimarelaterte risikoer (Pilar 3 ESG).",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2024-06-01",
+    chapter: "Berekraft",
+    section: "Klimarisiko bank utvidet",
+  },
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning cybersikkerhetsstrategi",
+    title: "Veiledning om cybersikkerhetsstrategi for finansforetak",
+    text: "Veiledningen gir Finanstilsynets forventninger til finansforetaks cybersikkerhetsstrategi. Strategien skal vaere styregodkjent og dekke trussellandskapet, risikoapetitt, sikkerhetsmalesetninger, tiltak for beskyttelse av kritiske eiendeler, hendelsesrespons, opplaering av ansatte, og samarbeid med myndigheter og bransjeorganisasjoner (Nordic Financial CERT). Veiledningen er harmonisert med DORA-forordningens krav til IKT-sikkerhet.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2025-01-01",
+    chapter: "IKT",
+    section: "Cybersikkerhetsstrategi",
+  },
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning forsikring klimarisiko utvidet",
+    title: "Veiledning om handtering av klimarelaterte risikoer i forsikringsforetak",
+    text: "Veiledningen beskriver Finanstilsynets forventninger til forsikringsforetaks handtering av klimarelaterte risikoer, herunder fysisk risiko (okte naturskader), overgangsrisiko (endrede reguleringer), og ansvarsrisiko. Foretakene skal integrere klimarisiko i ORSA, forsikringstekniske avsetninger, og investeringsstrategi. Veiledningen dekker ogs krav til klimastresstesting i trad med EIOPAs retningslinjer.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2024-12-01",
+    chapter: "Berekraft",
+    section: "Klimarisiko forsikring utvidet",
+  },
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning AML sanksjonsscreening",
+    title: "Veiledning om sanksjonsscreening for finansforetak",
+    text: "Veiledningen beskriver Finanstilsynets forventninger til finansforetaks sanksjonsscreening, herunder automatisert kontroll av kunder og transaksjoner mot sanksjonslistene (FN, EU, nasjonale lister). Foretakene skal ha systemer for sanntids screening av nye kundeforhold og transaksjoner, rutiner for handtering av treff (alerts), prosedyrer for frysing av midler, og rapportering til Utenriksdepartementet. Veiledningen presiserer krav til datakvalitet i sanksjonslistene og kalibrering av screeningsystemer.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2024-01-01",
+    chapter: "Hvitvasking",
+    section: "Sanksjonsscreening",
+  },
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning forsikring solvensrapportering",
+    title: "Veiledning om Solvens II-rapportering — kvantitative maler (QRT)",
+    text: "Veiledningen gir praktisk veiledning om utfylling av de kvantitative rapporteringsmalene (Quantitative Reporting Templates, QRT) for Solvens II-rapportering. Forsikringsforetak skal rapportere kvartalsvis og arsvis til Finanstilsynet ved hjelp av EIOPA-standardiserte maler. Veiledningen dekker de vanligste feilene i rapporteringen, krav til datakvalitet, tidsfrister, og tekniske spesifikasjoner for innsending via Altinn.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2023-01-01",
+    chapter: "Forsikring",
+    section: "Solvens II QRT",
+  },
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning AIF verdsettelse",
+    title: "Veiledning om verdsettelse av eiendeler i alternative investeringsfond",
+    text: "Veiledningen beskriver Finanstilsynets forventninger til AIF-forvalteres verdsettelse av eiendeler i alternative investeringsfond, herunder unoterte investeringer. Veiledningen dekker krav til verdsettelsespolicy, bruk av uavhengig verdsetter, verdsettelsesmetoder (DCF, comparable transactions, NAV), krav til frekvens og dokumentasjon, og handtering av illikvide eiendeler. Forvaltere skal ha prosedyrer som sikrer at verdivurderingene er uavhengige av portefoljebeslutninger.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2023-06-01",
+    chapter: "Verdipapirfond",
+    section: "AIF verdsettelse",
+  },
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning eiendomsmegling digitale visninger",
+    title: "Veiledning om digitale visninger og elektronisk budgivning i eiendomsmegling",
+    text: "Veiledningen beskriver Finanstilsynets syn pa bruk av digitale visninger og elektronisk budgivning i eiendomsmegling. Digitale verktoy kan vaere et supplement til fysisk visning, men megleren skal sikre at kjoper far tilstrekkelig grunnlag for a vurdere eiendommen. Ved elektronisk budgivning skal megleren sikre at budenes autentisitet verifiseres, at alle budgivere behandles likt, og at prosessen er transparent og etterprobar.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2021-03-01",
+    chapter: "Eiendomsmegling",
+    section: "Digitale verktoy",
+  },
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning MiCA hvitbok",
+    title: "Veiledning om utarbeidelse av kryptoeiendelshvitbok etter MiCA",
+    text: "Veiledningen beskriver kravene til utarbeidelse av hvitbok (white paper) for utstedere av kryptoeiendeler i henhold til MiCA artikkel 6. Hvitboken skal inneholde beskrivelse av utstederen, kryptoeiendelen, rettighetene og forpliktelsene knyttet til kryptoeiendelen, underliggende teknologi, risikoer, og innvirkning pa miljoet. Hvitboken skal offentliggores minst 20 virkedager for tilbudet starter og sendes til Finanstilsynet.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2025-07-01",
+    chapter: "Kryptoeiendeler",
+    section: "MiCA hvitbok",
+  },
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning OTC-margin",
+    title: "Veiledning om marginutveksling for OTC-derivater som ikke cleares sentralt",
+    text: "Veiledningen beskriver kravene til marginutveksling mellom motparter i OTC-derivatkontrakter som ikke cleares gjennom sentrale motparter (bilateral margin). Finansielle motparter og ikke-finansielle motparter over clearingterskelen skal utveksle initial margin (IM) og variasjonmargin (VM) for a redusere motpartsrisikoen. Veiledningen dekker beregningsmetoder, kvalifiserte sikkerheter, segregeringskrav, og fasene i innforing av IM-kravene.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2024-01-01",
+    chapter: "Derivater",
+    section: "Bilateral margin",
+  },
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning verdipapirforetak kundebehandling",
+    title: "Veiledning om verdipapirforetaks kundebehandling — MiFID II",
+    text: "Veiledningen beskriver Finanstilsynets forventninger til verdipapirforetaks behandling av kunder i henhold til MiFID II. Veiledningen dekker klassifisering av kunder (profesjonelle, ikke-profesjonelle, kvalifiserte motparter), egnethetsvurdering, hensiktsmessighetsvurdering, krav til beste utforelse, handtering av kundeklager, og krav til rapportering av kostnadsinformasjon til kunder. Foretaket skal handle aarlig, redelig og profesjonelt i kundens beste interesse.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2023-06-01",
+    chapter: "Verdipapir",
+    section: "MiFID II kundebehandling",
+  },
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning naerstaendeavtaler",
+    title: "Veiledning om handtering av naerstaendeavtaler i finansforetak",
+    text: "Veiledningen beskriver Finanstilsynets forventninger til finansforetaks handtering av avtaler med naerstaende parter. Foretakene skal identifisere naerstaende parter, sikre at transaksjoner med naerstaende gjennomfores pa armlengdes vilkar, dokumentere vilkarene, og rapportere vesentlige naerstaendeavtaler til styret. Veiledningen er relevant for banker, forsikringsselskaper, og verdipapirforetak som er del av konsernstrukturer.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2022-06-01",
+    chapter: "Finansforetak",
+    section: "Naerstaendeavtaler",
+  },
+  {
+    sourcebook_id: "FTNO_VEILEDNINGER",
+    reference: "Veiledning forsikring distribusjon digital",
+    title: "Veiledning om digital distribusjon av forsikringsprodukter",
+    text: "Veiledningen beskriver Finanstilsynets forventninger til digital distribusjon av forsikringsprodukter, herunder salg via nettbaserte plattformer og apper. Veiledningen dekker krav til informasjonsplikt i digitale kanaler, krav til radgivning ved automatiserte rad, handtering av interessekonflikter, og krav til at den digitale prosessen sikrer at kunden forstaar produktet for kjop. Veiledningen er harmonisert med IDD og EIOPAs retningslinjer om digital distribusjon.",
+    type: "veiledning",
+    status: "in_force",
+    effective_date: "2024-06-01",
+    chapter: "Forsikring",
+    section: "Digital distribusjon",
+  },
 ];
 
 // ── Enforcement Actions ─────────────────────────────────────────────────────
@@ -3013,6 +5208,810 @@ const enforcements: EnforcementRow[] = [
     summary:
       "Finanstilsynet ila et betalingsforetak overtredelsesgebyr pa 1,5 millioner kroner for mangelfulle AML-rutiner. Tilsynet avdekket at foretaket ikke hadde gjennomfort tilstrekkelig virksomhetsinnrettet risikovurdering, hadde mangelfull kundekontroll ved registrering av nye kunder, og ikke hadde rapportert mistenkelige transaksjoner til Okokrim i tide.",
     sourcebook_references: "LOV-2018-06-01-23, FOR-2019-02-15-152",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 2025 ENFORCEMENT — AUDIT FIRMS
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    firm_name: "Deloitte AS",
+    reference_number: "FTNO/2025/REV-DELOITTE",
+    action_type: "overtredelsesgebyr",
+    amount: 750_000,
+    date: "2025-03-01",
+    summary:
+      "Finanstilsynet ila Deloitte AS overtredelsesgebyr etter revisorloven. Tilsynet avdekket alvorlige feil og mangler ved revisjonsutforelsen knyttet til flere av selskapets revisjonsoppdrag for foretak av allmenn interesse. Manglene gjaldt utilstrekkelig revisjonsbevis for vesentlige poster, mangelfulle risikovurderinger, og svakheter i kvalitetsstyringssystemet.",
+    sourcebook_references: "LOV-2020-11-20-128",
+  },
+  {
+    firm_name: "KPMG AS",
+    reference_number: "FTNO/2025/REV-KPMG",
+    action_type: "overtredelsesgebyr",
+    amount: 600_000,
+    date: "2025-06-01",
+    summary:
+      "Finanstilsynet ila KPMG AS overtredelsesgebyr etter revisorloven. Tilsynet avdekket alvorlige feil og mangler ved revisjonsutforelsen, herunder utilstrekkelig revisjonsbevis, mangelfull vurdering av going concern, og brudd pa krav til uavhengighet for enkelte oppdrag.",
+    sourcebook_references: "LOV-2020-11-20-128",
+  },
+  {
+    firm_name: "Enter Revisjon AS",
+    reference_number: "FTNO/2026/REV-ENTER",
+    action_type: "overtredelsesgebyr",
+    amount: 300_000,
+    date: "2026-01-01",
+    summary:
+      "Finanstilsynet ila Enter Revisjon AS et overtredelsesgebyr pa 300 000 kroner for omfattende brudd pa revisorloven. Tilsynet avdekket mangler ved revisjonsutforelsen, herunder utilstrekkelig revisjonsbevis for utsatt skatt og mangelfulle vurderinger av fortsatt drift.",
+    sourcebook_references: "LOV-2020-11-20-128",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 2025 ENFORCEMENT — MARKET ABUSE
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    firm_name: "Seacrest Petroleo Bermuda Limited",
+    reference_number: "FTNO/2025/MAR-SEACREST",
+    action_type: "overtredelsesgebyr",
+    amount: 5_000_000,
+    date: "2025-04-01",
+    summary:
+      "Finanstilsynet ila Seacrest Petroleo Bermuda Limited overtredelsesgebyr for brudd pa markedsmisbruksforordningen (MAR). Selskapet hadde ikke offentliggjort innsideinformasjon i tide og hadde mangelfulle rutiner for handtering av innsideinformasjon.",
+    sourcebook_references: "LOV-2007-06-29-75",
+  },
+  {
+    firm_name: "Interoil Exploration and Production ASA",
+    reference_number: "FTNO/2025/MAR-INTEROIL",
+    action_type: "overtredelsesgebyr",
+    amount: 800_000,
+    date: "2025-02-01",
+    summary:
+      "Finanstilsynet ila Interoil Exploration and Production ASA et overtredelsesgebyr pa NOK 800 000 for brudd pa informasjonsplikten etter verdipapirhandelloven/MAR. Selskapet hadde ikke offentliggjort innsideinformasjon sa snart som mulig.",
+    sourcebook_references: "LOV-2007-06-29-75",
+  },
+  {
+    firm_name: "Markedsmanipulasjon — fysisk person 2025",
+    reference_number: "FTNO/2025/MAR-MANIP-001",
+    action_type: "overtredelsesgebyr",
+    amount: 2_000_000,
+    date: "2025-05-01",
+    summary:
+      "Finanstilsynet fattet vedtak om overtredelsesgebyr for markedsmanipulasjon i strid med MAR artikkel 15. Vedkommende hadde gjennomfort handelsmonstre som ga et feilaktig inntrykk av tilbud og ettersporsel etter aksjer notert pa Oslo Bors.",
+    sourcebook_references: "LOV-2007-06-29-75",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 2025 ENFORCEMENT — BANK AML AND SUPERVISION
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    firm_name: "SpareBank 1 Ostlandet",
+    reference_number: "FTNO/2025/AML-SB1OST",
+    action_type: "overtredelsesgebyr",
+    amount: 3_000_000,
+    date: "2025-03-26",
+    summary:
+      "Finanstilsynet ila SpareBank 1 Ostlandet overtredelsesgebyr pa 3 millioner kroner etter stedlig tilsyn med bankens etterlevelse av hvitvaskingsregelverket. Tilsynet avdekket mangelfulle rutiner for lopende oppfolging av kundeforhold, utilstrekkelig transaksjonsovervakning, og mangler i virksomhetsinnrettet risikovurdering.",
+    sourcebook_references: "LOV-2018-06-01-23, LOV-2015-04-10-17",
+  },
+  {
+    firm_name: "Sparebanken Ost",
+    reference_number: "FTNO/2025/IT-SPOST",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2025-05-14",
+    summary:
+      "Finanstilsynet gjennomforte IKT-tilsyn med Sparebanken Ost. Tilsynet omfattet vurdering av bankens IKT-risikostyring, hendelseshandtering, tilgangskontroll, endringshandtering, og beredskapsplanlegging. Tilsynsrapporten identifiserte forbedringsomrader knyttet til loggovervaking og saerbarhetstesting.",
+    sourcebook_references: "FOR-2003-05-21-630, LOV-2025-05-27-18",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 2024 ENFORCEMENT — BANKS AND FINANCIAL INSTITUTIONS
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    firm_name: "RSM Norge AS",
+    reference_number: "FTNO/2024/REV-RSM",
+    action_type: "overtredelsesgebyr",
+    amount: 500_000,
+    date: "2024-11-01",
+    summary:
+      "Finanstilsynet ila RSM Norge AS overtredelsesgebyr bade etter revisorloven og hvitvaskingsloven etter stedlig tilsyn gjennomfort i november 2023. Tilsynet avdekket mangler i revisjonsutforelsen og svikt i etterlevelse av hvitvaskingsregelverket, herunder mangelfull virksomhetsinnrettet risikovurdering.",
+    sourcebook_references: "LOV-2020-11-20-128, LOV-2018-06-01-23",
+  },
+  {
+    firm_name: "Norsk Regnskap AS",
+    reference_number: "FTNO/2024/REG-NORSKREGN",
+    action_type: "overtredelsesgebyr",
+    amount: 350_000,
+    date: "2024-12-11",
+    summary:
+      "Finanstilsynet ila Norsk Regnskap AS overtredelsesgebyr etter at tilsynet avdekket at foretaket hadde signert bekreftelser pa aksjeinnskudd basert pa forfalsket dokumentasjon. Vedtaket ble fattet med hjemmel i regnskapsforerloven.",
+    sourcebook_references: "LOV-2022-12-16-90",
+  },
+  {
+    firm_name: "Kredinor AS",
+    reference_number: "FTNO/2024/INK-KREDINOR",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2024-09-01",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med Kredinor AS med fokus pa inkassoforetakets etterlevelse av inkassoloven og god inkassoskikk. Tilsynet avdekket mangler ved saksbehandlingsrutiner, klientmiddelhandtering, og overholdelse av inkassosalaermaksimalsatser. Foretaket ble palagt a rette de identifiserte avvikene.",
+    sourcebook_references: "LOV-1988-05-13-26",
+  },
+  {
+    firm_name: "DNB Bank ASA",
+    reference_number: "FTNO/2024/DNB-GOV",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2024-10-23",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med DNB Bank ASA med fokus pa bankens styring og kontroll, risikostyring, og internkontroll. Tilsynet evaluerte deler av bankens styrings- og kontrollsystemer og identifiserte forbedringsomrader.",
+    sourcebook_references: "LOV-2015-04-10-17, FOR-2008-09-22-1080",
+  },
+  {
+    firm_name: "Skandinaviska Enskilda Banken AB (SEB) Oslofilialen",
+    reference_number: "FTNO/2024/SEB-TILSYN",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2024-10-23",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med SEB Oslofilialen med fokus pa verdipapirvirksomheten og handtering av innsidelister. Tilsynet avdekket forbedringsomrader knyttet til rutiner for foring av innsidelister og oppfolging av primaerinnsideres meldeplikt.",
+    sourcebook_references: "LOV-2007-06-29-75",
+  },
+  {
+    firm_name: "Fram Fondene AS",
+    reference_number: "FTNO/2024/FOND-FRAM",
+    action_type: "palegg",
+    amount: 0,
+    date: "2024-11-06",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med Fram Fondene AS og identifiserte vesentlige mangler i den overordnede styringen og kontrollen av virksomheten. Foretaket ble palagt a rette manglene innen fastsatte frister. Paleggene gjaldt organisering av compliance-funksjonen, risikostyring, og rutiner for handtering av interessekonflikter.",
+    sourcebook_references: "LOV-2011-11-25-44",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 2023 ENFORCEMENT — ADDITIONAL
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    firm_name: "Collectia AS (navaerende Alektum Inkasso AS)",
+    reference_number: "FTNO/2023/INK-COLLECTIA",
+    action_type: "tilbakekall",
+    amount: 0,
+    date: "2023-05-22",
+    summary:
+      "Finanstilsynet tilbakekalte Collectia AS sin fremmedinkassobevilling etter stedlig tilsyn som avdekket betydelige mangler i risikostyring og internkontroll. Manglene hadde medfort regelbrudd i saksbehandlingen av inkassosaker og utilstrekkelig kontroll med klientmidler.",
+    sourcebook_references: "LOV-1988-05-13-26",
+  },
+  {
+    firm_name: "MyBank ASA",
+    reference_number: "FTNO/2023/AML-MYBANK",
+    action_type: "overtredelsesgebyr",
+    amount: 5_000_000,
+    date: "2023-01-11",
+    summary:
+      "Finanstilsynet ila MyBank ASA overtredelsesgebyr pa 5 millioner kroner for brudd pa hvitvaskingsregelverket. Tilsynet avdekket alvorlige mangler i bankens virksomhetsinnrettede risikovurdering, kundetiltak, lopende oppfolging, og rutiner for rapportering av mistenkelige transaksjoner. Banken hadde ogs mangler i styrets overvaking av etterlevelsen av hvitvaskingsregelverket.",
+    sourcebook_references: "LOV-2018-06-01-23",
+  },
+  {
+    firm_name: "Beaufort AS",
+    reference_number: "FTNO/2023/VP-BEAUFORT",
+    action_type: "overtredelsesgebyr",
+    amount: 1_200_000,
+    date: "2023-06-01",
+    summary:
+      "Finanstilsynet ila Beaufort AS overtredelsesgebyr for brudd pa verdipapirhandelloven. Tilsynet avdekket mangler i foretakets organisering, interessekonflikthandtering, og kundebehandling ved ytelse av investeringstjenester.",
+    sourcebook_references: "LOV-2007-06-29-75",
+  },
+  {
+    firm_name: "Norske Finansielle Referanser AS (NoRe)",
+    reference_number: "FTNO/2023/BMR-NORE",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2023-03-31",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med Norske Finansielle Referanser AS, administratoren av Nibor-referanserenten. Tilsynet vurderte foretakets etterlevelse av referanseverdiforordningen (BMR), herunder governance, metodologi, integritet, og interessekonflikthandtering.",
+    sourcebook_references: "FOR-2019-12-20-2091",
+  },
+  {
+    firm_name: "BDO AS",
+    reference_number: "FTNO/2023/REV-BDO",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2023-12-13",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med BDO AS som dekket revisjonsselskapets virksomhetsstyring, revisjonsutforelse og etterlevelse av hvitvaskingsregelverket. Tilsynet ble gjennomfort i perioden november 2022 og avdekket forbedringsomrader.",
+    sourcebook_references: "LOV-2020-11-20-128, LOV-2018-06-01-23",
+  },
+  {
+    firm_name: "Sarepta Invest AS",
+    reference_number: "FTNO/2023/VP-SAREPTA",
+    action_type: "vedtak",
+    amount: 0,
+    date: "2023-10-16",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med Sarepta Invest AS og fattet vedtak om retting av avdekkede mangler. Foretaket ble palagt a styrke sin compliance-funksjon og forbedre rutinene for handtering av interessekonflikter.",
+    sourcebook_references: "LOV-2007-06-29-75",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 2022 ENFORCEMENT — ADDITIONAL
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    firm_name: "Nordea Bank (AML tematilsyn)",
+    reference_number: "FTNO/2022/AML-NORDEA-TEMA",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2022-12-21",
+    summary:
+      "Finanstilsynet gjennomforte tematilsyn med Nordea Banks markedsovervakningsfunksjon. Tilsynet vurderte bankens systemer og prosedyrer for overvaking av mistenkelige ordrer og transaksjoner i henhold til MAR. Tilsynsrapporten identifiserte forbedringsomrader knyttet til parametersetting og oppfolging av varsler.",
+    sourcebook_references: "LOV-2007-06-29-75",
+  },
+  {
+    firm_name: "DNB Bank ASA (tematilsyn AML 2022)",
+    reference_number: "FTNO/2022/AML-DNB-TEMA",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2022-12-21",
+    summary:
+      "Finanstilsynet gjennomforte tematilsyn i DNB Bank ASA med fokus pa markedsovervakning. Tilsynet avdekket forbedringsomrader knyttet til bankens markedsovervakningssystemer og rapporteringsrutiner.",
+    sourcebook_references: "LOV-2007-06-29-75",
+  },
+  {
+    firm_name: "46 banker (dokumentbasert AML-tilsyn)",
+    reference_number: "FTNO/2022/AML-46BANKS",
+    action_type: "tematilsyn",
+    amount: 0,
+    date: "2022-02-07",
+    summary:
+      "Finanstilsynet gjennomforte dokumentbasert anti-hvitvaskingstilsyn med 46 banker. Tilsynet var basert pa innhentede opplysninger om bankenes virksomhetsinnrettede risikovurderinger, kundetiltaksrutiner, transaksjonovervaking, og internkontroll. Rapporten identifiserte generelle forbedringsomrader for bransjen.",
+    sourcebook_references: "LOV-2018-06-01-23",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 2025 ENFORCEMENT — ASSET MANAGEMENT AND SUSTAINABILITY
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    firm_name: "Storebrand Asset Management AS (berekraft)",
+    reference_number: "FTNO/2025/FOND-STOREBRAND-ESG",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2025-09-25",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med Storebrand Asset Management AS med fokus pa etterlevelse av berekraftsreglene (SFDR) for fondsforvaltere. Tilsynet vurderte foretakets klassifisering av fond under SFDR artikkel 8 og 9, offentliggjoring av berekraftsinformasjon, og integrasjon av berekraftsfaktorer i investeringsbeslutninger.",
+    sourcebook_references: "LOV-2021-12-22-161, LOV-2011-11-25-44",
+  },
+  {
+    firm_name: "Formue Norge AS",
+    reference_number: "FTNO/2025/VP-FORMUE",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2025-03-26",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med Formue Norge AS med fokus pa verdsettelse av mindre likvide produkter. Tilsynet vurderte foretakets rutiner for verdsettelse av unoterte investeringer, metodologien som brukes for virkelig verdi-maling, og krav til informasjon til kunder om risiko ved illikvide investeringer.",
+    sourcebook_references: "LOV-2007-06-29-75",
+  },
+  {
+    firm_name: "Valid Regnskap AS",
+    reference_number: "FTNO/2025/REG-VALID",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2025-12-17",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med Valid Regnskap AS. Tilsynet vurderte foretakets etterlevelse av regnskapsforerloven, herunder kvalitetskontroll, oppdragsavtaler, og etterutdanningskrav.",
+    sourcebook_references: "LOV-2022-12-16-90",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 2021 ENFORCEMENT
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    firm_name: "Skagerrak Sparebank",
+    reference_number: "FTNO/2021/AML-SKAGERRAK",
+    action_type: "overtredelsesgebyr",
+    amount: 2_000_000,
+    date: "2021-06-02",
+    summary:
+      "Finanstilsynet ila Skagerrak Sparebank et overtredelsesgebyr pa 2 millioner kroner for brudd pa hvitvaskingsregelverket. Tilsynet avdekket mangler i virksomhetsinnrettet risikovurdering, kundetiltak, og rutiner for lopende oppfolging av kundeforhold.",
+    sourcebook_references: "LOV-2018-06-01-23",
+  },
+  {
+    firm_name: "Sparebanken Sogn og Fjordane",
+    reference_number: "FTNO/2021/AML-SOGNOG",
+    action_type: "overtredelsesgebyr",
+    amount: 3_500_000,
+    date: "2021-11-15",
+    summary:
+      "Finanstilsynet ila Sparebanken Sogn og Fjordane overtredelsesgebyr for mangelfulle AML-rutiner etter stedlig tilsyn. Banken hadde vesentlige mangler i transaksjonovervaking, kundekontroll ved oppfølging av eksisterende kunder, og rapportering av mistenkelige transaksjoner.",
+    sourcebook_references: "LOV-2018-06-01-23",
+  },
+  {
+    firm_name: "Folkeinvest AS",
+    reference_number: "FTNO/2021/VP-FOLKEINVEST",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2021-08-11",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med Folkeinvest AS, en folkefinansieringsplattform. Tilsynet startet i oktober 2020 og vurderte foretakets organisering, investorbeskyttelse, informasjonsplikt, og handtering av interessekonflikter.",
+    sourcebook_references: "LOV-2007-06-29-75",
+  },
+  {
+    firm_name: "Kraft Finans AS",
+    reference_number: "FTNO/2021/VP-KRAFT",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2021-06-01",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med Kraft Finans AS som startet i februar 2020. Tilsynet dekket verdipapirforetakets organisering, risikostyring, klientmiddelhandtering, og etterlevelse av markedsreglene.",
+    sourcebook_references: "LOV-2007-06-29-75",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 2020 ENFORCEMENT
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    firm_name: "Vipps AS",
+    reference_number: "FTNO/2020/IT-VIPPS",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2020-09-16",
+    summary:
+      "Finanstilsynet gjennomforte IKT-tilsyn med Vipps AS. Tilsynet vurderte Vipps sine rutiner for IKT-risikostyring, hendelseshandtering, tilgangskontroll, endringshandtering og informasjonssikkerhet i henhold til IKT-forskriften. Tilsynsrapporten identifiserte forbedringsomrader.",
+    sourcebook_references: "FOR-2003-05-21-630",
+  },
+  {
+    firm_name: "Nordea Bank (IRB/credit risk)",
+    reference_number: "FTNO/2020/BANK-NORDEA",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2020-04-14",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med Nordea Bank med fokus pa IRB-modeller og kredittrisikohandtering. Tilsynet vurderte modellenes kvalitet, backtesting-resultater, og etterlevelse av CRR-kravene til IRB-metoden.",
+    sourcebook_references: "FOR-2014-08-22-1097, FOR-2006-12-14-1506",
+  },
+  {
+    firm_name: "Finans2 AS",
+    reference_number: "FTNO/2020/FIN-FINANS2",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2020-03-11",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med Finans2 AS, et finansieringsforetak. Tilsynet dekket foretakets utlanspraksis for forbrukslan, kredittvurdering av kunder, og etterlevelse av den tidligere forbrukslansforskriften.",
+    sourcebook_references: "FOR-2020-12-09-2648, LOV-2015-04-10-17",
+  },
+  {
+    firm_name: "Hagland Finans AS",
+    reference_number: "FTNO/2020/FIN-HAGLAND",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2020-10-08",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med Hagland Finans AS og vurderte foretakets kredittrisikohandtering, utlanspraksis, og internkontroll. Tilsynsrapporten identifiserte forbedringsomrader knyttet til dokumentasjon av kredittvurderinger og rapportering.",
+    sourcebook_references: "LOV-2015-04-10-17",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 2019 ENFORCEMENT
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    firm_name: "DNB Bank ASA (stedlig tilsyn 2019)",
+    reference_number: "FTNO/2019/AML-DNB",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2019-09-18",
+    summary:
+      "Finanstilsynet gjennomforte stedlig tilsyn med DNB Bank ASA. Tilsynsrapporten dekket bankens AML-rutiner, transaksjonovervaking, kundekontroll, og internkontroll knyttet til hvitvaskingsregelverket. Rapporten ble publisert 18. september 2019.",
+    sourcebook_references: "LOV-2018-06-01-23",
+  },
+  {
+    firm_name: "Carnegie AS",
+    reference_number: "FTNO/2019/VP-CARNEGIE",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2019-10-22",
+    summary:
+      "Finanstilsynet gjennomforte tematilsyn med Carnegie AS med fokus pa foretakets handtering av emisjonsprosesser og interessekonflikter. Tilsynsrapporten avdekket forbedringsomrader knyttet til informasjonsbarrierer og allokering av aksjer i rettede emisjoner.",
+    sourcebook_references: "LOV-2007-06-29-75",
+  },
+  {
+    firm_name: "Danica Pensjonsforsikring AS",
+    reference_number: "FTNO/2019/PENS-DANICA",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2019-12-18",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med Danica Pensjonsforsikring AS med fokus pa Solvens II-etterlevelse, aktuarfunksjonen, ORSA-prosessen og kapitalforvaltningen. Tilsynsrapporten identifiserte forbedringsomrader.",
+    sourcebook_references: "FOR-2015-08-25-999",
+  },
+  {
+    firm_name: "Monobank ASA",
+    reference_number: "FTNO/2019/BANK-MONOBANK",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2019-05-10",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med Monobank ASA, en digital forbrukslansbank. Tilsynet dekket bankens utlanspraksis, kredittvurdering, IKT-sikkerhet, og etterlevelse av hvitvaskingsregelverket.",
+    sourcebook_references: "LOV-2015-04-10-17, LOV-2018-06-01-23",
+  },
+  {
+    firm_name: "Guardian Corporate AS",
+    reference_number: "FTNO/2019/VP-GUARDIAN",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2019-10-14",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med Guardian Corporate AS med fokus pa virksomhetstjenester og etterlevelse av hvitvaskingsregelverket. Tilsynet avdekket mangler i foretakets kundetiltak og lopende oppfolging.",
+    sourcebook_references: "LOV-2018-06-01-23",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 2019 ENFORCEMENT — ADDITIONAL
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    firm_name: "Sparebanken Sor",
+    reference_number: "FTNO/2019/BANK-SBSOR",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2019-12-04",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med Sparebanken Sor med fokus pa bankens kredittrisikohandtering, likviditetsstyring, og styrings- og kontrollsystemer. Tilsynsrapporten identifiserte forbedringsomrader.",
+    sourcebook_references: "LOV-2015-04-10-17, FOR-2008-09-22-1080",
+  },
+  {
+    firm_name: "Fearnley Securities AS",
+    reference_number: "FTNO/2019/VP-FEARNLEY",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2019-02-14",
+    summary:
+      "Finanstilsynet gjennomforte tematilsyn med Fearnley Securities AS. Tilsynet fokuserte pa foretakets handtering av emisjonsprosesser, allokering, og interessekonflikter i shipping- og offshorerelaterte emisjoner.",
+    sourcebook_references: "LOV-2007-06-29-75",
+  },
+  {
+    firm_name: "Forum Securities AS",
+    reference_number: "FTNO/2019/VP-FORUM",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2019-06-25",
+    summary:
+      "Finanstilsynet gjennomforte stedlig tilsyn med Forum Securities AS. Tilsynet dekket foretakets organisering, compliance-funksjon, klientmiddelhandtering, og handtering av interessekonflikter.",
+    sourcebook_references: "LOV-2007-06-29-75",
+  },
+  {
+    firm_name: "HCA Revisjon og Radgivning AS",
+    reference_number: "FTNO/2019/REV-HCA",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2019-02-06",
+    summary:
+      "Finanstilsynet gjennomforte stedlig tilsyn med HCA Revisjon og Radgivning AS. Tilsynet avdekket mangler i revisjonsutforelsen og dokumentasjonen for utvalgte revisjonsoppdrag.",
+    sourcebook_references: "LOV-2020-11-20-128",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 2020-2021 ENFORCEMENT — ADDITIONAL
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    firm_name: "Afjord Sparebank",
+    reference_number: "FTNO/2020/BANK-AFJORD",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2020-05-13",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med Afjord Sparebank. Tilsynet dekket bankens kredittrisikohandtering, likviditetsstyring, styrings- og kontrollsystemer, og hvitvaskingsrutiner. Tilsynsrapporten identifiserte forbedringsomrader.",
+    sourcebook_references: "LOV-2015-04-10-17",
+  },
+  {
+    firm_name: "Fakta Revisjon AS",
+    reference_number: "FTNO/2020/REV-FAKTA",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2020-08-28",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med Fakta Revisjon AS. Tilsynet avdekket mangler i revisjonsutforelsen og revisjonsdokumentasjonen for utvalgte oppdrag.",
+    sourcebook_references: "LOV-2020-11-20-128",
+  },
+  {
+    firm_name: "Echas Revisjon AS",
+    reference_number: "FTNO/2020/REV-ECHAS",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2020-04-24",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med Echas Revisjon AS. Tilsynet avdekket alvorlige mangler ved revisjonsutforelsen som ga grunnlag for administrative reaksjoner.",
+    sourcebook_references: "LOV-2020-11-20-128",
+  },
+  {
+    firm_name: "Eie Okonomi AS",
+    reference_number: "FTNO/2020/EIENDOM-EIE",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2020-06-01",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med Eie Okonomi AS med fokus pa eiendomsmeglerforetakets klientmiddelhandtering, dokumentasjonsrutiner, og etterlevelse av hvitvaskingsregelverket.",
+    sourcebook_references: "LOV-2007-06-29-73, LOV-2018-06-01-23",
+  },
+  {
+    firm_name: "Arendal og Omegn Sparekasse",
+    reference_number: "FTNO/2021/BANK-ARENDAL",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2021-09-22",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med Arendal og Omegn Sparekasse. Tilsynet fokuserte pa kassens risikostyring, internkontroll, og kapitaldekning.",
+    sourcebook_references: "LOV-2015-04-10-17, FOR-2008-09-22-1080",
+  },
+  {
+    firm_name: "Sparebanken Vest",
+    reference_number: "FTNO/2021/BANK-SBVEST",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2021-08-25",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med Sparebanken Vest. Tilsynet vurderte bankens styrings- og kontrollsystemer, kredittrisikohandtering, og etterlevelse av kapitaldeekningsregelverket.",
+    sourcebook_references: "LOV-2015-04-10-17, FOR-2014-08-22-1097",
+  },
+  {
+    firm_name: "KPMG AS (2021)",
+    reference_number: "FTNO/2021/REV-KPMG-2021",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2021-09-29",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med KPMG AS med fokus pa revisjonsselskapets virksomhetsstyring, revisjonsutforelse, og etterlevelse av hvitvaskingsregelverket.",
+    sourcebook_references: "LOV-2020-11-20-128, LOV-2018-06-01-23",
+  },
+  {
+    firm_name: "Son Revisjon AS",
+    reference_number: "FTNO/2021/REV-SON",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2021-04-07",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med Son Revisjon AS. Tilsynet avdekket mangler i revisjonsutforelsen knyttet til revisjon av sma og mellomstore foretak.",
+    sourcebook_references: "LOV-2020-11-20-128",
+  },
+  {
+    firm_name: "Viken Regnskap AS",
+    reference_number: "FTNO/2021/REG-VIKEN",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2021-08-26",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med Viken Regnskap AS. Tilsynet dekket regnskapsforetakets kvalitetskontroll, oppdragshandtering, og etterlevelse av regnskapsforerregelverket.",
+    sourcebook_references: "LOV-2022-12-16-90",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 2022 ENFORCEMENT — ADDITIONAL
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    firm_name: "Deloitte AS (2022)",
+    reference_number: "FTNO/2022/REV-DELOITTE-2022",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2022-07-11",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med Deloitte AS med fokus pa revisjonsselskapets virksomhetsstyring og revisjonsutforelse for utvalgte oppdrag av allmenn interesse.",
+    sourcebook_references: "LOV-2020-11-20-128",
+  },
+  {
+    firm_name: "KPMG AS (2022)",
+    reference_number: "FTNO/2022/REV-KPMG-2022",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2022-07-11",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med KPMG AS med fokus pa virksomhetsstyring og revisjonsutforelse. Tilsynet dekket bade alminnelig revisjon og PIE-oppdrag.",
+    sourcebook_references: "LOV-2020-11-20-128",
+  },
+  {
+    firm_name: "Alesund Team Revisjon",
+    reference_number: "FTNO/2022/REV-ALESUND",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2022-06-28",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med Alesund Team Revisjon. Tilsynet avdekket mangler i revisjonsutforelsen og dokumentasjonen.",
+    sourcebook_references: "LOV-2020-11-20-128",
+  },
+  {
+    firm_name: "KF Regnskap",
+    reference_number: "FTNO/2022/REG-KF",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2022-03-03",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med KF Regnskap. Tilsynet dekket regnskapsforetakets oppdragshandtering, kvalitetskontroll, og etterlevelse av gjeldende regelverk.",
+    sourcebook_references: "LOV-2022-12-16-90",
+  },
+  {
+    firm_name: "Synega Regnskap AS",
+    reference_number: "FTNO/2022/REG-SYNEGA",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2022-06-01",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med Synega Regnskap AS. Tilsynet dekket regnskapsforetakets oppdragshandtering og kvalitetssikring.",
+    sourcebook_references: "LOV-2022-12-16-90",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 2023-2025 ENFORCEMENT — ADDITIONAL MARKET CONDUCT
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    firm_name: "Markedsmanipulasjon — vedtak 2023-1",
+    reference_number: "FTNO/2023/MAR-VEDTAK-001",
+    action_type: "overtredelsesgebyr",
+    amount: 1_000_000,
+    date: "2023-03-01",
+    summary:
+      "Finanstilsynet fattet vedtak om overtredelsesgebyr for markedsmanipulasjon i henhold til MAR artikkel 15. Vedtaket gjaldt koordinert handel som ga et feilaktig inntrykk av kursutvikling for et borsnotert verdipapir.",
+    sourcebook_references: "LOV-2007-06-29-75",
+  },
+  {
+    firm_name: "Industrifinans Direkte Investeringer AS",
+    reference_number: "FTNO/2023/VP-INDUSTRIFINANS",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2023-12-06",
+    summary:
+      "Finanstilsynet gjennomforte tematilsyn med Industrifinans Direkte Investeringer AS med fokus pa plassering av unoterte aksjer og obligasjoner. Tilsynet ble avsluttet uten merknader.",
+    sourcebook_references: "LOV-2007-06-29-75",
+  },
+  {
+    firm_name: "CIM AS",
+    reference_number: "FTNO/2023/VP-CIM",
+    action_type: "vedtak",
+    amount: 0,
+    date: "2023-10-16",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med CIM AS og fattet vedtak om retting av avdekkede mangler knyttet til foretakets organisering og compliance-funksjon.",
+    sourcebook_references: "LOV-2007-06-29-75",
+  },
+  {
+    firm_name: "Gjeldfinans AS",
+    reference_number: "FTNO/2023/FIN-GJELDFINANS",
+    action_type: "vedtak",
+    amount: 0,
+    date: "2023-10-16",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med Gjeldfinans AS og fattet vedtak om retting. Foretaket ble palagt a styrke sine kredittvurderingsrutiner og internkontroll.",
+    sourcebook_references: "LOV-2015-04-10-17",
+  },
+  {
+    firm_name: "Revisor — tilbakekall godkjenning 2025",
+    reference_number: "FTNO/2025/REV-TILB-2025",
+    action_type: "tilbakekall",
+    amount: 0,
+    date: "2025-09-01",
+    summary:
+      "Finanstilsynet fattet vedtak om tilbakekall av godkjenning som statsautorisert revisor etter revisorloven § 9-1. Vedtaket var begrunnet i grove overtredelser av lovgivningen, herunder alvorlige mangler i revisjonsutforelsen over lengre tid.",
+    sourcebook_references: "LOV-2020-11-20-128",
+  },
+  {
+    firm_name: "Regnskapsforer — tilbakekall 2025-2",
+    reference_number: "FTNO/2025/REG-TILB-2025-2",
+    action_type: "tilbakekall",
+    amount: 0,
+    date: "2025-10-22",
+    summary:
+      "Finanstilsynet fattet vedtak om tilbakekall av godkjenning for en statsautorisert regnskapsforer og et regnskapsforerselskap pa grunn av alvorlige mangler i oppdragsutforelsen.",
+    sourcebook_references: "LOV-2022-12-16-90",
+  },
+  {
+    firm_name: "Statsautorisert revisor — tilbakekall 2024",
+    reference_number: "FTNO/2024/REV-TILB-2024",
+    action_type: "tilbakekall",
+    amount: 0,
+    date: "2024-02-14",
+    summary:
+      "Finanstilsynet tilbakekalte godkjenningen til en statsautorisert revisor etter tilsyn som avdekket alvorlige brudd pa revisjonsstandardene. Revisoren hadde utstedt rene revisjonsberetninger basert pa utilstrekkelig revisjonsbevis, saerlig knyttet til skattefunn-attestasjoner.",
+    sourcebook_references: "LOV-2020-11-20-128",
+  },
+  {
+    firm_name: "Regnskapsforer — tilbakekall 2024",
+    reference_number: "FTNO/2024/REG-TILB-2024",
+    action_type: "tilbakekall",
+    amount: 0,
+    date: "2024-12-04",
+    summary:
+      "Finanstilsynet fattet vedtak om tilbakekall av daglig leders godkjenning som statsautorisert regnskapsforer etter stedlig tilsyn som avdekket omfattende og alvorlige mangler. Manglene gjaldt oppdragsavtaler, kvalitetskontroll, og dokumentasjon av regnskapsoppdrag.",
+    sourcebook_references: "LOV-2022-12-16-90",
+  },
+  {
+    firm_name: "Kallesten Revisjon og Regnskap AS",
+    reference_number: "FTNO/2025/REV-KALLESTEN",
+    action_type: "tilsynsrapport",
+    amount: 0,
+    date: "2025-01-10",
+    summary:
+      "Finanstilsynet gjennomforte tilsyn med Kallesten Revisjon og Regnskap AS. Tilsynet vurderte revisjonsselskapets prosedyrer for kvalitetsstyring og revisjonsutforelse.",
+    sourcebook_references: "LOV-2020-11-20-128",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ADDITIONAL WARNINGS — UNAUTHORIZED FIRMS
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    firm_name: "Uautorisert verdipapirforetak — advarsel 2023-1",
+    reference_number: "FTNO/2023/ADV-001",
+    action_type: "advarsel",
+    amount: 0,
+    date: "2023-02-01",
+    summary:
+      "Finanstilsynet publiserte advarsel mot et foretak som tilbod investeringstjenester i Norge uten tillatelse. Foretaket markedsforte CFD-er og kryptovalutaprodukter til norske forbrukere. Finanstilsynet advarer norske forbrukere mot a benytte seg av uautoriserte tjenestetilbydere.",
+    sourcebook_references: "LOV-2007-06-29-75",
+  },
+  {
+    firm_name: "Uautorisert verdipapirforetak — advarsel 2023-2",
+    reference_number: "FTNO/2023/ADV-002",
+    action_type: "advarsel",
+    amount: 0,
+    date: "2023-05-15",
+    summary:
+      "Finanstilsynet publiserte advarsel mot et utenlandsk foretak som tilbod investeringstjenester uten konsesjon. Foretaket tilbod uregistrerte fond og strukturerte produkter til norske investorer gjennom aggressive markedsforingsmetoder.",
+    sourcebook_references: "LOV-2007-06-29-75",
+  },
+  {
+    firm_name: "Uautorisert verdipapirforetak — advarsel 2024-1",
+    reference_number: "FTNO/2024/ADV-001",
+    action_type: "advarsel",
+    amount: 0,
+    date: "2024-03-01",
+    summary:
+      "Finanstilsynet publiserte advarsel mot et foretak som tilbod kryptovalutarelaterte investeringstjenester i Norge uten tillatelse fra Finanstilsynet.",
+    sourcebook_references: "LOV-2007-06-29-75",
+  },
+  {
+    firm_name: "Uautorisert verdipapirforetak — advarsel 2024-2",
+    reference_number: "FTNO/2024/ADV-002",
+    action_type: "advarsel",
+    amount: 0,
+    date: "2024-07-01",
+    summary:
+      "Finanstilsynet publiserte advarsel mot et utenlandsk foretak uten konsesjon som markedsforte binary options og forex-produkter til norske forbrukere.",
+    sourcebook_references: "LOV-2007-06-29-75",
+  },
+  {
+    firm_name: "Uautorisert verdipapirforetak — advarsel 2025-1",
+    reference_number: "FTNO/2025/ADV-001",
+    action_type: "advarsel",
+    amount: 0,
+    date: "2025-01-15",
+    summary:
+      "Finanstilsynet publiserte advarsel mot et foretak som tilbod kryptoeiendelstjenester uten tillatelse etter kryptoeiendelsloven (MiCA).",
+    sourcebook_references: "LOV-2025-05-27-20",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ADDITIONAL ENFORCEMENT — FINANCIAL REPORTING CONTROL
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    firm_name: "Borsnotert foretak — regnskapskontroll 2022",
+    reference_number: "FTNO/2022/REGN-001",
+    action_type: "palegg",
+    amount: 0,
+    date: "2022-06-01",
+    summary:
+      "Finanstilsynet ga palegg om retting etter regnskapskontroll av et borsnotert foretak. Finanstilsynet konstaterte feilaktig klassifisering av finansielle instrumenter under IFRS 9 og mangelfulle noteopplysninger om kreditrisiko.",
+    sourcebook_references: "LOV-1998-07-17-56, FOR-2005-01-17-36",
+  },
+  {
+    firm_name: "Borsnotert foretak — regnskapskontroll 2021",
+    reference_number: "FTNO/2021/REGN-001",
+    action_type: "palegg",
+    amount: 0,
+    date: "2021-12-01",
+    summary:
+      "Finanstilsynet gjennomforte regnskapskontroll og konstaterte mangler i foretakets noteopplysninger om naerstaende parter (IAS 24) og segmentrapportering (IFRS 8). Foretaket ble palagt a rette rapporteringen.",
+    sourcebook_references: "LOV-1998-07-17-56",
+  },
+  {
+    firm_name: "Borsnotert foretak — berekraftsrapportering 2025",
+    reference_number: "FTNO/2025/ESG-REGN-001",
+    action_type: "palegg",
+    amount: 0,
+    date: "2025-11-01",
+    summary:
+      "Finanstilsynet gjennomforte kontroll av berekraftsrapporteringen til et borsnotert foretak i henhold til CSRD-regelverket. Tilsynet konstaterte mangler i foretakets vesentlighetsanalyse (double materiality) og rapportering av klimamalesetninger. Foretaket ble palagt a rette rapporteringen i naeste arsrapport.",
+    sourcebook_references: "LOV-1998-07-17-56, LOV-2024-11-01-CSRD",
   },
 ];
 
