@@ -1,0 +1,102 @@
+{
+  "version": "1.0",
+  "mcp_name": "Norwegian Financial Regulation MCP",
+  "tests": [
+    {
+      "id": "no-fin-001",
+      "category": "search",
+      "description": "Search regulations for 'hvitvaskingsloven' (AML)",
+      "tool": "no_fin_search_regulations",
+      "input": { "query": "hvitvaskingsloven" },
+      "assertions": { "result_not_empty": true, "min_results": 1 }
+    },
+    {
+      "id": "no-fin-002",
+      "category": "search",
+      "description": "Search regulations for 'kapitaldekning' (capital adequacy)",
+      "tool": "no_fin_search_regulations",
+      "input": { "query": "kapitaldekning" },
+      "assertions": { "result_not_empty": true, "min_results": 1 }
+    },
+    {
+      "id": "no-fin-003",
+      "category": "data_retrieval",
+      "description": "Get regulation by sourcebook and reference",
+      "tool": "no_fin_get_regulation",
+      "input": { "sourcebook": "FTNO_RUNDSKRIV", "reference": "Rundskriv 14/2021" },
+      "assertions": { "result_not_empty": true }
+    },
+    {
+      "id": "no-fin-004",
+      "category": "meta_tool",
+      "description": "List all sourcebooks returns at least 3",
+      "tool": "no_fin_list_sourcebooks",
+      "input": {},
+      "assertions": { "result_not_empty": true, "min_results": 3 }
+    },
+    {
+      "id": "no-fin-005",
+      "category": "search",
+      "description": "Search enforcement actions for 'overtredelsesgebyr' (administrative fine)",
+      "tool": "no_fin_search_enforcement",
+      "input": { "query": "overtredelsesgebyr" },
+      "assertions": { "result_not_empty": true, "min_results": 1 }
+    },
+    {
+      "id": "no-fin-006",
+      "category": "search",
+      "description": "Search enforcement actions with action_type filter",
+      "tool": "no_fin_search_enforcement",
+      "input": { "query": "tilbakekall", "action_type": "ban" },
+      "assertions": { "result_not_empty": true }
+    },
+    {
+      "id": "no-fin-007",
+      "category": "data_retrieval",
+      "description": "Check currency of a provision reference",
+      "tool": "no_fin_check_currency",
+      "input": { "reference": "Rundskriv 14/2021" },
+      "assertions": { "result_not_empty": true }
+    },
+    {
+      "id": "no-fin-008",
+      "category": "meta_tool",
+      "description": "About tool returns server metadata",
+      "tool": "no_fin_about",
+      "input": {},
+      "assertions": { "result_not_empty": true, "any_result_contains": "finanstilsynet" }
+    },
+    {
+      "id": "no-fin-009",
+      "category": "negative_test",
+      "description": "Non-existent provision reference handles gracefully",
+      "tool": "no_fin_get_regulation",
+      "input": { "sourcebook": "FTNO_FORSKRIFTER", "reference": "NONEXISTENT-REF-999" },
+      "assertions": { "handles_gracefully": true }
+    },
+    {
+      "id": "no-fin-010",
+      "category": "negative_test",
+      "description": "Non-existent currency check handles gracefully",
+      "tool": "no_fin_check_currency",
+      "input": { "reference": "NONEXISTENT-REF-999" },
+      "assertions": { "handles_gracefully": true }
+    },
+    {
+      "id": "no-fin-011",
+      "category": "search",
+      "description": "Search regulations filtered by sourcebook (forskrifter only)",
+      "tool": "no_fin_search_regulations",
+      "input": { "query": "forsikring", "sourcebook": "FTNO_FORSKRIFTER" },
+      "assertions": { "result_not_empty": true, "min_results": 1 }
+    },
+    {
+      "id": "no-fin-012",
+      "category": "search",
+      "description": "Search regulations filtered by status (in_force only)",
+      "tool": "no_fin_search_regulations",
+      "input": { "query": "verdipapir", "status": "in_force" },
+      "assertions": { "result_not_empty": true, "min_results": 1 }
+    }
+  ]
+}
