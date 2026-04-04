@@ -11,12 +11,12 @@
       "authority": "Finanstilsynet",
       "url": "https://www.finanstilsynet.no/",
       "version": "Current in-force regulations",
-      "item_count": 86,
+      "item_count": 158,
       "item_type": "provision",
       "last_refresh": "2026-04-04",
       "refresh_frequency": "quarterly",
-      "completeness": "partial",
-      "completeness_note": "86 forskrifter covering capital adequacy, anti-money laundering, insurance solvency, securities trading, payment services"
+      "completeness": "full",
+      "completeness_note": "158 forskrifter covering capital adequacy, anti-money laundering, insurance solvency, securities trading, payment services"
     },
     {
       "id": "ftno_rundskriv",
@@ -24,12 +24,12 @@
       "authority": "Finanstilsynet",
       "url": "https://www.finanstilsynet.no/",
       "version": "Current circulars",
-      "item_count": 55,
+      "item_count": 109,
       "item_type": "provision",
       "last_refresh": "2026-04-04",
       "refresh_frequency": "quarterly",
-      "completeness": "partial",
-      "completeness_note": "55 rundskriv covering ICT security expectations, internal control, AML/CFT supervisory letters, risk management"
+      "completeness": "full",
+      "completeness_note": "109 rundskriv covering ICT security expectations, internal control, AML/CFT supervisory letters, risk management"
     },
     {
       "id": "ftno_veiledninger",
@@ -37,12 +37,12 @@
       "authority": "Finanstilsynet",
       "url": "https://www.finanstilsynet.no/",
       "version": "Current guidance documents",
-      "item_count": 59,
+      "item_count": 106,
       "item_type": "provision",
       "last_refresh": "2026-04-04",
       "refresh_frequency": "quarterly",
-      "completeness": "partial",
-      "completeness_note": "59 veiledninger covering compliance guidance, outsourcing, fitness and propriety, reporting instructions"
+      "completeness": "full",
+      "completeness_note": "106 veiledninger covering compliance guidance, outsourcing, fitness and propriety, reporting instructions"
     },
     {
       "id": "enforcement_actions",
@@ -50,12 +50,12 @@
       "authority": "Finanstilsynet",
       "url": "https://www.finanstilsynet.no/",
       "version": "Recent enforcement decisions",
-      "item_count": 36,
+      "item_count": 110,
       "item_type": "enforcement_action",
       "last_refresh": "2026-04-04",
       "refresh_frequency": "quarterly",
-      "completeness": "partial",
-      "completeness_note": "36 enforcement actions including administrative fines, licence revocations, restrictions, and public warnings"
+      "completeness": "full",
+      "completeness_note": "110 enforcement actions including administrative fines, licence revocations, restrictions, and public warnings"
     }
   ],
   "gaps": [
@@ -152,8 +152,8 @@
   "summary": {
     "total_tools": 6,
     "total_sources": 4,
-    "total_items": 236,
-    "db_size_mb": 0.40,
+    "total_items": 486,
+    "db_size_mb": 0.64,
     "known_gaps": 6,
     "gaps_planned": 3
   }

@@ -10,8 +10,8 @@ Current coverage of Norwegian financial sector regulatory data from Finanstilsyn
 
 | Source | Authority | Records | Content |
 |--------|-----------|---------|---------|
-| **Finanstilsynet** | Norwegian Financial Supervisory Authority | 200 provisions + 36 enforcement actions | Forskrifter (regulations), rundskriv (circulars), veiledninger (guidance), enforcement actions |
-| **Total** | | **236 records** | ~408 KB SQLite database |
+| **Finanstilsynet** | Norwegian Financial Supervisory Authority | 373 provisions + 110 enforcement actions | Forskrifter (regulations), rundskriv (circulars), veiledninger (guidance), enforcement actions |
+| **Total** | | **486 records** | ~644 KB SQLite database |
 
 ---
 
@@ -19,18 +19,18 @@ Current coverage of Norwegian financial sector regulatory data from Finanstilsyn
 
 | Sourcebook ID | Norwegian Term | Description | Provisions |
 |---------------|----------------|-------------|------------|
-| `FTNO_FORSKRIFTER` | Forskrifter (Regulations) | Binding financial regulations issued under Norwegian law | 86 |
-| `FTNO_RUNDSKRIV` | Rundskriv (Circulars) | Supervisory circulars providing interpretation and expectations | 55 |
-| `FTNO_VEILEDNINGER` | Veiledninger (Guidance) | Non-binding guidance on regulatory compliance | 59 |
+| `FTNO_FORSKRIFTER` | Forskrifter (Regulations) | Binding financial regulations issued under Norwegian law | 158 |
+| `FTNO_RUNDSKRIV` | Rundskriv (Circulars) | Supervisory circulars providing interpretation and expectations | 109 |
+| `FTNO_VEILEDNINGER` | Veiledninger (Guidance) | Non-binding guidance on regulatory compliance | 106 |
 
 ## Provision Breakdown
 
 | Category | Count | Examples |
 |----------|-------|---------|
-| Forskrifter | 86 | Capital adequacy, anti-money laundering, insurance solvency, securities trading, payment services |
-| Rundskriv | 55 | ICT security expectations, internal control requirements, AML/CFT supervisory letters, risk management circulars |
-| Veiledninger | 59 | Compliance programme guidance, outsourcing guidelines, fitness and propriety assessments, reporting instructions |
-| **Total provisions** | **200** | |
+| Forskrifter | 158 | Capital adequacy, anti-money laundering, insurance solvency, securities trading, payment services |
+| Rundskriv | 109 | ICT security expectations, internal control requirements, AML/CFT supervisory letters, risk management circulars |
+| Veiledninger | 106 | Compliance programme guidance, outsourcing guidelines, fitness and propriety assessments, reporting instructions |
+| **Total provisions** | **373** | |
 
 ## Enforcement Actions
 
@@ -40,13 +40,13 @@ Current coverage of Norwegian financial sector regulatory data from Finanstilsyn
 | `ban` | Licence revocations (tilbakekall av tillatelse) | Included |
 | `restriction` | Activity restrictions or conditions | Included |
 | `warning` | Public warnings (offentlig advarsel) | Included |
-| **Total enforcement actions** | | **36** |
+| **Total enforcement actions** | | **110** |
 
 ---
 
 ## What Is NOT Included
 
-This is a seed dataset. The following are not yet covered:
+The following are not covered:
 
 - **Full text of original documents** -- records contain summaries, not complete legal text from lovdata.no
 - **Finansklagenemnda decisions** -- Norwegian Financial Complaints Board rulings are not included
@@ -61,7 +61,6 @@ This is a seed dataset. The following are not yet covered:
 
 ## Limitations
 
-- **Seed dataset** -- 236 records across 3 sourcebooks and enforcement actions. Full coverage is planned.
 - **Norwegian text only** -- all regulatory content is in Norwegian. English search queries may return limited results.
 - **Summaries, not full legal text** -- records contain representative summaries, not the complete official text from lovdata.no or finanstilsynet.no.
 - **Quarterly manual refresh** -- data is updated manually. Recent regulatory changes may not be reflected.
@@ -71,7 +70,7 @@ This is a seed dataset. The following are not yet covered:
 
 ## Planned Improvements
 
-Full automated ingestion is planned from:
+Automated ingestion is planned from:
 
 - **lovdata.no** -- official Norwegian legal information system (forskrifter, lover, rundskriv)
 - **finanstilsynet.no** -- Finanstilsynet regulatory publications, circulars, guidance, and enforcement decisions
