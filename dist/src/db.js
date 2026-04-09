@@ -8,19 +8,15 @@
  *
  * FTS5 virtual tables back full-text search on provisions and enforcement actions.
  */
-
 import Database from "@ansvar/mcp-sqlite";
 import { existsSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { seedDatabase } from "./seed.js";
-
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const PKG_ROOT = join(__dirname, "..");
-
 const DB_PATH = process.env["NO_FIN_DB_PATH"] ?? join(PKG_ROOT, "data", "no-fin.db");
-
 export const SCHEMA_SQL = `
 CREATE TABLE IF NOT EXISTS sourcebooks (
   id          TEXT PRIMARY KEY,
@@ -106,192 +102,98 @@ CREATE TRIGGER IF NOT EXISTS enforcement_au AFTER UPDATE ON enforcement_actions 
   VALUES (new.id, new.firm_name, COALESCE(new.summary, ''));
 END;
 `;
-
-export interface Sourcebook {
-  id: string;
-  name: string;
-  description: string | null;
+let _db = null;
+export function getDb() {
+    if (_db)
+        return _db;
+    const dir = dirname(DB_PATH);
+    if (!existsSync(dir)) {
+        mkdirSync(dir, { recursive: true });
+    }
+    _db = new Database(DB_PATH);
+    _db.pragma("journal_mode = WAL");
+    _db.pragma("foreign_keys = ON");
+    _db.exec(SCHEMA_SQL);
+    seedDatabase(_db);
+    return _db;
 }
-
-export interface Provision {
-  id: number;
-  sourcebook_id: string;
-  reference: string;
-  title: string | null;
-  text: string;
-  type: string | null;
-  status: string;
-  effective_date: string | null;
-  chapter: string | null;
-  section: string | null;
-}
-
-export interface EnforcementAction {
-  id: number;
-  firm_name: string;
-  reference_number: string | null;
-  action_type: string | null;
-  amount: number | null;
-  date: string | null;
-  summary: string | null;
-  sourcebook_references: string | null;
-}
-
-let _db: InstanceType<typeof Database> | null = null;
-
-export function getDb(): InstanceType<typeof Database> {
-  if (_db) return _db;
-
-  const dir = dirname(DB_PATH);
-  if (!existsSync(dir)) {
-    mkdirSync(dir, { recursive: true });
-  }
-
-  _db = new Database(DB_PATH);
-  _db.pragma("journal_mode = WAL");
-  _db.pragma("foreign_keys = ON");
-  _db.exec(SCHEMA_SQL);
-  seedDatabase(_db);
-
-  return _db;
-}
-
 // --- Sourcebook queries ---
-
-export function listSourcebooks(): Sourcebook[] {
-  const db = getDb();
-  return db
-    .prepare("SELECT id, name, description FROM sourcebooks ORDER BY id")
-    .all() as Sourcebook[];
-}
-
-// --- Provision queries ---
-
-export interface SearchProvisionsOptions {
-  query: string;
-  sourcebook?: string | undefined;
-  status?: string | undefined;
-  limit?: number | undefined;
-}
-
-export function searchProvisions(opts: SearchProvisionsOptions): Provision[] {
-  const db = getDb();
-  const limit = opts.limit ?? 20;
-
-  if (opts.sourcebook ?? opts.status) {
-    const conditions: string[] = [];
-    const params: Record<string, unknown> = { query: opts.query, limit };
-
-    if (opts.sourcebook) {
-      conditions.push("p.sourcebook_id = :sourcebook");
-      params["sourcebook"] = opts.sourcebook.toUpperCase();
-    }
-    if (opts.status) {
-      conditions.push("p.status = :status");
-      params["status"] = opts.status;
-    }
-
-    const where = conditions.length > 0 ? `AND ${conditions.join(" AND ")}` : "";
+export function listSourcebooks() {
+    const db = getDb();
     return db
-      .prepare(
-        `SELECT p.* FROM provisions_fts f
+        .prepare("SELECT id, name, description FROM sourcebooks ORDER BY id")
+        .all();
+}
+export function searchProvisions(opts) {
+    const db = getDb();
+    const limit = opts.limit ?? 20;
+    if (opts.sourcebook ?? opts.status) {
+        const conditions = [];
+        const params = { query: opts.query, limit };
+        if (opts.sourcebook) {
+            conditions.push("p.sourcebook_id = :sourcebook");
+            params["sourcebook"] = opts.sourcebook.toUpperCase();
+        }
+        if (opts.status) {
+            conditions.push("p.status = :status");
+            params["status"] = opts.status;
+        }
+        const where = conditions.length > 0 ? `AND ${conditions.join(" AND ")}` : "";
+        return db
+            .prepare(`SELECT p.* FROM provisions_fts f
          JOIN provisions p ON p.id = f.rowid
          WHERE provisions_fts MATCH :query ${where}
          ORDER BY rank
-         LIMIT :limit`,
-      )
-      .all(params) as Provision[];
-  }
-
-  return db
-    .prepare(
-      `SELECT p.* FROM provisions_fts f
+         LIMIT :limit`)
+            .all(params);
+    }
+    return db
+        .prepare(`SELECT p.* FROM provisions_fts f
        JOIN provisions p ON p.id = f.rowid
        WHERE provisions_fts MATCH :query
        ORDER BY rank
-       LIMIT :limit`,
-    )
-    .all({ query: opts.query, limit }) as Provision[];
+       LIMIT :limit`)
+        .all({ query: opts.query, limit });
 }
-
-export function getProvision(
-  sourcebook: string,
-  reference: string,
-): Provision | null {
-  const db = getDb();
-  const row = db
-    .prepare(
-      "SELECT * FROM provisions WHERE sourcebook_id = ? AND reference = ? LIMIT 1",
-    )
-    .get(sourcebook.toUpperCase(), reference) as Provision | undefined;
-
-  if (row) return row;
-
-  return (
-    (db
-      .prepare(
-        "SELECT * FROM provisions WHERE sourcebook_id = ? AND LOWER(reference) LIKE LOWER(?) LIMIT 1",
-      )
-      .get(sourcebook.toUpperCase(), `${reference}%`) as Provision | undefined) ??
-    null
-  );
+export function getProvision(sourcebook, reference) {
+    const db = getDb();
+    const row = db
+        .prepare("SELECT * FROM provisions WHERE sourcebook_id = ? AND reference = ? LIMIT 1")
+        .get(sourcebook.toUpperCase(), reference);
+    if (row)
+        return row;
+    return (db
+        .prepare("SELECT * FROM provisions WHERE sourcebook_id = ? AND LOWER(reference) LIKE LOWER(?) LIMIT 1")
+        .get(sourcebook.toUpperCase(), `${reference}%`) ??
+        null);
 }
-
-export function checkProvisionCurrency(reference: string): {
-  reference: string;
-  status: string;
-  effective_date: string | null;
-  found: boolean;
-} {
-  const db = getDb();
-  const row = db
-    .prepare(
-      "SELECT reference, status, effective_date FROM provisions WHERE reference = ? LIMIT 1",
-    )
-    .get(reference) as
-    | Pick<Provision, "reference" | "status" | "effective_date">
-    | undefined;
-
-  if (!row) {
-    return { reference, status: "unknown", effective_date: null, found: false };
-  }
-
-  return { ...row, found: true };
+export function checkProvisionCurrency(reference) {
+    const db = getDb();
+    const row = db
+        .prepare("SELECT reference, status, effective_date FROM provisions WHERE reference = ? LIMIT 1")
+        .get(reference);
+    if (!row) {
+        return { reference, status: "unknown", effective_date: null, found: false };
+    }
+    return { ...row, found: true };
 }
-
-// --- Enforcement queries ---
-
-export interface SearchEnforcementOptions {
-  query: string;
-  action_type?: string | undefined;
-  limit?: number | undefined;
-}
-
-export function searchEnforcement(
-  opts: SearchEnforcementOptions,
-): EnforcementAction[] {
-  const db = getDb();
-  const limit = opts.limit ?? 20;
-
-  if (opts.action_type) {
-    return db
-      .prepare(
-        `SELECT e.* FROM enforcement_fts f
+export function searchEnforcement(opts) {
+    const db = getDb();
+    const limit = opts.limit ?? 20;
+    if (opts.action_type) {
+        return db
+            .prepare(`SELECT e.* FROM enforcement_fts f
          JOIN enforcement_actions e ON e.id = f.rowid
          WHERE enforcement_fts MATCH :query AND e.action_type = :action_type
          ORDER BY rank
-         LIMIT :limit`,
-      )
-      .all({ query: opts.query, action_type: opts.action_type, limit }) as EnforcementAction[];
-  }
-
-  return db
-    .prepare(
-      `SELECT e.* FROM enforcement_fts f
+         LIMIT :limit`)
+            .all({ query: opts.query, action_type: opts.action_type, limit });
+    }
+    return db
+        .prepare(`SELECT e.* FROM enforcement_fts f
        JOIN enforcement_actions e ON e.id = f.rowid
        WHERE enforcement_fts MATCH :query
        ORDER BY rank
-       LIMIT :limit`,
-    )
-    .all({ query: opts.query, limit }) as EnforcementAction[];
+       LIMIT :limit`)
+        .all({ query: opts.query, limit });
 }

@@ -1,5 +1,6 @@
 node_modules/
-dist/
+# Build output — tracked so bunx works without devDeps
+# dist/
 *.db
 *.db-journal
 *.db-wal

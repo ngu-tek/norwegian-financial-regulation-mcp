@@ -1,43 +1,11 @@
 /**
- * Full real-data ingestion for the Finanstilsynet (Norway) MCP server.
+ * Full corpus seed data for the Finanstilsynet MCP server.
  *
- * Populates the database with verified regulatory data sourced from:
- *   - finanstilsynet.no (rundskriv, veiledninger, enforcement actions)
- *   - lovdata.no (forskrifter / regulations)
- *
- * Usage:
- *   npx tsx scripts/ingest-all.ts
- *   npx tsx scripts/ingest-all.ts --force   # drop and recreate
+ * Called once on first startup when the database is empty.
+ * All data is hardcoded — no external fetches.
  */
 
-import Database from "@ansvar/mcp-sqlite";
-import { existsSync, mkdirSync, unlinkSync } from "node:fs";
-import { dirname } from "node:path";
-import { SCHEMA_SQL } from "../src/db.js";
-
-const DB_PATH = process.env["NO_FIN_DB_PATH"] ?? "data/no-fin.db";
-const force = process.argv.includes("--force");
-
-// ── Bootstrap database ─────────────────────────────────────────────────────
-
-const dir = dirname(DB_PATH);
-if (!existsSync(dir)) {
-  mkdirSync(dir, { recursive: true });
-}
-
-if (force && existsSync(DB_PATH)) {
-  unlinkSync(DB_PATH);
-  console.log(`Deleted existing database at ${DB_PATH}`);
-}
-
-const db = new Database(DB_PATH);
-db.pragma("journal_mode = WAL");
-db.pragma("foreign_keys = ON");
-db.exec(SCHEMA_SQL);
-
-console.log(`Database initialised at ${DB_PATH}`);
-
-// ── Sourcebooks ─────────────────────────────────────────────────────────────
+import type Database from "@ansvar/mcp-sqlite";
 
 interface SourcebookRow {
   id: string;
@@ -66,15 +34,8 @@ const sourcebooks: SourcebookRow[] = [
   },
 ];
 
-const insertSourcebook = db.prepare(
-  "INSERT OR IGNORE INTO sourcebooks (id, name, description) VALUES (?, ?, ?)",
-);
 
-for (const sb of sourcebooks) {
-  insertSourcebook.run(sb.id, sb.name, sb.description);
-}
 
-console.log(`Inserted ${sourcebooks.length} sourcebooks`);
 
 // ── Provision type definitions ──────────────────────────────────────────────
 
@@ -6015,96 +5976,50 @@ const enforcements: EnforcementRow[] = [
   },
 ];
 
-// ── Insert all provisions ───────────────────────────────────────────────────
 
-const allProvisions = [...forskrifter, ...rundskriv, ...veiledninger];
+const SERVER_NAME = "norwegian-financial-regulation-mcp";
 
-const insertProvision = db.prepare(`
-  INSERT INTO provisions (sourcebook_id, reference, title, text, type, status, effective_date, chapter, section)
-  VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-`);
+export function seedDatabase(db: InstanceType<typeof Database>): void {
+  const count = (db.prepare("SELECT count(*) as cnt FROM sourcebooks").get() as { cnt: number }).cnt;
+  if (count > 0) return;
 
-const insertAllProvisions = db.transaction(() => {
-  for (const p of allProvisions) {
-    insertProvision.run(
-      p.sourcebook_id,
-      p.reference,
-      p.title,
-      p.text,
-      p.type,
-      p.status,
-      p.effective_date,
-      p.chapter,
-      p.section,
-    );
+  console.error(`[${SERVER_NAME}] Empty database — seeding full corpus...`);
+
+  const insertSourcebook = db.prepare(
+    "INSERT OR IGNORE INTO sourcebooks (id, name, description) VALUES (?, ?, ?)",
+  );
+  for (const sb of sourcebooks) {
+    insertSourcebook.run(sb.id, sb.name, sb.description);
   }
-});
 
-insertAllProvisions();
+  const allProvisions = [...forskrifter, ...rundskriv, ...veiledninger];
+  const insertProvision = db.prepare(`
+    INSERT INTO provisions (sourcebook_id, reference, title, text, type, status, effective_date, chapter, section)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+  `);
+  const insertAllProvisions = db.transaction(() => {
+    for (const p of allProvisions) {
+      insertProvision.run(
+        p.sourcebook_id, p.reference, p.title, p.text,
+        p.type, p.status, p.effective_date, p.chapter, p.section,
+      );
+    }
+  });
+  insertAllProvisions();
 
-console.log(`Inserted ${allProvisions.length} provisions:`);
-console.log(`  FTNO_FORSKRIFTER:  ${forskrifter.length}`);
-console.log(`  FTNO_RUNDSKRIV:    ${rundskriv.length}`);
-console.log(`  FTNO_VEILEDNINGER: ${veiledninger.length}`);
+  const insertEnforcement = db.prepare(`
+    INSERT INTO enforcement_actions (firm_name, reference_number, action_type, amount, date, summary, sourcebook_references)
+    VALUES (?, ?, ?, ?, ?, ?, ?)
+  `);
+  const insertAllEnforcements = db.transaction(() => {
+    for (const e of enforcements) {
+      insertEnforcement.run(
+        e.firm_name, e.reference_number, e.action_type,
+        e.amount, e.date, e.summary, e.sourcebook_references,
+      );
+    }
+  });
+  insertAllEnforcements();
 
-// ── Insert enforcement actions ──────────────────────────────────────────────
-
-const insertEnforcement = db.prepare(`
-  INSERT INTO enforcement_actions (firm_name, reference_number, action_type, amount, date, summary, sourcebook_references)
-  VALUES (?, ?, ?, ?, ?, ?, ?)
-`);
-
-const insertAllEnforcements = db.transaction(() => {
-  for (const e of enforcements) {
-    insertEnforcement.run(
-      e.firm_name,
-      e.reference_number,
-      e.action_type,
-      e.amount,
-      e.date,
-      e.summary,
-      e.sourcebook_references,
-    );
-  }
-});
-
-insertAllEnforcements();
-
-console.log(`Inserted ${enforcements.length} enforcement actions`);
-
-// ── Summary ─────────────────────────────────────────────────────────────────
-
-const provisionCount = (
-  db.prepare("SELECT count(*) as cnt FROM provisions").get() as { cnt: number }
-).cnt;
-const sourcebookCount = (
-  db.prepare("SELECT count(*) as cnt FROM sourcebooks").get() as { cnt: number }
-).cnt;
-const enforcementCount = (
-  db.prepare("SELECT count(*) as cnt FROM enforcement_actions").get() as {
-    cnt: number;
-  }
-).cnt;
-const ftsCount = (
-  db.prepare("SELECT count(*) as cnt FROM provisions_fts").get() as {
-    cnt: number;
-  }
-).cnt;
-const enfFtsCount = (
-  db.prepare("SELECT count(*) as cnt FROM enforcement_fts").get() as {
-    cnt: number;
-  }
-).cnt;
-
-console.log(`\nDatabase summary:`);
-console.log(`  Sourcebooks:              ${sourcebookCount}`);
-console.log(`  Provisions:               ${provisionCount}`);
-console.log(`    FTNO_FORSKRIFTER:        ${forskrifter.length}`);
-console.log(`    FTNO_RUNDSKRIV:          ${rundskriv.length}`);
-console.log(`    FTNO_VEILEDNINGER:       ${veiledninger.length}`);
-console.log(`  Enforcement actions:       ${enforcementCount}`);
-console.log(`  FTS entries (provisions):  ${ftsCount}`);
-console.log(`  FTS entries (enforcement): ${enfFtsCount}`);
-console.log(`\nDone. Database ready at ${DB_PATH}`);
-
-db.close();
+  console.error(`[${SERVER_NAME}] Seeded ${sourcebooks.length} sourcebooks, ${allProvisions.length} provisions, ${enforcements.length} enforcement actions`);
+}
