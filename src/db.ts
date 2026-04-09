@@ -165,6 +165,23 @@ export function listSourcebooks(): Sourcebook[] {
     .all() as Sourcebook[];
 }
 
+// --- FTS5 query sanitization ---
+
+/**
+ * Sanitize user input for FTS5 MATCH.
+ *
+ * Wraps each whitespace-delimited token in double quotes so that hyphens,
+ * FTS operators (AND/OR/NOT), brackets, and other special characters are
+ * treated as literals instead of FTS5 syntax.
+ */
+function sanitizeFtsQuery(raw: string): string {
+  return raw
+    .split(/\s+/)
+    .filter(Boolean)
+    .map((token) => `"${token.replace(/"/g, '""')}"`)
+    .join(" ");
+}
+
 // --- Provision queries ---
 
 export interface SearchProvisionsOptions {
@@ -177,10 +194,11 @@ export interface SearchProvisionsOptions {
 export function searchProvisions(opts: SearchProvisionsOptions): Provision[] {
   const db = getDb();
   const limit = opts.limit ?? 20;
+  const query = sanitizeFtsQuery(opts.query);
 
   if (opts.sourcebook ?? opts.status) {
     const conditions: string[] = [];
-    const params: Record<string, unknown> = { query: opts.query, limit };
+    const params: Record<string, unknown> = { query, limit };
 
     if (opts.sourcebook) {
       conditions.push("p.sourcebook_id = :sourcebook");
@@ -211,7 +229,7 @@ export function searchProvisions(opts: SearchProvisionsOptions): Provision[] {
        ORDER BY rank
        LIMIT :limit`,
     )
-    .all({ query: opts.query, limit }) as Provision[];
+    .all({ query, limit }) as Provision[];
 }
 
 export function getProvision(
@@ -272,6 +290,7 @@ export function searchEnforcement(
 ): EnforcementAction[] {
   const db = getDb();
   const limit = opts.limit ?? 20;
+  const query = sanitizeFtsQuery(opts.query);
 
   if (opts.action_type) {
     return db
@@ -282,7 +301,7 @@ export function searchEnforcement(
          ORDER BY rank
          LIMIT :limit`,
       )
-      .all({ query: opts.query, action_type: opts.action_type, limit }) as EnforcementAction[];
+      .all({ query, action_type: opts.action_type, limit }) as EnforcementAction[];
   }
 
   return db
@@ -293,5 +312,5 @@ export function searchEnforcement(
        ORDER BY rank
        LIMIT :limit`,
     )
-    .all({ query: opts.query, limit }) as EnforcementAction[];
+    .all({ query, limit }) as EnforcementAction[];
 }

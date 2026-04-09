@@ -124,12 +124,28 @@ export function listSourcebooks() {
         .prepare("SELECT id, name, description FROM sourcebooks ORDER BY id")
         .all();
 }
+// --- FTS5 query sanitization ---
+/**
+ * Sanitize user input for FTS5 MATCH.
+ *
+ * Wraps each whitespace-delimited token in double quotes so that hyphens,
+ * FTS operators (AND/OR/NOT), brackets, and other special characters are
+ * treated as literals instead of FTS5 syntax.
+ */
+function sanitizeFtsQuery(raw) {
+    return raw
+        .split(/\s+/)
+        .filter(Boolean)
+        .map((token) => `"${token.replace(/"/g, '""')}"`)
+        .join(" ");
+}
 export function searchProvisions(opts) {
     const db = getDb();
     const limit = opts.limit ?? 20;
+    const query = sanitizeFtsQuery(opts.query);
     if (opts.sourcebook ?? opts.status) {
         const conditions = [];
-        const params = { query: opts.query, limit };
+        const params = { query, limit };
         if (opts.sourcebook) {
             conditions.push("p.sourcebook_id = :sourcebook");
             params["sourcebook"] = opts.sourcebook.toUpperCase();
@@ -153,7 +169,7 @@ export function searchProvisions(opts) {
        WHERE provisions_fts MATCH :query
        ORDER BY rank
        LIMIT :limit`)
-        .all({ query: opts.query, limit });
+        .all({ query, limit });
 }
 export function getProvision(sourcebook, reference) {
     const db = getDb();
@@ -180,6 +196,7 @@ export function checkProvisionCurrency(reference) {
 export function searchEnforcement(opts) {
     const db = getDb();
     const limit = opts.limit ?? 20;
+    const query = sanitizeFtsQuery(opts.query);
     if (opts.action_type) {
         return db
             .prepare(`SELECT e.* FROM enforcement_fts f
@@ -187,7 +204,7 @@ export function searchEnforcement(opts) {
          WHERE enforcement_fts MATCH :query AND e.action_type = :action_type
          ORDER BY rank
          LIMIT :limit`)
-            .all({ query: opts.query, action_type: opts.action_type, limit });
+            .all({ query, action_type: opts.action_type, limit });
     }
     return db
         .prepare(`SELECT e.* FROM enforcement_fts f
@@ -195,5 +212,5 @@ export function searchEnforcement(opts) {
        WHERE enforcement_fts MATCH :query
        ORDER BY rank
        LIMIT :limit`)
-        .all({ query: opts.query, limit });
+        .all({ query, limit });
 }

@@ -117,8 +117,8 @@ const TOOLS = [
         },
         action_type: {
           type: "string",
-          enum: ["fine", "ban", "restriction", "warning"],
-          description: "Filter by action type. Optional.",
+          enum: ["overtredelsesgebyr", "tilsynsrapport", "tilbakekall", "palegg", "advarsel", "vedtak", "tematilsyn"],
+          description: "Filter by action type: overtredelsesgebyr (fine), tilsynsrapport (supervisory report), tilbakekall (licence revocation), palegg (order), advarsel (warning), vedtak (decision), tematilsyn (thematic review). Optional.",
         },
         limit: {
           type: "number",
@@ -170,7 +170,7 @@ const GetRegulationArgs = z.object({
 
 const SearchEnforcementArgs = z.object({
   query: z.string().min(1),
-  action_type: z.enum(["fine", "ban", "restriction", "warning"]).optional(),
+  action_type: z.enum(["overtredelsesgebyr", "tilsynsrapport", "tilbakekall", "palegg", "advarsel", "vedtak", "tematilsyn"]).optional(),
   limit: z.number().int().positive().max(100).optional(),
 });
 
