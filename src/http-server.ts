@@ -27,6 +27,8 @@ import {
   listSourcebooks,
   searchProvisions,
   getProvision,
+  getProvisionSections,
+  getProvisionAttachments,
   searchEnforcement,
   checkProvisionCurrency,
 } from "./db.js";
@@ -196,7 +198,16 @@ function createMcpServer(): Server {
               `Provision not found: ${parsed.sourcebook} ${parsed.reference}`,
             );
           }
-          return textContent(provision);
+          const sections = getProvisionSections(provision.id);
+          const attachments = getProvisionAttachments(provision.id).map((a) => ({
+            url: a.url,
+            mime_type: a.mime_type,
+            filename: a.filename,
+            pages: a.pages,
+            bytes: a.bytes,
+            has_extracted_text: a.text != null && !a.text.startsWith("["),
+          }));
+          return textContent({ ...provision, sections, attachments });
         }
 
         case "no_fin_list_sourcebooks": {

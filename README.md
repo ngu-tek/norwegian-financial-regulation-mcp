@@ -83,13 +83,16 @@ Full tool documentation: [TOOLS.md](TOOLS.md)
 
 | Sourcebook | Records | Content |
 |------------|---------|---------|
-| FTNO_FORSKRIFTER | 86 provisions | Capital adequacy, AML, insurance solvency, securities trading, payment services |
-| FTNO_RUNDSKRIV | 55 provisions | ICT security, internal control, AML/CFT supervisory letters, risk management |
-| FTNO_VEILEDNINGER | 59 provisions | Compliance guidance, outsourcing, fitness and propriety, reporting instructions |
-| Enforcement actions | 36 actions | Administrative fines, licence revocations, restrictions, public warnings |
-| **Total** | **236 records** | ~408 KB database |
+| FTNO_FORSKRIFTER | Finanstilsynet-administered forskrifter from Lovdata | Capital adequacy, AML, insurance solvency, securities trading, payment services |
+| FTNO_RUNDSKRIV | All current rundskriv from Finanstilsynet | ICT security, internal control, AML/CFT supervisory letters, risk management |
+| FTNO_VEILEDNINGER | All current veiledninger from Finanstilsynet | Compliance guidance, outsourcing, fitness and propriety, reporting instructions |
+| Enforcement actions | Inspection reports and decisions | Administrative fines, licence revocations, restrictions, public warnings |
 
-This is a seed dataset. Full automated ingestion from lovdata.no and finanstilsynet.no is planned.
+For each rundskriv and veiledning the ingester also captures:
+
+- **Numbered sections** — the body is split into `provision_sections` keyed by section number (`1`, `2.1`, `2.3`…) and depth, so consumers can cite a specific subsection.
+- **PDF attachments** — the canonical PDF version of each circular is downloaded and its text extracted (via `pdfjs-dist`, no native deps), stored in `provision_attachments`. PDF text is concatenated into the provision's `text` field so full-text search hits the canonical body.
+- **Sidebar metadata** — `applies_to` (the "Gjelder for" entity list), `replaces` (any superseded rundskriv), `source_url`, and `content_source` (whether the text came from the HTML body, an attached PDF, or both).
 
 **Language note:** All regulatory content is in Norwegian. Search queries work best in Norwegian (e.g., `hvitvaskingsloven`, `kapitaldekning`, `IKT-sikkerhet`, `overtredelsesgebyr`).
 

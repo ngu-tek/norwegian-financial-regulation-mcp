@@ -23,7 +23,10 @@ import { z } from "zod";
 import {
   listSourcebooks,
   searchProvisions,
+  searchProvisionSections,
   getProvision,
+  getProvisionSections,
+  getProvisionAttachments,
   searchEnforcement,
   checkProvisionCurrency,
 } from "./db.js";
@@ -50,7 +53,7 @@ const TOOLS = [
   {
     name: "no_fin_search_regulations",
     description:
-      "Full-text search across Finanstilsynet regulatory provisions. Returns forskrifter (regulations), rundskriv (circulars), and veiledninger (guidance). Supports Norwegian-language queries.",
+      "Full-text search across Finanstilsynet regulatory provisions (forskrifter, rundskriv, veiledninger). Returns lightweight metadata + a highlighted snippet — call no_fin_get_regulation for the full text, or no_fin_search_sections for pinpointed § matches inside rundskriv/veiledninger.",
     inputSchema: {
       type: "object" as const,
       properties: {
@@ -66,6 +69,34 @@ const TOOLS = [
           type: "string",
           enum: ["in_force", "deleted", "not_yet_in_force"],
           description: "Filter by provision status. Defaults to all statuses.",
+        },
+        limit: {
+          type: "number",
+          description: "Maximum number of results to return. Defaults to 20.",
+        },
+      },
+      required: ["query"],
+    },
+  },
+  {
+    name: "no_fin_search_sections",
+    description:
+      "Full-text search across decomposed sections of Finanstilsynet rundskriv and veiledninger. Returns pinpointed § hits with a highlighted snippet — preferable to no_fin_search_regulations when you need a specific paragraph rather than a whole document.",
+    inputSchema: {
+      type: "object" as const,
+      properties: {
+        query: {
+          type: "string",
+          description: "Search query in Norwegian or English",
+        },
+        sourcebook: {
+          type: "string",
+          description: "Filter by sourcebook ID. Optional.",
+        },
+        status: {
+          type: "string",
+          enum: ["in_force", "deleted", "not_yet_in_force"],
+          description: "Filter by parent provision status. Optional.",
         },
         limit: {
           type: "number",
@@ -222,6 +253,17 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
         return textContent({ results, count: results.length });
       }
 
+      case "no_fin_search_sections": {
+        const parsed = SearchRegulationsArgs.parse(args);
+        const results = searchProvisionSections({
+          query: parsed.query,
+          sourcebook: parsed.sourcebook,
+          status: parsed.status,
+          limit: parsed.limit,
+        });
+        return textContent({ results, count: results.length });
+      }
+
       case "no_fin_get_regulation": {
         const parsed = GetRegulationArgs.parse(args);
         const provision = getProvision(parsed.sourcebook, parsed.reference);
@@ -230,9 +272,20 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
             `Provision not found: ${parsed.sourcebook} ${parsed.reference}`,
           );
         }
+        const sections = getProvisionSections(provision.id);
+        const attachments = getProvisionAttachments(provision.id).map((a) => ({
+          url: a.url,
+          mime_type: a.mime_type,
+          filename: a.filename,
+          pages: a.pages,
+          bytes: a.bytes,
+          has_extracted_text: a.text != null && !a.text.startsWith("["),
+        }));
         const p = provision as unknown as Record<string, unknown>;
         return textContent({
           ...p,
+          sections,
+          attachments,
           _citation: buildCitation(
             String(p.reference ?? parsed.reference),
             String(p.title ?? p.reference ?? parsed.reference),

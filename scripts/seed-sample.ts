@@ -10,7 +10,7 @@
  *   npx tsx scripts/seed-sample.ts --force   # drop and recreate
  */
 
-import Database from "better-sqlite3";
+import Database from "@ansvar/mcp-sqlite";
 import { existsSync, mkdirSync, unlinkSync } from "node:fs";
 import { dirname } from "node:path";
 import { SCHEMA_SQL } from "../src/db.js";
